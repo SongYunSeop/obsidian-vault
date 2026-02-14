@@ -14,7 +14,7 @@ aliases:
 # TIL: Claude Code Plugin
 
 > [!tldr] 한줄 요약
-> Plugin은 [[Claude Code Skill|Skills]], [[Claude Code Agent|Agents]], Hooks, MCP, LSP를 하나의 패키지로 묶어 팀과 커뮤니티에 공유/배포하는 시스템이다.
+> Plugin은 [[til/claude-code/skill|Skills]], [[til/claude-code/agent|Agents]], Hooks, MCP, LSP를 하나의 패키지로 묶어 팀과 커뮤니티에 공유/배포하는 시스템이다.
 
 ## 핵심 내용
 
@@ -71,7 +71,7 @@ my-plugin/
 |----------|------|------|
 | **Skills** | `skills/` | Claude가 자동 또는 `/name`으로 호출하는 확장 |
 | **Commands** | `commands/` | 슬래시 커맨드 (legacy, skills 권장) |
-| **Agents** | `agents/` | 전문 [[Claude Code Agent\|서브에이전트]] |
+| **Agents** | `agents/` | 전문 [[til/claude-code/agent|서브에이전트]] |
 | **Hooks** | `hooks/hooks.json` | 이벤트 핸들러 (PreToolUse, PostToolUse 등) |
 | **MCP Servers** | `.mcp.json` | 외부 서비스 연결 |
 | **LSP Servers** | `.lsp.json` | 코드 인텔리전스 (타입 에러, 정의 이동 등) |
@@ -114,6 +114,6 @@ claude plugin install formatter --scope project
 
 ## 관련 노트
 
-- [[til/claude-code/01-overview|Claude Code 개요]]
-- [[til/claude-code/03-skill|Claude Code Skill]]
-- [[til/claude-code/02-agent|Claude Code Agent 동작 방식]]
+- [[til/claude-code/overview|Claude Code 개요]]
+- [[til/claude-code/skill|Claude Code Skill]]
+- [[til/claude-code/agent|Claude Code Agent 동작 방식]]

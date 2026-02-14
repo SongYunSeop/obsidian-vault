@@ -77,10 +77,10 @@ updated: YYYY-MM-DD
 ```markdown
 ### claude-code
 - [[til/claude-code/backlog|학습 백로그]]
-1. [[til/claude-code/01-overview|Claude Code 개요]]
+1. [[til/claude-code/overview|Claude Code 개요]]
 ```
 
-백로그 링크는 해당 카테고리의 번호 리스트 위에 둔다.
+백로그 링크는 해당 카테고리의 TIL 목록 위에 둔다.
 
 ## /til과의 연계
 

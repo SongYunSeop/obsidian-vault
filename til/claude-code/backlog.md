@@ -2,14 +2,14 @@
 tags:
   - backlog
   - claude-code
-updated: 2026-02-13
+updated: 2026-02-14
 ---
 
 # Claude Code 학습 백로그
 
 ## 선행 지식
-- [ ] [[CLAUDE.md]] - 프로젝트 루트에 두는 설정 파일로, 매 세션마다 자동 로드되어 코딩 규칙과 컨텍스트를 제공
-- [ ] [[Settings와 Configuration]] - 5단계 설정 범위(user/local/project/CLI/env)가 우선순위에 따라 병합되는 설정 체계
+- [x] [[til/claude-code/claude-md|CLAUDE.md]] - 프로젝트 루트에 두는 설정 파일로, 매 세션마다 자동 로드되어 코딩 규칙과 컨텍스트를 제공
+- [x] [[til/claude-code/settings|Settings와 Configuration]] - 5단계 설정 범위(user/local/project/CLI/env)가 우선순위에 따라 병합되는 설정 체계
 - [ ] [[Permission 모드]] - default/acceptEdits/plan/dontAsk 등 도구 실행 승인을 제어하는 보안 모델
 - [ ] [[CLI 레퍼런스(CLI Reference)]] - `claude` 명령어의 플래그, 모드, 내장 슬래시 커맨드(/compact, /init, /clear 등) 전체 참조
 

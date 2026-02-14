@@ -12,7 +12,7 @@ Obsidian 기반 개인 학습 노트 저장소. TIL(Today I Learned) 노트와 �
 til/                    ← TIL 노트 (카테고리별 하위 폴더)
   TIL MOC.md            ← 전체 TIL 목록 (Map of Content)
   {카테고리}/
-    {NN}-{slug}.md      ← 개별 TIL (번호 기반 파일명)
+    {slug}.md            ← 개별 TIL
     backlog.md           ← 학습 백로그 (체크리스트)
 Daily/                  ← Daily 노트 (gitignore, 로컬 전용)
 .claude/skills/         ← 프로젝트 전용 Claude Code 스킬
@@ -28,5 +28,5 @@ Daily/                  ← Daily 노트 (gitignore, 로컬 전용)
 
 - 한국어로 작성. 기술 용어는 원어 병기 (예: "클로저(Closure)")
 - Obsidian 문법 사용: `[[wikilink]]`, `> [!callout]`, frontmatter properties
-- TIL 파일명은 번호 기반: `{NN}-{slug}.md` (날짜는 frontmatter `date`에)
+- TIL 파일명: `{slug}.md` (날짜는 frontmatter `date`에)
 - 커밋 메시지에 Co-Authored-By를 넣지 않는다

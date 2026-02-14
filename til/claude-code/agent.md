@@ -10,6 +10,7 @@ tags:
 aliases:
   - "Claude Code Agent 동작 방식"
   - "Claude Code Agentic Loop"
+  - "Claude Code Agent"
 ---
 
 # TIL: Claude Code에서 Agent가 동작하는 방식
@@ -44,7 +45,7 @@ Claude Code의 핵심 동작 방식. 3단계를 반복한다:
 
 ### 서브에이전트 (Sub-agents)
 
-독립된 [[컨텍스트 윈도우(Context Window)]]에서 특정 작업을 처리하는 전문 AI 어시스턴트.
+독립된 **컨텍스트 윈도우(Context Window)**에서 특정 작업을 처리하는 전문 AI 어시스턴트.
 
 #### 빌트인 서브에이전트
 
@@ -84,7 +85,7 @@ memory: user          # 세션 간 영구 메모리
 
 | 개념 | 설명 |
 |------|------|
-| **컨텍스트 윈도우** | 대화 히스토리 + 파일 + 명령 출력 + [[CLAUDE.md]] + [[Claude Code Skill\|스킬]] |
+| **컨텍스트 윈도우** | 대화 히스토리 + 파일 + 명령 출력 + [[til/claude-code/claude-md|CLAUDE.md]] + [[til/claude-code/skill|스킬]] |
 | **자동 압축** | 한계 도달 시 오래된 도구 출력 제거 후 대화 요약 |
 | **CLAUDE.md** | 압축에서 보존되는 영구 지시사항 |
 | **서브에이전트 격리** | 별도 컨텍스트 사용으로 메인 대화 공간 보호 |
@@ -117,6 +118,6 @@ memory: user          # 세션 간 영구 메모리
 
 ## 관련 노트
 
-- [[til/claude-code/01-overview|Claude Code 개요]]
-- [[til/claude-code/03-skill|Claude Code Skill]]
-- [[til/claude-code/04-plugin|Claude Code Plugin]]
+- [[til/claude-code/overview|Claude Code 개요]]
+- [[til/claude-code/skill|Claude Code Skill]]
+- [[til/claude-code/plugin|Claude Code Plugin]]
