@@ -90,6 +90,14 @@ aliases:
 
 상세 설명...
 
+구조나 흐름을 시각화하면 이해에 도움이 될 때 Mermaid를 활용한다:
+
+```mermaid
+graph LR
+    A[개념 A] --> B[개념 B]
+    B --> C[개념 C]
+```
+
 ## 예시
 
 ```언어
@@ -127,7 +135,13 @@ aliases:
    - 주의사항: `> [!warning]` 사용
    - 팁: `> [!tip]` 사용
 
-4. **태그**
+4. **Mermaid 다이어그램**
+   - 개념 간 관계, 흐름, 구조를 시각화하면 이해에 도움이 될 때 적극 활용한다
+   - Obsidian이 Mermaid를 기본 지원하므로 별도 설정 없이 렌더링된다
+   - 활용 예시: 아키텍처 구조(`graph`), 흐름/프로세스(`flowchart`), 시퀀스(`sequenceDiagram`), 상태 전이(`stateDiagram-v2`), 클래스 관계(`classDiagram`)
+   - 다이어그램은 설명하는 내용 바로 아래에 배치한다
+
+5. **태그**
    - frontmatter의 `tags`로 관리 (Obsidian이 자동 인식)
    - 카테고리명도 태그에 포함 (예: `javascript`, `devops`)
 
