@@ -31,6 +31,7 @@ disable-model-invocation: true
    - 완료 항목 수 (`- [x]`)
    - 미완료 항목 수 (`- [ ]`)
    - 진행률 (%)
+   - 최근 학습일 (frontmatter `updated` 필드)
 3. 전체 백로그 요약을 테이블로 보여준다
 
 ### 인수가 있을 때 (`/backlog 카테고리`)
@@ -40,7 +41,7 @@ disable-model-invocation: true
 3. 파일이 있으면 다음을 보여준다:
    - 진행률 요약 (완료/전체)
    - 섹션별(선행 지식/핵심 개념/심화) 미완료 항목 목록
-   - 완료된 항목은 `[x]` 체크박스 그대로 표시 (터미널에서 취소선이 렌더링되지 않으므로 ~~취소선~~ 사용 금지)
+   - 완료된 항목은 `- [x] 항목명 ✅` 형식으로 체크박스와 체크마크를 함께 표시하여 시각적으로 구분
 
 ## 출력 형식
 
@@ -49,10 +50,10 @@ disable-model-invocation: true
 ```
 📋 학습 백로그 현황
 
-| 카테고리 | 진행률 | 완료 | 전체 |
-|---------|--------|------|------|
-| claude-code | 30% | 4/13 | ████░░░░░░ |
-| javascript | 0% | 0/8 | ░░░░░░░░░░ |
+| 카테고리 | 진행률 | 완료 | 최근 학습 | 진행바 |
+|---------|--------|------|----------|--------|
+| claude-code | 30% | 4/13 | 2026-02-15 | ████░░░░░░ |
+| javascript | 0% | 0/8 | 2026-02-10 | ░░░░░░░░░░ |
 
 총 21개 항목 중 4개 완료
 ```
@@ -63,13 +64,13 @@ disable-model-invocation: true
 📋 claude-code 백로그 (4/13 완료, 30%)
 
 ## 선행 지식 (2/4)
-- [x] CLAUDE.md
-- [x] Settings와 Configuration
+- [x] CLAUDE.md ✅
+- [x] Settings와 Configuration ✅
 - [ ] Permission 모드
 - [ ] CLI 레퍼런스(CLI Reference)
 
 ## 핵심 개념 (1/5)
-- [x] Hooks
+- [x] Hooks ✅
 - [ ] MCP(Model Context Protocol)
 - [ ] Context 관리(Context Management)
 - [ ] Agent Teams
@@ -79,6 +80,8 @@ disable-model-invocation: true
 - [ ] GitHub Actions와 CI/CD
 - ...
 ```
+
+완료된 항목은 `- [x] 항목명 ✅` 형식으로 체크박스와 체크마크를 함께 표시하여 시각적으로 구분한다.
 
 ## 주의사항
 
