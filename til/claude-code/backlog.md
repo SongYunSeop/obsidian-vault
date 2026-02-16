@@ -25,9 +25,20 @@ updated: 2026-02-16
 - [x] [[til/claude-code/best-practices|Best Practices]] - Plan-first 개발, Git Worktrees 패턴, 프롬프트 엔지니어링, 토큰 비용 최적화 전략
 - [x] [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]] - 모델 티어 선택(Haiku/Sonnet/Opus), /compact 활용, 토큰 사용량 모니터링
 - [x] [[til/claude-code/mcp-server-development|MCP Server 개발]] - Python/TypeScript SDK로 커스텀 MCP 서버를 직접 만들어 Claude Code의 도구 확장
-- [ ] [[MCP Server 개발 실습]] - 간단한 MCP 서버를 직접 만들어 Claude Code에 연결하고 Tool/Resource/Prompt를 구현하는 핸즈온
+- [x] [[til/claude-code/mcp-server-hands-on|MCP Server 개발 실습]] - 간단한 MCP 서버를 직접 만들어 Claude Code에 연결하고 Tool/Resource/Prompt를 구현하는 핸즈온
 - [x] [[til/claude-code/status-line|Status Line]] - 터미널 하단에 모델 정보, 토큰 사용량, Git 브랜치 등을 실시간 표시하는 커스텀 상태 표시줄
+
+## Agent SDK
+- [ ] [[til/claude-code/anthropic-messages-api|Anthropic Messages API]] - Claude API의 기본 호출 방식, 도구 사용(Tool Use) 패턴, 스트리밍 응답
+- [ ] [[til/claude-code/agent-loop|에이전트 루프(Agent Loop)]] - 컨텍스트 수집 → 액션 실행 → 검증 → 반복의 자율 실행 사이클
+- [ ] [[til/claude-code/agent-sdk-quickstart|Agent SDK 시작하기(Quickstart)]] - Python/TypeScript SDK 설치, 첫 번째 에이전트 실행, 내장 도구 사용
+- [ ] [[til/claude-code/built-in-tools-permissions|내장 도구와 권한(Built-in Tools & Permissions)]] - Read/Write/Edit/Bash/Glob/Grep 등 내장 도구, 권한 모드(default/acceptEdits/bypassPermissions)
+- [ ] [[til/claude-code/custom-tools|커스텀 도구(Custom Tools)]] - createSdkMcpServer로 인프로세스 MCP 서버를 만들어 에이전트에 도구 추가
+- [ ] [[til/claude-code/sessions|세션 관리(Sessions)]] - 세션 ID로 대화 재개, 세션 포킹(forking), 자동 컴팩션
+- [ ] [[til/claude-code/sdk-hooks|훅(SDK Hooks)]] - PreToolUse/PostToolUse/Stop 등 에이전트 실행 시점에 커스텀 로직 삽입
+- [ ] [[til/claude-code/subagents|서브에이전트(Subagents)]] - 메인 에이전트가 전문화된 하위 에이전트를 생성하여 병렬/분업 처리
+- [ ] [[til/claude-code/hosting-secure-deployment|프로덕션 배포(Hosting & Secure Deployment)]] - 컨테이너 격리, 자격 증명 관리, OpenTelemetry 관찰성, 보안 모범 사례
+- [ ] [[til/claude-code/cicd-automation|CI/CD 자동화 실습]] - Agent SDK로 PR 리뷰, 코드 분석, 테스트 자동화 파이프라인 구축
 
 ## 생태계
 - [x] [[til/claude-code/oh-my-claudecode|oh-my-claudecode]] - 28+ 전문 에이전트, 40+ 스킬, 멀티에이전트 오케스트레이션(autopilot/ralph/ultrawork/team 등) 플러그인
-- [ ] [[Claude Code 생태계(Ecosystem)]] - awesome-claude-code, 커뮤니티 스킬/훅 컬렉션, 워크플로우 프레임워크, 마켓플레이스 등 주요 오픈소스 프로젝트
