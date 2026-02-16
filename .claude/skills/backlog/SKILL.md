@@ -40,7 +40,7 @@ disable-model-invocation: true
 3. 파일이 있으면 다음을 보여준다:
    - 진행률 요약 (완료/전체)
    - 섹션별(선행 지식/핵심 개념/심화) 미완료 항목 목록
-   - 이미 완료된 항목은 ~~취소선~~으로 표시
+   - 완료된 항목은 `[x]` 체크박스 그대로 표시 (터미널에서 취소선이 렌더링되지 않으므로 ~~취소선~~ 사용 금지)
 
 ## 출력 형식
 
@@ -63,13 +63,13 @@ disable-model-invocation: true
 📋 claude-code 백로그 (4/13 완료, 30%)
 
 ## 선행 지식 (2/4)
-- [x] ~~CLAUDE.md~~
-- [x] ~~Settings와 Configuration~~
+- [x] CLAUDE.md
+- [x] Settings와 Configuration
 - [ ] Permission 모드
 - [ ] CLI 레퍼런스(CLI Reference)
 
 ## 핵심 개념 (1/5)
-- [x] ~~Hooks~~
+- [x] Hooks
 - [ ] MCP(Model Context Protocol)
 - [ ] Context 관리(Context Management)
 - [ ] Agent Teams
