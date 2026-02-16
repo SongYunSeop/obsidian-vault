@@ -11,3 +11,6 @@
 ## 카테고리
 
 - [claude-code](til/claude-code/) - Claude Code 학습
+- [datadog](til/datadog/) - Datadog 모니터링
+- [devops](til/devops/) - DevOps 기초
+- [postgresql](til/postgresql/) - PostgreSQL
