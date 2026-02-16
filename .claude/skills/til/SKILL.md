@@ -147,15 +147,26 @@ graph LR
 
 ## Daily 노트 연동
 
-TIL 저장 시 해당 날짜의 Daily 노트(`./Daily/YYYY-MM-DD.md`)에 링크를 추가한다:
+TIL 저장 시 해당 날짜의 Daily 노트(`./Daily/YYYY-MM-DD.md`)에 카테고리별로 그룹핑하여 링크를 추가한다:
 
 ```markdown
 ## TIL
+
+### javascript
 - [[til/javascript/closure|클로저(Closure)]]
+- [[til/javascript/event-loop|이벤트 루프(Event Loop)]]
+
+### devops
+- [[til/devops/docker-network|Docker 네트워크]]
 ```
 
-- Daily 노트가 이미 있으면: `## TIL` 섹션을 찾아 항목 추가. 없으면 파일 끝에 섹션 추가
-- Daily 노트가 없으면: 새로 생성하고 TIL 섹션만 작성
+- 카테고리 소제목(`### 카테고리`)으로 그룹핑한다
+- Daily 노트가 이미 있으면:
+  - `## TIL` 섹션이 있으면 해당 카테고리 소제목(`### 카테고리`)을 찾아 항목 추가
+  - 해당 카테고리 소제목이 없으면 새로 만들어서 항목 추가
+  - `## TIL` 섹션 자체가 없으면 파일 끝에 섹션과 카테고리 소제목 추가
+- Daily 노트가 없으면: 새로 생성하고 TIL 섹션과 카테고리 소제목을 작성
+- 카테고리 소제목 순서: 기존에 있는 순서를 유지하고, 새 카테고리는 마지막에 추가
 
 ## TIL MOC (Map of Content)
 
