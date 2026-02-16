@@ -30,7 +30,7 @@ updated: 2026-02-16
 - [x] [[신서틱 모니터링(Synthetic Monitoring)]] - 코드 없이 API/브라우저 테스트를 자동 실행
 - [x] [[Error Tracking]] - 백엔드 에러를 자동 그룹핑하여 이슈 단위로 추적·관리
 - [x] [[til/datadog/continuous-profiler|Continuous Profiler]] - 프로덕션 코드 레벨 성능 분석 (CPU, 메모리, 락 등)
-- [ ] [[Database Monitoring(DBM)]] - 느린 쿼리, 블로킹 쿼리, DB 부하 실시간 모니터링
+- [x] [[til/datadog/database-monitoring|Database Monitoring(DBM)]] - 느린 쿼리, 블로킹 쿼리, DB 부하 실시간 모니터링
 - [ ] [[Watchdog]] - AI 기반 이상 탐지, 메트릭/APM/로그에서 이상 징후 자동 발견
 - [ ] [[Product Analytics]] - RUM 데이터 기반 사용자 행동 분석, 퍼널, 리텐션
 - [ ] [[Trace Explorer 고급 기능]] - 트레이스 검색, 분석 뷰, 커스텀 메트릭 생성, 보존 필터

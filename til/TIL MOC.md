@@ -30,12 +30,16 @@ tags:
 13. [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
 14. [[til/datadog/error-tracking|Error Tracking]]
 15. [[til/datadog/continuous-profiler|Continuous Profiler]]
+16. [[til/datadog/database-monitoring|Database Monitoring(DBM)]]
 
 ### postgresql
 - [[til/postgresql/backlog|학습 백로그]]
 1. [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처(PostgreSQL Architecture)]]
 2. [[til/postgresql/mvcc|MVCC (Multi-Version Concurrency Control)]]
 3. [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
+
+### obsidian
+- [[til/obsidian/backlog|학습 백로그]]
 
 ### claude-code
 - [[til/claude-code/backlog|학습 백로그]]
