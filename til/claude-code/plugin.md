@@ -76,6 +76,37 @@ my-plugin/
 | **MCP Servers** | `.mcp.json` | 외부 서비스 연결 |
 | **LSP Servers** | `.lsp.json` | 코드 인텔리전스 (타입 에러, 정의 이동 등) |
 
+```mermaid
+graph TB
+    Plugin["Plugin<br/>(my-plugin)"]
+
+    Plugin --> Skills["Skills<br/>(SKILL.md)"]
+    Plugin --> Commands["Commands<br/>(슬래시 커맨드)"]
+    Plugin --> Agents["Agents<br/>(커스텀 서브에이전트)"]
+    Plugin --> Hooks["Hooks<br/>(이벤트 핸들러)"]
+    Plugin --> MCP["MCP Servers<br/>(.mcp.json)"]
+    Plugin --> LSP["LSP Servers<br/>(.lsp.json)"]
+
+    Skills --> Claude["Claude Code"]
+    Commands --> Claude
+    Agents --> Claude
+    Hooks --> Claude
+    MCP --> External["외부 서비스"]
+    LSP --> CodeIntel["코드 인텔리전스"]
+
+    External --> Claude
+    CodeIntel --> Claude
+
+    style Plugin fill:#e1f5ff
+    style Skills fill:#ffe1e1
+    style Commands fill:#ffe1e1
+    style Agents fill:#e1ffe1
+    style Hooks fill:#ffe1ff
+    style MCP fill:#fff4e1
+    style LSP fill:#fff4e1
+    style Claude fill:#f0f0f0
+```
+
 ### 설치 범위 (Scope)
 
 | 범위 | 설정 파일 | 용도 |

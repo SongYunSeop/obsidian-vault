@@ -28,6 +28,16 @@ Claude Code의 핵심 동작 방식. 3단계를 반복한다:
 프롬프트 → 컨텍스트 수집 → 액션 실행 → 결과 검증 → (반복)
 ```
 
+```mermaid
+flowchart LR
+    A["사용자 입력"] --> B["컨텍스트 수집"]
+    B --> C["도구 호출"]
+    C --> D["결과 반환"]
+    D --> B
+    D --> E["사용자 개입 가능"]
+    E --> B
+```
+
 - 각 도구 사용 결과가 다음 단계의 입력이 됨
 - 사용자가 언제든 **중간에 개입**하여 방향 전환 가능
 - **모델**(추론)과 **도구**(행동) 두 컴포넌트로 구동
@@ -46,6 +56,26 @@ Claude Code의 핵심 동작 방식. 3단계를 반복한다:
 ### 서브에이전트 (Sub-agents)
 
 독립된 **컨텍스트 윈도우(Context Window)**에서 특정 작업을 처리하는 전문 AI 어시스턴트.
+
+```mermaid
+graph TB
+    A["Lead Agent<br/>(메인 대화)"]
+    A -->|작업 위임| B["Explore<br/>(Haiku)"]
+    A -->|작업 위임| C["Plan<br/>(상속)"]
+    A -->|작업 위임| D["General-purpose<br/>(상속)"]
+    A -->|작업 위임| E["커스텀 에이전트<br/>(예: code-reviewer)"]
+
+    B -->|결과 반환| A
+    C -->|결과 반환| A
+    D -->|결과 반환| A
+    E -->|결과 반환| A
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#fff4e1
+    style D fill:#fff4e1
+    style E fill:#f0f0f0
+```
 
 #### 빌트인 서브에이전트
 
