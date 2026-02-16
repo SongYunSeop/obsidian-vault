@@ -34,6 +34,6 @@ updated: 2026-02-16
 - [x] [[til/datadog/watchdog|Watchdog]] - AI 기반 이상 탐지, 메트릭/APM/로그에서 이상 징후 자동 발견
 - [x] [[til/datadog/product-analytics|Product Analytics]] - RUM 데이터 기반 사용자 행동 분석, 퍼널, 리텐션
 - [x] [[til/datadog/trace-explorer|Trace Explorer 고급 기능]] - 트레이스 검색, 분석 뷰, 커스텀 메트릭 생성, 보존 필터
-- [ ] [[til/datadog/cost-management|비용 관리(Cost Management)]] - 커스텀 메트릭 과금, Metrics without Limits, 로그/트레이스 보존 비용 최적화
+- [x] [[til/datadog/cost-management|비용 관리(Cost Management)]] - 커스텀 메트릭 과금, Metrics without Limits, 로그/트레이스 보존 비용 최적화
 - [ ] [[til/datadog/workflow-automation|Workflow Automation]] - 모니터 알림 트리거로 자동 대응 워크플로우 구성 (스케일링, 티켓 생성 등)
 - [ ] [[til/datadog/bits-ai|Bits AI]] - 자연어로 Datadog 질의, 장애 자동 조사, 근본 원인 요약

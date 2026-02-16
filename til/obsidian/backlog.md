@@ -13,8 +13,8 @@ updated: 2026-02-16
 
 ## 핵심 개념
 - [x] [[til/obsidian/vault|Vault]] - Obsidian의 기본 저장 단위. 로컬 파일시스템 기반 폴더 구조
-- [ ] [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - `[[이중 대괄호]]`로 노트 간 양방향 연결을 만드는 핵심 메커니즘
-- [ ] [[til/obsidian/properties|Properties]] - YAML 기반 노트 메타데이터 시스템. 타입 지정, 검색/필터에 활용
+- [x] [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - `[[이중 대괄호]]`로 노트 간 양방향 연결을 만드는 핵심 메커니즘
+- [x] [[til/obsidian/properties|Properties]] - YAML 기반 노트 메타데이터 시스템. 타입 지정, 검색/필터에 활용
 - [ ] [[til/obsidian/graph-view|Graph View]] - 노트 간 연결을 시각적 그래프로 보여주는 기능
 - [ ] [[til/obsidian/core-plugins|Core Plugins]] - 내장 플러그인 (Command Palette, Daily Notes, Templates, Bookmarks 등)
 - [ ] [[til/obsidian/search-and-tags|검색과 태그]] - 노트 검색, `#태그` 시스템, 필터링 방법

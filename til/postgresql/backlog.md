@@ -11,7 +11,7 @@ updated: 2026-02-15
 - [x] [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처]] - 프로세스 모델 (Postmaster, Backend, Background Worker)
 - [x] [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]] - 디스크 I/O를 줄이는 메모리 구조
 - [x] [[til/postgresql/mvcc|MVCC]] - 다중 버전 동시성 제어, xmin/xmax를 이용한 트랜잭션 격리
-- [ ] [[til/postgresql/wal|WAL(Write-Ahead Logging)]] - 장애 복구를 위한 선행 기록 로그
+- [x] [[til/postgresql/wal|WAL(Write-Ahead Logging)]] - 장애 복구를 위한 선행 기록 로그
 - [ ] [[til/postgresql/vacuum|VACUUM]] - 죽은 튜플 정리와 트랜잭션 ID 랩어라운드 방지
 - [ ] [[til/postgresql/btree-index|인덱스 기초(B-tree)]] - 기본 인덱스 구조, 등호·범위 검색 최적화
 - [ ] [[til/postgresql/explain-analyze|실행 계획(EXPLAIN ANALYZE)]] - 쿼리 플랜 읽기와 성능 분석
