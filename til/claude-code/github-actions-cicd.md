@@ -11,7 +11,7 @@ aliases:
   - "Claude Code CI/CD"
 ---
 
-# TIL: GitHub Actions와 CI/CD
+# GitHub Actions와 CI/CD
 
 > [!tldr] 한줄 요약
 > Claude Code는 헤드리스 모드(`-p`)와 공식 GitHub Action(`claude-code-action`)으로 PR 리뷰, 이슈 트리아지, 코드 생성 등 CI/CD 파이프라인 자동화를 지원한다.

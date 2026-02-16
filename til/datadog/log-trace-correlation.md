@@ -12,7 +12,7 @@ aliases:
   - "Log-Trace Correlation"
 ---
 
-# TIL: 로그-트레이스 상관관계(Log-Trace Correlation)
+# 로그-트레이스 상관관계(Log-Trace Correlation)
 
 > [!tldr] 한줄 요약
 > 로그에 `dd.trace_id`와 `dd.span_id`를 주입하여 같은 요청의 로그와 트레이스를 양방향으로 연결하는 메커니즘이며, JSON 로그 + `DD_LOGS_INJECTION=true` 또는 `tracer.get_log_correlation_context()`로 설정한다.

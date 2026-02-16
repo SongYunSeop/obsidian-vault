@@ -13,7 +13,7 @@ aliases:
   - "PostgreSQL Shared Buffers"
 ---
 
-# TIL: 공유 메모리와 버퍼 풀(Shared Buffer)
+# 공유 메모리와 버퍼 풀(Shared Buffer)
 
 > [!tldr] 한줄 요약
 > Shared Buffer는 PostgreSQL이 디스크 I/O를 줄이기 위해 직접 관리하는 메모리 캐시로, 모든 읽기/쓰기가 이 버퍼를 경유하며, Clock Sweep 알고리즘으로 페이지를 교체한다.

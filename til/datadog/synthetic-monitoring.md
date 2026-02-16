@@ -13,7 +13,7 @@ aliases:
   - "Datadog Synthetic"
 ---
 
-# TIL: 신서틱 모니터링(Synthetic Monitoring)
+# 신서틱 모니터링(Synthetic Monitoring)
 
 > [!tldr] 한줄 요약
 > 가상 사용자의 요청을 전 세계 여러 위치에서 주기적으로 시뮬레이션하여 API 가용성, 사용자 여정, SSL 인증서 등을 **능동적으로** 감시하고, CI/CD에 통합하여 배포 전 자동 검증 게이트로도 활용한다.

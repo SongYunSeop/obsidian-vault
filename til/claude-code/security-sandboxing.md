@@ -11,7 +11,7 @@ aliases:
   - "샌드박싱"
 ---
 
-# TIL: Security와 Sandboxing
+# Security와 Sandboxing
 
 > [!tldr] 한줄 요약
 > Claude Code는 OS 수준 샌드박스(macOS Seatbelt, Linux bubblewrap)로 파일시스템/네트워크를 격리하여, Permission 모드를 완화해도 안전하게 자율 실행할 수 있다.

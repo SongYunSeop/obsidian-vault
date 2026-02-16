@@ -11,7 +11,7 @@ aliases:
   - "Observability"
 ---
 
-# TIL: 옵저버빌리티(Observability)
+# 옵저버빌리티(Observability)
 
 > [!tldr] 한줄 요약
 > 옵저버빌리티는 시스템의 외부 출력(메트릭, 로그, 트레이스)만으로 내부 상태를 추론할 수 있는 능력이다.

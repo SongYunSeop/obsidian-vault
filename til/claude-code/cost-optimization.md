@@ -11,7 +11,7 @@ aliases:
   - "Cost Optimization"
 ---
 
-# TIL: Cost 최적화(Cost Optimization)
+# Cost 최적화(Cost Optimization)
 
 > [!tldr] 한줄 요약
 > 모델 선택, CLAUDE.md 최적화, 컨텍스트 관리, MCP Tool Search 등을 조합하면 Claude Code 비용을 50-70% 절감할 수 있다.

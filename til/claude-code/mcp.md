@@ -10,7 +10,7 @@ aliases:
   - "Model Context Protocol"
 ---
 
-# TIL: MCP(Model Context Protocol)
+# MCP(Model Context Protocol)
 
 > [!tldr] 한줄 요약
 > MCP는 AI 앱과 외부 도구/서비스를 연결하는 개방형 표준 프로토콜로, Claude Code에서 서버를 설정하면 GitHub, DB, 모니터링 등 외부 시스템을 도구로 사용할 수 있다.

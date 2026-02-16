@@ -12,7 +12,7 @@ aliases:
   - Claude Code 메모리
 ---
 
-# TIL: CLAUDE.md
+# CLAUDE.md
 
 > [!tldr] 한줄 요약
 > CLAUDE.md는 Claude Code가 매 세션 시작 시 자동으로 읽는 마크다운 설정 파일로, 6단계 메모리 계층 구조를 통해 조직/팀/개인 수준의 지시사항을 관리한다.

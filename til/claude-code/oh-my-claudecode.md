@@ -12,7 +12,7 @@ aliases:
   - "OMC"
 ---
 
-# TIL: oh-my-claudecode (OMC)
+# oh-my-claudecode (OMC)
 
 > [!tldr] 한줄 요약
 > OMC는 28+ 에이전트와 40+ 스킬을 마크다운 프롬프트로 정의하고, 훅 기반 오케스트레이션으로 조합하는 Claude Code 플러그인이다. 마크다운이 곧 프로그래밍 언어가 되는 "Prompt-as-Code" 패러다임을 구현한다.

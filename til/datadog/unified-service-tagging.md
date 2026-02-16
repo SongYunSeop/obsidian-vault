@@ -10,7 +10,7 @@ aliases:
   - "Unified Service Tagging"
 ---
 
-# TIL: 통합 서비스 태깅(Unified Service Tagging)
+# 통합 서비스 태깅(Unified Service Tagging)
 
 > [!tldr] 한줄 요약
 > `env`, `service`, `version` 3개의 표준 태그를 모든 텔레메트리에 일관되게 적용하여 메트릭·로그·트레이스를 자동으로 연결하는 Datadog의 태깅 규약이다.

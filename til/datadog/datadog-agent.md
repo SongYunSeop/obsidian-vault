@@ -11,7 +11,7 @@ aliases:
   - "데이터독 에이전트"
 ---
 
-# TIL: Datadog Agent
+# Datadog Agent
 
 > [!tldr] 한줄 요약
 > Datadog Agent는 호스트에 설치되어 메트릭, 로그, 트레이스를 수집하고 Datadog 백엔드로 전송하는 경량 소프트웨어로, Collector·DogStatsD·Forwarder·APM Agent·Process Agent로 구성된다.

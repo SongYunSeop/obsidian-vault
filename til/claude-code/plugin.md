@@ -11,7 +11,7 @@ aliases:
   - Claude Code 플러그인
 ---
 
-# TIL: Claude Code Plugin
+# Claude Code Plugin
 
 > [!tldr] 한줄 요약
 > Plugin은 [[til/claude-code/skill|Skills]], [[til/claude-code/agent|Agents]], Hooks, MCP, LSP를 하나의 패키지로 묶어 팀과 커뮤니티에 공유/배포하는 시스템이다.

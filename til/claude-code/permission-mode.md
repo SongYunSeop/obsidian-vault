@@ -11,7 +11,7 @@ aliases:
   - "Permission Mode"
 ---
 
-# TIL: Permission 모드(Permission Mode)
+# Permission 모드(Permission Mode)
 
 > [!tldr] 한줄 요약
 > Claude Code는 5가지 Permission 모드와 allow/deny/ask 규칙 시스템으로 도구 실행 권한을 제어한다.

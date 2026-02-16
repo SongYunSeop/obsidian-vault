@@ -10,7 +10,7 @@ aliases:
   - "CLI Reference"
 ---
 
-# TIL: CLI 레퍼런스(CLI Reference)
+# CLI 레퍼런스(CLI Reference)
 
 > [!tldr] 한줄 요약
 > Claude Code CLI는 Interactive/One-shot/Pipe/Headless 4가지 실행 모드와 다양한 플래그, 내장 슬래시 커맨드, 환경변수로 제어한다.

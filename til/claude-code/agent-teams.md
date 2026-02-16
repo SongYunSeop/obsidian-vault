@@ -11,7 +11,7 @@ aliases:
   - "에이전트 팀"
 ---
 
-# TIL: Agent Teams
+# Agent Teams
 
 > [!tldr] 한줄 요약
 > Agent Teams는 여러 Claude Code 인스턴스가 리드/팀원 구조로 공유 태스크 목록을 통해 병렬 협업하는 멀티에이전트 오케스트레이션이다.

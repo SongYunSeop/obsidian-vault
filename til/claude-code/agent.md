@@ -13,7 +13,7 @@ aliases:
   - "Claude Code Agent"
 ---
 
-# TIL: Claude Code에서 Agent가 동작하는 방식
+# Claude Code에서 Agent가 동작하는 방식
 
 > [!tldr] 한줄 요약
 > Claude Code는 "컨텍스트 수집 - 액션 실행 - 결과 검증"의 에이전틱 루프를 반복하며, 서브에이전트로 작업을 위임해 병렬 처리와 컨텍스트 관리를 수행한다.

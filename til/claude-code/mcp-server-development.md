@@ -11,7 +11,7 @@ aliases:
   - "MCP Server Development"
 ---
 
-# TIL: MCP Server 개발
+# MCP Server 개발
 
 > [!tldr] 한줄 요약
 > Python/TypeScript SDK로 커스텀 MCP 서버를 만들면 Claude Code에 DB 조회, 어드민 API, 배포 도구 등 원하는 기능을 자연어 인터페이스로 확장할 수 있다.

@@ -11,7 +11,7 @@ aliases:
   - "컨텍스트 관리"
 ---
 
-# TIL: Context 관리(Context Management)
+# Context 관리(Context Management)
 
 > [!tldr] 한줄 요약
 > Claude Code는 200K 토큰 컨텍스트 윈도우를 사용하며, 자동 압축(Auto-Compaction)과 메모리 시스템으로 긴 세션에서도 대화를 지속한다.

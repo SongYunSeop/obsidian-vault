@@ -12,7 +12,7 @@ aliases:
   - "Datadog Metrics"
 ---
 
-# TIL: Datadog 메트릭(Metrics)
+# Datadog 메트릭(Metrics)
 
 > [!tldr] 한줄 요약
 > Datadog 메트릭은 5가지 타입(Count, Rate, Gauge, Histogram, Distribution)이 있으며, Histogram은 Agent 측에서, Distribution은 서버 측에서 집계되어 글로벌 퍼센타일 정확도에 차이가 난다.

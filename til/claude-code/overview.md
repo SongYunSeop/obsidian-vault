@@ -11,7 +11,7 @@ aliases:
   - Claude Code Overview
 ---
 
-# TIL: Claude Code 개요
+# Claude Code 개요
 
 > [!tldr] 한줄 요약
 > Claude Code는 터미널에서 자연어로 코드를 읽고, 편집하고, 명령을 실행하는 Anthropic의 에이전틱 코딩 도구다.

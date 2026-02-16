@@ -12,7 +12,7 @@ aliases:
   - "Datadog Dashboards"
 ---
 
-# TIL: Datadog 대시보드(Dashboards)
+# Datadog 대시보드(Dashboards)
 
 > [!tldr] 한줄 요약
 > Datadog 대시보드는 위젯 기반의 반응형 그리드 레이아웃으로 메트릭·로그·트레이스를 시각화하며, 템플릿 변수로 동적 필터링하고, 오버레이·어노테이션·예약 리포트로 팀 전체의 모니터링 허브 역할을 한다.

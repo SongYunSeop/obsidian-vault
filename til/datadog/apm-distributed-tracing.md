@@ -12,7 +12,7 @@ aliases:
   - "Datadog APM"
 ---
 
-# TIL: Datadog APM과 분산 트레이싱(Distributed Tracing)
+# Datadog APM과 분산 트레이싱(Distributed Tracing)
 
 > [!tldr] 한줄 요약
 > Datadog APM은 dd-trace 라이브러리로 자동/수동 계측하여 서비스 간 요청 흐름을 추적하고, Service Map·Flame Graph·Trace Explorer로 병목을 시각화하며, Head-based + Error/Rare 샘플링으로 비용과 가시성을 균형 잡는다.

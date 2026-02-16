@@ -10,7 +10,7 @@ aliases:
   - "베스트 프랙티스"
 ---
 
-# TIL: Best Practices
+# Best Practices
 
 > [!tldr] 한줄 요약
 > Plan-first 개발, 구체적 프롬프트, Git Worktrees 병렬 작업, CLAUDE.md 최적화, 컨텍스트 관리 전략으로 Claude Code의 생산성과 품질을 극대화한다.

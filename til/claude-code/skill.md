@@ -11,7 +11,7 @@ aliases:
   - "Claude Code Custom Slash Command"
 ---
 
-# TIL: Claude Code Skill (커스텀 슬래시 커맨드)
+# Claude Code Skill (커스텀 슬래시 커맨드)
 
 > [!tldr] 한줄 요약
 > Skill은 `SKILL.md` 파일로 정의하는 Claude Code의 확장 기능으로, 커스텀 슬래시 커맨드(`/skill-name`)나 자동 호출로 Claude의 동작을 확장한다.

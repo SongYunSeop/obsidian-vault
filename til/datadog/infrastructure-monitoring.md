@@ -11,7 +11,7 @@ aliases:
   - "Infrastructure Monitoring"
 ---
 
-# TIL: Datadog 인프라스트럭처 모니터링(Infrastructure Monitoring)
+# Datadog 인프라스트럭처 모니터링(Infrastructure Monitoring)
 
 > [!tldr] 한줄 요약
 > Datadog 인프라스트럭처 모니터링은 Host Map, Live Containers, Live Processes, Autodiscovery 등으로 호스트·컨테이너·프로세스의 상태를 실시간 시각화하고 1,000개 이상의 통합으로 클라우드/서버리스까지 커버한다.

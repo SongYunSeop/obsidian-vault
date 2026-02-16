@@ -11,7 +11,7 @@ aliases:
   - "Claude Code Hooks"
 ---
 
-# TIL: Hooks
+# Hooks
 
 > [!tldr] 한줄 요약
 > Hooks는 Claude Code 라이프사이클의 특정 시점에 자동 실행되는 셸 커맨드/프롬프트/에이전트로, 도구 차단, 자동 포맷팅, 알림 등 결정적 제어를 제공한다.

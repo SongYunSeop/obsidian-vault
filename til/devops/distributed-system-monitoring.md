@@ -12,7 +12,7 @@ aliases:
   - "Distributed System Monitoring"
 ---
 
-# TIL: 분산 시스템 모니터링(Distributed System Monitoring)
+# 분산 시스템 모니터링(Distributed System Monitoring)
 
 > [!tldr] 한줄 요약
 > 분산 시스템은 서비스 수, 의존성, 동적 인프라 때문에 모놀리식보다 모니터링이 어렵고, Golden Signals/RED/USE 같은 방법론과 분산 트레이싱으로 체계적으로 접근해야 한다.

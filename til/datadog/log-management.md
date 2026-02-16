@@ -12,7 +12,7 @@ aliases:
   - "Datadog Log Management"
 ---
 
-# TIL: Datadog 로그 관리(Log Management)
+# Datadog 로그 관리(Log Management)
 
 > [!tldr] 한줄 요약
 > Datadog 로그 관리는 수집 → Pipeline 처리(Grok 파싱) → 인덱싱(Exclusion Filter로 비용 제어) → 검색/분석 → 아카이브/리하이드레이션의 전체 파이프라인이며, dd.trace_id 주입으로 트레이스와 자동 연결된다.

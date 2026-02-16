@@ -11,7 +11,7 @@ aliases:
   - "Datadog Tagging"
 ---
 
-# TIL: Datadog 태깅(Tagging)
+# Datadog 태깅(Tagging)
 
 > [!tldr] 한줄 요약
 > 태그는 `key:value` 형태로 Datadog의 모든 데이터에 차원을 부여하는 메커니즘으로, 호스트 태그가 메트릭·로그·트레이스에 자동 상속되어 필터링·집계·비교를 가능하게 한다.

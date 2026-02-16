@@ -13,7 +13,7 @@ aliases:
   - "Datadog RUM"
 ---
 
-# TIL: RUM(Real User Monitoring)
+# RUM(Real User Monitoring)
 
 > [!tldr] 한줄 요약
 > RUM은 브라우저/모바일에 SDK를 삽입하여 실제 사용자의 페이지 로딩, 에러, 상호작용을 수집하고, `allowedTracingUrls` 설정으로 백엔드 [[til/datadog/apm-distributed-tracing|APM 트레이스]]와 연결하여 프론트엔드→백엔드 end-to-end 옵저버빌리티를 제공한다.

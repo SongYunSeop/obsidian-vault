@@ -11,7 +11,7 @@ aliases:
   - "PostgreSQL Architecture"
 ---
 
-# TIL: PostgreSQL 아키텍처
+# PostgreSQL 아키텍처
 
 > [!tldr] 한줄 요약
 > PostgreSQL은 멀티프로세스 모델로 동작하며, Postmaster가 클라이언트 연결마다 Backend 프로세스를 fork하고, 백그라운드 프로세스들이 WAL 기록·체크포인트·VACUUM 등을 처리한다.

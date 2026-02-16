@@ -12,7 +12,7 @@ aliases:
   - Claude Code 설정
 ---
 
-# TIL: Settings와 Configuration
+# Settings와 Configuration
 
 > [!tldr] 한줄 요약
 > settings.json은 4단계 범위(Managed/User/Project/Local)로 Claude Code의 권한, 환경변수, 모델, 샌드박스 등 시스템 동작을 제어하는 JSON 설정 파일이다.

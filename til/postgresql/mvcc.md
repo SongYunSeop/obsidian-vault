@@ -12,7 +12,7 @@ aliases:
   - "Multi-Version Concurrency Control"
 ---
 
-# TIL: MVCC (Multi-Version Concurrency Control)
+# MVCC (Multi-Version Concurrency Control)
 
 > [!tldr] 한줄 요약
 > PostgreSQL은 데이터를 수정할 때 기존 행을 덮어쓰지 않고 새 버전을 만들어, 읽기와 쓰기가 서로를 차단하지 않는 동시성 제어(MVCC)를 구현한다.

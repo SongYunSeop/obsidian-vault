@@ -13,7 +13,7 @@ aliases:
   - "Datadog SLO"
 ---
 
-# TIL: Datadog SLO 모니터링
+# Datadog SLO 모니터링
 
 > [!tldr] 한줄 요약
 > Datadog SLO는 Metric-based/Monitor-based/Time Slice 3가지 유형으로 서비스 수준 목표를 추적하며, Burn Rate(에러 버짓 소진율) 기반 Multi-Window 알림으로 장애를 선제적으로 감지한다.

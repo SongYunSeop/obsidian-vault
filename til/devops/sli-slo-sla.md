@@ -15,7 +15,7 @@ aliases:
   - "Service Level Agreement"
 ---
 
-# TIL: SLI / SLO / SLA
+# SLI / SLO / SLA
 
 > [!tldr] 한줄 요약
 > SLI는 서비스 품질의 측정값, SLO는 내부 목표, SLA는 외부 계약이며, 에러 버짓으로 "안정성 vs 속도"의 균형을 잡는다.

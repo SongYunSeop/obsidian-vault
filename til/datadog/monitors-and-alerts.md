@@ -13,7 +13,7 @@ aliases:
   - "Datadog Monitors"
 ---
 
-# TIL: Datadog 모니터와 알림(Monitors & Alerts)
+# Datadog 모니터와 알림(Monitors & Alerts)
 
 > [!tldr] 한줄 요약
 > Datadog 모니터는 메트릭·로그·트레이스에 조건을 걸어 OK/Warn/Alert/No Data 상태를 관리하며, Notification Rules로 태그 기반 알림 라우팅을 중앙 관리하고, Composite Monitor·Recovery Threshold·Downtime으로 Alert Fatigue를 방지한다.
