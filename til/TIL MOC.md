@@ -28,6 +28,8 @@ tags:
 11. [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
 12. [[til/datadog/rum|RUM(Real User Monitoring)]]
 13. [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
+14. [[til/datadog/error-tracking|Error Tracking]]
+15. [[til/datadog/continuous-profiler|Continuous Profiler]]
 
 ### postgresql
 - [[til/postgresql/backlog|학습 백로그]]
@@ -55,3 +57,4 @@ tags:
 16. [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
 17. [[til/claude-code/mcp-server-development|MCP Server 개발(MCP Server Development)]]
 18. [[til/claude-code/oh-my-claudecode|oh-my-claudecode (OMC)]]
+19. [[til/claude-code/status-line|Status Line]]

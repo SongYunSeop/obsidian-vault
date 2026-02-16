@@ -26,7 +26,7 @@ updated: 2026-02-16
 - [x] [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]] - 모델 티어 선택(Haiku/Sonnet/Opus), /compact 활용, 토큰 사용량 모니터링
 - [x] [[til/claude-code/mcp-server-development|MCP Server 개발]] - Python/TypeScript SDK로 커스텀 MCP 서버를 직접 만들어 Claude Code의 도구 확장
 - [ ] [[MCP Server 개발 실습]] - 간단한 MCP 서버를 직접 만들어 Claude Code에 연결하고 Tool/Resource/Prompt를 구현하는 핸즈온
-- [ ] [[Status Line]] - 터미널 하단에 모델 정보, 토큰 사용량, Git 브랜치 등을 실시간 표시하는 커스텀 상태 표시줄
+- [x] [[til/claude-code/status-line|Status Line]] - 터미널 하단에 모델 정보, 토큰 사용량, Git 브랜치 등을 실시간 표시하는 커스텀 상태 표시줄
 
 ## 생태계
 - [x] [[til/claude-code/oh-my-claudecode|oh-my-claudecode]] - 28+ 전문 에이전트, 40+ 스킬, 멀티에이전트 오케스트레이션(autopilot/ralph/ultrawork/team 등) 플러그인

@@ -28,8 +28,8 @@ updated: 2026-02-16
 - [x] [[로그-트레이스 상관관계(Log-Trace Correlation)]] - 트레이스 ID 주입으로 로그와 트레이스 연결
 - [x] [[RUM(Real User Monitoring)]] - 브라우저/모바일에서 실제 사용자 경험 모니터링
 - [x] [[신서틱 모니터링(Synthetic Monitoring)]] - 코드 없이 API/브라우저 테스트를 자동 실행
-- [ ] [[Error Tracking]] - 백엔드 에러를 자동 그룹핑하여 이슈 단위로 추적·관리
-- [ ] [[Continuous Profiler]] - 프로덕션 코드 레벨 성능 분석 (CPU, 메모리, 락 등)
+- [x] [[Error Tracking]] - 백엔드 에러를 자동 그룹핑하여 이슈 단위로 추적·관리
+- [x] [[til/datadog/continuous-profiler|Continuous Profiler]] - 프로덕션 코드 레벨 성능 분석 (CPU, 메모리, 락 등)
 - [ ] [[Database Monitoring(DBM)]] - 느린 쿼리, 블로킹 쿼리, DB 부하 실시간 모니터링
 - [ ] [[Watchdog]] - AI 기반 이상 탐지, 메트릭/APM/로그에서 이상 징후 자동 발견
 - [ ] [[Product Analytics]] - RUM 데이터 기반 사용자 행동 분석, 퍼널, 리텐션
