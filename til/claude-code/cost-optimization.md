@@ -1,5 +1,5 @@
 ---
-date: 2026-02-16
+date: 2026-02-17
 category: claude-code
 tags:
   - til
@@ -69,12 +69,14 @@ Shift+Tab → 모델 전환
 /model haiku   # 모델 변경
 ```
 
-#### 2. CLAUDE.md 최적화 (50-70% 절감)
+#### 2. CLAUDE.md 최적화 → Skills 분리 (50-70% 절감)
 
 잘 작성된 [[til/claude-code/claude-md|CLAUDE.md]]는 반복 설명을 줄인다.
-- 300줄 이하 유지
+- **~500줄 이하** 유지 (핵심 지침만)
 - 빌드 명령, 컨벤션, 구조만 기록
 - 하위 디렉토리별 모듈화
+
+PR 리뷰 규칙, DB 마이그레이션 절차 같은 **전문 지침은 [[til/claude-code/skill|Skills]]로 분리**한다. Skills는 호출할 때만 로딩되므로 기본 컨텍스트가 줄어든다.
 
 #### 3. 컨텍스트 관리
 
@@ -82,15 +84,26 @@ Shift+Tab → 모델 전환
 |------|------|
 | `/clear` | 세션 초기화, 불필요한 이력 제거 |
 | `/compact` | 이력 압축, 핵심만 유지 |
+| `/compact 지시` | `/compact Focus on code samples` 처럼 보존할 내용 지정 |
 | 구체적 파일 지정 | "src/ 전체" 대신 "src/auth/login.ts" |
+
+CLAUDE.md에 compact 지시를 넣어두면 자동 압축 시에도 적용된다:
+
+```markdown
+# Compact instructions
+When you are using compact, please focus on test output and code changes
+```
 
 #### 4. MCP Tool Search (최대 95% 절감)
 
 [[til/claude-code/mcp|MCP]] 도구 정의가 컨텍스트의 10%+ 차지할 수 있다. Tool Search를 활성화하면 51K → 8.7K 토큰으로 줄어든다.
 
 ```bash
-ENABLE_TOOL_SEARCH=auto  # 기본값, 10% 넘으면 자동 활성화
+ENABLE_TOOL_SEARCH=auto    # 기본값, 10% 넘으면 자동 활성화
+ENABLE_TOOL_SEARCH=auto:5  # 임계치를 5%로 낮춰 더 적극적으로 활성화
 ```
+
+또한 **CLI 도구를 MCP 서버보다 우선 사용**하면 컨텍스트를 아낄 수 있다. `gh`, `aws`, `gcloud`, `sentry-cli` 같은 CLI는 실행할 때만 토큰을 소모하지만, MCP 서버는 도구 정의가 항상 컨텍스트에 올라간다.
 
 #### 5. Extended Thinking 제어 (95% 절감)
 
@@ -113,15 +126,56 @@ claude -p "리뷰해줘" --max-turns 5
 
 큰 파일 탐색을 서브에이전트에 맡기면 메인 세션 컨텍스트를 보호한다.
 
+#### 8. Hooks로 입력 전처리
+
+[[til/claude-code/hooks|Hooks]]로 Claude에게 전달되는 데이터를 사전 필터링한다. 10,000줄 로그를 통째로 읽는 대신, 훅이 `grep ERROR` 결과만 전달하면 수만 토큰 → 수백 토큰으로 줄일 수 있다.
+
+```bash
+# PreToolUse 훅 예시: 테스트 실행 시 실패 결과만 필터링
+if [[ "$cmd" =~ ^(npm test|pytest|go test) ]]; then
+  filtered_cmd="$cmd 2>&1 | grep -A 5 -E '(FAIL|ERROR)' | head -100"
+fi
+```
+
+#### 9. Code Intelligence 플러그인
+
+LSP 기반 코드 인텔리전스 플러그인을 설치하면 `grep` → 여러 파일 읽기 대신 **"go to definition" 한 번**으로 심볼을 찾는다. 편집 직후 타입 에러도 자동 감지하므로 컴파일러를 실행할 필요가 없다.
+
+```bash
+# 설치 예시 (Python)
+npm install -g pyright
+/plugin install pyright-lsp@claude-plugins-official
+```
+
+#### 10. Agent Team 비용 관리
+
+[[til/claude-code/agent-teams|Agent Teams]]는 표준 세션 대비 **~7배 토큰**을 소모한다. 팀원마다 별도 컨텍스트 윈도우를 유지하기 때문이다.
+
+- 팀원은 Sonnet 사용 (Opus 대신)
+- 팀 규모 최소화
+- 작업 완료 후 즉시 팀 정리
+
+### 작업 습관 최적화
+
+도구 설정 외에 **작업 습관**도 비용에 큰 영향을 미친다:
+
+- **Plan 모드 먼저** (Shift+Tab): 탐색 후 승인받아 비용이 큰 재작업을 방지
+- **검증 타겟 제공**: 테스트 케이스나 기대 출력을 프롬프트에 포함 → 셀프 검증으로 수정 요청 감소
+- **점진적 작업**: 파일 하나 → 테스트 → 다음 파일 (문제를 조기 발견)
+- **즉시 중단**: 방향이 틀리면 Escape → `/rewind`로 체크포인트 복원
+- **구체적 프롬프트**: "이 코드 개선해줘" 대신 "auth.ts의 login 함수에 입력 검증 추가해줘"
+
 ### 비용 최적화 체크리스트
 
 - [ ] 작업에 맞는 모델을 선택하고 있는가?
-- [ ] CLAUDE.md가 300줄 이하인가?
+- [ ] CLAUDE.md가 ~500줄 이하인가? 전문 지침은 Skills로 분리했는가?
 - [ ] 주제 전환 시 `/compact` 또는 `/clear`를 사용하는가?
-- [ ] 불필요한 MCP 서버를 제거했는가?
+- [ ] 불필요한 MCP 서버를 비활성화했는가? CLI 도구를 우선 사용하는가?
 - [ ] CI/CD에서 `--max-turns`를 설정했는가?
 - [ ] Extended Thinking 예산을 적절히 제한했는가?
 - [ ] `/cost`로 주기적으로 비용을 확인하는가?
+- [ ] Code Intelligence 플러그인을 설치했는가?
+- [ ] Hooks로 대용량 출력을 필터링하고 있는가?
 
 ## 예시
 
@@ -153,4 +207,7 @@ claude -p "리뷰해줘" --max-turns 5
 - [[til/claude-code/best-practices|Best Practices]]
 - [[til/claude-code/mcp|MCP(Model Context Protocol)]]
 - [[til/claude-code/claude-md|CLAUDE.md]]
+- [[til/claude-code/hooks|Hooks]]
+- [[til/claude-code/skill|Skills]]
+- [[til/claude-code/agent-teams|Agent Teams]]
 - [[til/claude-code/github-actions-cicd|GitHub Actions와 CI/CD]]

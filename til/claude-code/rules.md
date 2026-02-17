@@ -31,14 +31,7 @@ aliases:
 
 ### 파일 위치와 범위
 
-```mermaid
-graph TD
-    A[Managed Policy<br/>조직 레벨 - 최상위] --> B[Project Rules<br/>.claude/rules/]
-    B --> C[User Rules<br/>~/.claude/rules/]
-    style A fill:#f66,color:#fff
-    style B fill:#69f,color:#fff
-    style C fill:#6c6,color:#fff
-```
+우선순위: Managed Policy(조직 레벨) > Project Rules(`.claude/rules/`) > User Rules(`~/.claude/rules/`)
 
 | 위치 | 범위 | 용도 |
 |------|------|------|

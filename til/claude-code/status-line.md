@@ -22,11 +22,7 @@ aliases:
 
 Status Line은 사용자가 작성한 셸 스크립트를 실행하여 세션 정보를 터미널 하단에 표시한다. API 토큰을 소비하지 않고 로컬에서 동작한다.
 
-```mermaid
-flowchart LR
-    A[Claude Code<br/>세션 데이터 JSON] -->|stdin| B[사용자 스크립트<br/>bash/node/python]
-    B -->|stdout| C[터미널 하단<br/>Status Line 표시]
-```
+Claude Code가 세션 데이터를 JSON으로 사용자 스크립트(bash/node/python)의 stdin에 전달하고, 스크립트의 stdout 출력이 터미널 하단에 Status Line으로 표시된다.
 
 **업데이트 타이밍**:
 - 새로운 assistant 메시지 이후

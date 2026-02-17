@@ -41,21 +41,7 @@ aliases:
 
 ### 테스트 종류
 
-```mermaid
-graph TD
-    SYN[Synthetic Tests] --> API[API 테스트]
-    SYN --> MULTI[Multistep API 테스트]
-    SYN --> BROWSER[브라우저 테스트]
-
-    API --> HTTP[HTTP]
-    API --> SSL[SSL]
-    API --> DNS[DNS]
-    API --> TCP[TCP]
-    API --> UDP[UDP]
-    API --> ICMP[ICMP]
-    API --> WS[WebSocket]
-    API --> GRPC[gRPC]
-```
+Synthetic Tests는 **API 테스트**, **Multistep API 테스트**, **브라우저 테스트** 세 가지로 나뉜다.
 
 #### API 테스트 (단일 요청)
 

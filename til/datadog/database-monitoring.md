@@ -22,13 +22,7 @@ aliases:
 
 ### DBM이란
 
-[[til/datadog/apm-distributed-tracing|APM]]이 "어떤 서비스/엔드포인트가 DB 호출에서 느린가"를 보여준다면, DBM은 **"DB 안에서 어떤 쿼리가 왜 느린가"**를 보여준다. 개발자와 DBA 모두가 활용하는 DB 성능 분석 도구다.
-
-```mermaid
-graph LR
-    APM[APM<br/>서비스 레벨<br/>"checkout이 느리다"] -->|DB Span 클릭| DBM[DBM<br/>쿼리 레벨<br/>"SELECT가 Full Scan"]
-    DBM -->|Explain Plan| FIX[쿼리/인덱스 최적화]
-```
+[[til/datadog/apm-distributed-tracing|APM]]이 "어떤 서비스/엔드포인트가 DB 호출에서 느린가"를 보여준다면, DBM은 **"DB 안에서 어떤 쿼리가 왜 느린가"**를 보여준다. APM에서 DB Span을 클릭하면 DBM의 쿼리 레벨 분석으로 이동하고, Explain Plan을 통해 쿼리/인덱스 최적화까지 이어진다. 개발자와 DBA 모두가 활용하는 DB 성능 분석 도구다.
 
 Datadog Agent가 DB에 **읽기 전용 유저**로 접속하여 텔레메트리를 직접 수집한다. 애플리케이션 코드 변경 없이 DB 설정만으로 활성화된다.
 
@@ -82,11 +76,7 @@ Explain Plan 예시 (PostgreSQL):
 
 ### 블로킹 쿼리 분석
 
-```mermaid
-graph TD
-    TX1[트랜잭션 A<br/>UPDATE orders SET...<br/>락 보유 중] -->|블로킹| TX2[트랜잭션 B<br/>UPDATE orders SET...<br/>대기 중]
-    TX1 -->|블로킹| TX3[트랜잭션 C<br/>SELECT ... FOR UPDATE<br/>대기 중]
-```
+락을 보유한 트랜잭션(Root Blocker)이 다른 트랜잭션들을 대기 상태로 만드는 관계를 분석한다.
 
 **Blocking Summary**에서 확인할 수 있는 것:
 - **Root Blocker**: 블로킹의 근본 원인이 되는 쿼리

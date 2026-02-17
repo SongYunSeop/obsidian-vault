@@ -28,14 +28,7 @@ MCP 서버는 세 가지 방식으로 기능을 노출한다:
 | **Resources** | LLM이 읽는 데이터 (읽기 전용) | GET 엔드포인트 |
 | **Prompts** | 재사용 가능한 프롬프트 템플릿 | 프리셋 |
 
-```mermaid
-graph LR
-    Client[MCP 클라이언트<br/>Claude Code / Desktop] -->|도구 호출| Tools[Tools<br/>함수 실행]
-    Client -->|데이터 조회| Resources[Resources<br/>읽기 전용 데이터]
-    Client -->|템플릿 사용| Prompts[Prompts<br/>프롬프트 템플릿]
-    Tools --> Server[외부 시스템<br/>DB / API / 파일]
-    Resources --> Server
-```
+MCP 클라이언트(Claude Code, Desktop 등)가 서버의 Tools(함수 실행), Resources(읽기 전용 데이터), Prompts(프롬프트 템플릿)를 호출하여 외부 시스템(DB, API, 파일)과 상호작용한다.
 
 ### 공식 SDK
 
@@ -110,18 +103,6 @@ await server.connect(transport);
 ```
 
 ### 트랜스포트(Transport) 방식
-
-```mermaid
-graph TD
-    subgraph Transport
-        STDIO[stdio<br/>로컬 프로세스]
-        HTTP[Streamable HTTP<br/>프로덕션 권장]
-        SSE[SSE<br/>Deprecated]
-    end
-    STDIO -->|"파이프로 통신"| Local[로컬 개발<br/>Claude Code / Desktop]
-    HTTP -->|"HTTP 요청"| Remote[원격 배포<br/>클라우드 서버]
-    SSE -.->|"마이그레이션"| HTTP
-```
 
 | 방식 | 용도 | 특징 |
 |------|------|------|

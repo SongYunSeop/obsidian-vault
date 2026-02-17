@@ -55,17 +55,6 @@ graph LR
 
 정보를 **행동 가능성(Actionability)** 기준으로 4계층 분류:
 
-```mermaid
-graph TD
-    P["Projects<br/>현재 진행 중 (기한 있음)"]
-    A["Areas<br/>지속 관리 영역 (건강, 재무 등)"]
-    R["Resources<br/>관심사/참고 자료"]
-    AR["Archives<br/>비활성 (완료/보류)"]
-    P --> A --> R --> AR
-    style P fill:#e8f5e9
-    style AR fill:#f5f5f5
-```
-
 - **Projects** - 기한이 있는 진행 중 작업
 - **Areas** - 기한 없이 지속적으로 관리하는 책임 영역
 - **Resources** - 관심사, 참고 자료, 언젠가 쓸 수 있는 것

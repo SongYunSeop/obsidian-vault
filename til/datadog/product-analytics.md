@@ -24,11 +24,7 @@ aliases:
 
 [[til/datadog/rum|RUM]] 데이터를 기반으로 **사용자 행동을 분석**하는 기능. RUM이 "성능이 어떤가"에 초점을 둔다면, Product Analytics는 **"사용자가 무엇을 하는가"**에 초점을 둔다.
 
-```mermaid
-graph LR
-    SDK[RUM SDK<br/>Session/View/Action 수집] --> RUM[RUM<br/>성능 분석<br/>LCP, INP, CLS]
-    SDK --> PA[Product Analytics<br/>행동 분석<br/>퍼널, 리텐션, 경로]
-```
+RUM SDK가 수집하는 동일한 데이터(Session/View/Action)를 RUM은 성능 관점(LCP, INP, CLS)으로, Product Analytics는 행동 관점(퍼널, 리텐션, 경로)으로 분석한다.
 
 RUM SDK가 이미 설치되어 있으면 **추가 설정 없이** 사용할 수 있다. 같은 SDK, 같은 데이터를 공유한다.
 

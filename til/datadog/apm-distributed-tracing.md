@@ -29,23 +29,7 @@ aliases:
 | **Resource** | Service 안의 특정 엔드포인트/쿼리 (`GET /api/orders`) |
 | **Operation** | Span의 작업 유형 (`http.request`, `sql.query`) |
 
-```mermaid
-graph TB
-    Trace["Trace<br/>(전체 요청 여정)"]
-    Span1["Span<br/>(HTTP Request)"]
-    Span2["Span<br/>(DB Query)"]
-    Span3["Span<br/>(HTTP Call)"]
-    Service["Service<br/>(checkout)"]
-    Resource["Resource<br/>(GET /api/orders)"]
-    Operation["Operation<br/>(http.request)"]
-
-    Trace --> Span1
-    Trace --> Span2
-    Trace --> Span3
-    Span1 --> Service
-    Span1 --> Resource
-    Span1 --> Operation
-```
+하나의 Trace는 여러 Span으로 구성되고, 각 Span은 Service, Resource, Operation 정보를 갖는다.
 
 ### 동작 구조
 

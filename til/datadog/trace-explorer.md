@@ -22,14 +22,7 @@ aliases:
 
 ### Trace Pipeline 전체 구조
 
-[[til/datadog/apm-distributed-tracing|APM]]에서 트레이스가 수집되고 저장되는 흐름:
-
-```mermaid
-graph LR
-    ING[수집<br/>Ingestion<br/>모든 Span 100%] --> RET[보존<br/>Retention<br/>필터로 선별 저장]
-    RET --> EXP[분석<br/>Trace Explorer<br/>검색/시각화]
-    ING --> MET[커스텀 메트릭 생성<br/>15개월 보존]
-```
+[[til/datadog/apm-distributed-tracing|APM]]에서 트레이스가 수집되고 저장되는 흐름은 수집(Ingestion) → 보존(Retention) → 분석(Explorer) 3단계이며, 수집 단계에서 커스텀 메트릭도 별도로 생성(15개월 보존)할 수 있다.
 
 - **수집(Ingestion)**: 모든 Span을 100% 수집 가능
 - **보존(Retention)**: 보존 필터로 어떤 Span을 15일간 저장할지 결정

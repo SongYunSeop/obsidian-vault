@@ -50,10 +50,17 @@ tags:
 3. [[til/obsidian/vault|Vault]]
 4. [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]]
 5. [[til/obsidian/properties|Properties]]
+6. [[til/obsidian/graph-view|Graph View]]
+7. [[til/obsidian/core-plugins|Core Plugins]]
+8. [[til/obsidian/search-and-tags|검색과 태그]]
+9. [[til/obsidian/callout-embed|Callout과 Embed]]
+10. [[til/obsidian/plugin-development|Plugin 개발]]
+11. [[til/obsidian/obsidian-til-plugin-spec|obsidian-claude-til 프로젝트 명세]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|학습 백로그]]
 1. [[til/도시정비사업/도시-및-주거환경정비법|도시 및 주거환경정비법]]
+2. [[til/도시정비사업/정비기반시설|정비기반시설]]
 
 ### claude-code
 - [[til/claude-code/backlog|학습 백로그]]

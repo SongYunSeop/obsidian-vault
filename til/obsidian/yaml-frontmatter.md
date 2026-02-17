@@ -100,15 +100,6 @@ Settings > Editor > Properties in document에서 선택:
 
 ### 활용처
 
-```mermaid
-graph LR
-    FM[YAML Frontmatter] --> S[검색/필터]
-    FM --> DV[Dataview 쿼리]
-    FM --> B[Bases 데이터베이스]
-    FM --> P[Obsidian Publish]
-    FM --> T[Templater 변수]
-```
-
 - **검색/필터**: `[tags:til]`, `[date:2026-02-16]` 형태로 property 기반 검색
 - **[[Dataview]]**: `TABLE date, category FROM #til WHERE date >= date(2026-02-01)` 같은 쿼리로 조회
 - **[[Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준으로 활용

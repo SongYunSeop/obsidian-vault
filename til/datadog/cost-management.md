@@ -23,21 +23,7 @@ Datadog 비용 관리는 크게 **Datadog 자체 사용 비용 최적화**와 **
 
 ### 3대 비용 동인(Cost Driver)
 
-Datadog 과금에서 비용이 급증하는 주요 원인은 세 가지다:
-
-```mermaid
-graph TD
-    A[Datadog 비용] --> B[커스텀 메트릭]
-    A --> C[로그]
-    A --> D[트레이스]
-    B --> B1[Metrics without Limits]
-    C --> C1[Logging without Limits]
-    D --> D1[Ingestion Controls]
-
-    style B1 fill:#2ecc71,color:#fff
-    style C1 fill:#2ecc71,color:#fff
-    style D1 fill:#2ecc71,color:#fff
-```
+Datadog 과금에서 비용이 급증하는 주요 원인은 **커스텀 메트릭**, **로그**, **트레이스** 세 가지이며, 각각 Metrics without Limits, Logging without Limits, Ingestion Controls로 최적화한다.
 
 ### 1. 커스텀 메트릭(Custom Metrics)
 
@@ -107,15 +93,7 @@ Datadog 기본 통합(1,000+개)에서 오는 [[til/datadog/metrics|메트릭]] 
 
 Datadog이 제공하는 **클라우드 인프라 비용 가시성** 기능으로, AWS/Azure/GCP 비용 데이터를 Datadog에 연동하여 옵저버빌리티 데이터와 함께 분석한다.
 
-```mermaid
-graph LR
-    A[AWS/Azure/GCP<br>비용 데이터] --> D[Datadog<br>Cloud Cost Management]
-    B[인프라 메트릭] --> D
-    C[APM/로그] --> D
-    D --> E[비용 분석 & 추천]
-    D --> F[비용 모니터 & 알림]
-    D --> G[팀/서비스별 귀속]
-```
+AWS/Azure/GCP 비용 데이터를 인프라 메트릭, APM/로그와 함께 Datadog으로 연동하여 비용 분석, 모니터링, 팀/서비스별 귀속을 수행한다.
 
 - **Cost Recommendations**: 유휴 리소스, 과잉 프로비저닝, 레거시 리소스를 자동으로 식별하여 절감 방안 제안
 - **비용 귀속(Cost Allocation)**: 팀, 서비스, 제품별로 비용을 할당 (공유 인프라 포함)

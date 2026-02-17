@@ -33,31 +33,7 @@ aliases:
 | 성격 | 반응적(reactive) | 능동적(proactive) |
 | 범위 | 개별 시스템 건강 상태 | 시스템 간 상호작용 전체 |
 
-모니터링은 옵저버빌리티의 **부분집합**이다. 모니터링이 "장애 감지"라면, 옵저버빌리티는 "근본 원인 분석"까지 포함한다.
-
-```mermaid
-flowchart LR
-    Problem["시스템 문제 발생"]
-
-    Problem --> Mon["모니터링(Monitoring)<br/>사전 정의된 메트릭"]
-    Problem --> Obs["옵저버빌리티(Observability)<br/>텔레메트리 상관 분석"]
-
-    Mon --> Alert["알림: 무엇이 잘못됐나?"]
-
-    Obs --> Metrics["메트릭"]
-    Obs --> Logs["로그"]
-    Obs --> Traces["트레이스"]
-
-    Metrics --> Analysis["왜 잘못됐나?<br/>어떻게 고치나?"]
-    Logs --> Analysis
-    Traces --> Analysis
-
-    Alert -.-> |"부분집합"| Analysis
-
-    style Mon fill:#fff4e6
-    style Obs fill:#e1f5ff
-    style Analysis fill:#d4edda
-```
+모니터링은 옵저버빌리티의 **부분집합**이다. 모니터링이 사전 정의된 메트릭으로 "무엇이 잘못됐나?"를 알려준다면, 옵저버빌리티는 메트릭·로그·트레이스의 상관 분석을 통해 "왜 잘못됐고 어떻게 고치나?"까지 답한다.
 
 ### 세 기둥(Three Pillars)
 

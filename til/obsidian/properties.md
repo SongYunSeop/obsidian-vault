@@ -87,15 +87,6 @@ Obsidian 검색(`Cmd+Shift+F`)에서 property 기반 필터링:
 
 ### 다른 기능과의 연동
 
-```mermaid
-graph LR
-    P[Properties] --> S["검색 필터<br/>[property:value]"]
-    P --> DV["Dataview 쿼리<br/>WHERE, SORT"]
-    P --> B["Bases<br/>데이터베이스 뷰"]
-    P --> T["Templater<br/>tp.frontmatter"]
-    P --> GV["Graph View<br/>필터링"]
-```
-
 - **[[Dataview]]**: `TABLE date, category FROM #til SORT date DESC` 같은 쿼리의 데이터 소스
 - **[[Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준
 - **[[Templater]]**: `tp.frontmatter.date`로 템플릿에서 참조
