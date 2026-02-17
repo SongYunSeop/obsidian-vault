@@ -59,6 +59,8 @@ tags:
 11. [[til/obsidian/obsidian-til-plugin-spec|obsidian-claude-til 프로젝트 명세]]
 12. [[til/obsidian/map-of-content|Map of Content (MOC)]]
 13. [[til/obsidian/zettelkasten|체텔카스텐(Zettelkasten)]]
+14. [[til/obsidian/community-plugins|Community Plugins]]
+15. [[til/obsidian/obsidian-cli|Obsidian CLI]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|학습 백로그]]
