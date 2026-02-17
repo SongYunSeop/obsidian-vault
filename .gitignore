@@ -1,10 +1,17 @@
 # macOS
 .DS_Store
 
-# Obsidian - 기기별로 달라지는 설정
+# Obsidian - UI 상태 (기기별로 다름)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 
-# oh-my-claudecode (Claude Code 설정)
+# Obsidian 플러그인 - 코드 제외, 설정(data.json)만 추적
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+
+# Claude Code (플러그인이 자동 관리)
+.claude/
+
+# oh-my-claudecode
 .omc/
