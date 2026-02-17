@@ -19,8 +19,8 @@ updated: 2026-02-16
 - [x] [[til/obsidian/core-plugins|Core Plugins]] - 내장 플러그인 (Command Palette, Daily Notes, Templates, Bookmarks 등)
 - [x] [[til/obsidian/search-and-tags|검색과 태그]] - 노트 검색, `#태그` 시스템, 필터링 방법
 - [x] [[til/obsidian/callout-embed|Callout과 Embed]] - `> [!callout]` 블록과 `![[노트]]` 임베딩 문법
-- [ ] [[til/obsidian/map-of-content|Map of Content]] - 노트들을 체계적으로 조직하는 허브 노트(MOC) 패턴
-- [ ] [[til/obsidian/zettelkasten|Zettelkasten]] - 원자적 노트와 연결 기반 지식 관리 방법론
+- [x] [[til/obsidian/map-of-content|Map of Content]] - 노트들을 체계적으로 조직하는 허브 노트(MOC) 패턴
+- [x] [[til/obsidian/zettelkasten|Zettelkasten]] - 원자적 노트와 연결 기반 지식 관리 방법론
 
 ## 심화
 - [ ] [[til/obsidian/community-plugins|Community Plugins]] - 커뮤니티 플러그인 생태계 (Dataview, Templater, Calendar 등)

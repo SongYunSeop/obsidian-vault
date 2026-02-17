@@ -35,6 +35,7 @@ tags:
 18. [[til/datadog/product-analytics|Product Analytics]]
 19. [[til/datadog/trace-explorer|Trace Explorer 고급 기능]]
 20. [[til/datadog/cost-management|비용 관리(Cost Management)]]
+21. [[til/datadog/workflow-automation|Workflow Automation]]
 
 ### postgresql
 - [[til/postgresql/backlog|학습 백로그]]
@@ -56,11 +57,15 @@ tags:
 9. [[til/obsidian/callout-embed|Callout과 Embed]]
 10. [[til/obsidian/plugin-development|Plugin 개발]]
 11. [[til/obsidian/obsidian-til-plugin-spec|obsidian-claude-til 프로젝트 명세]]
+12. [[til/obsidian/map-of-content|Map of Content (MOC)]]
+13. [[til/obsidian/zettelkasten|체텔카스텐(Zettelkasten)]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|학습 백로그]]
 1. [[til/도시정비사업/도시-및-주거환경정비법|도시 및 주거환경정비법]]
 2. [[til/도시정비사업/정비기반시설|정비기반시설]]
+3. [[til/도시정비사업/노후불량건축물|노후불량건축물]]
+4. [[til/도시정비사업/정비기본계획|정비기본계획]]
 
 ### claude-code
 - [[til/claude-code/backlog|학습 백로그]]
