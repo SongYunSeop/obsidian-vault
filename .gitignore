@@ -10,6 +10,9 @@
 .obsidian/plugins/*/*
 !.obsidian/plugins/*/data.json
 
+# MCP 로컬 설정
+.mcp.json
+
 # Claude Code (플러그인이 자동 관리)
 .claude/
 
