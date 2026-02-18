@@ -68,6 +68,7 @@ tags:
 20. [[til/obsidian/obsidian-git|Obsidian Git]]
 21. [[til/obsidian/bases|Bases]]
 22. [[til/obsidian/obsidian-sync|Obsidian Sync]]
+23. [[til/obsidian/obsidian-publish|Obsidian Publish]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|Backlog]]
