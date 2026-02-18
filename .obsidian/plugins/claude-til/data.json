@@ -1,0 +1,10 @@
+{
+  "shellPath": "/bin/zsh",
+  "autoLaunchClaude": true,
+  "resumeLastSession": true,
+  "fontSize": 13,
+  "tilPath": "til",
+  "autoOpenNewTIL": true,
+  "mcpEnabled": true,
+  "mcpPort": 22360
+}

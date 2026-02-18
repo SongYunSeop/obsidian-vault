@@ -5,12 +5,11 @@
 ## 구조
 
 - `til/` - 카테고리별 TIL 노트
-- `til/TIL MOC.md` - 전체 목록 (Map of Content)
+- [`til/TIL MOC.md`](til/TIL%20MOC.md) - 전체 목록 (Map of Content)
 - `til/{카테고리}/backlog.md` - 학습 백로그
 
-## 카테고리
+## 도구
 
-- [claude-code](til/claude-code/) - Claude Code 학습
-- [datadog](til/datadog/) - Datadog 모니터링
-- [devops](til/devops/) - DevOps 기초
-- [postgresql](til/postgresql/) - PostgreSQL
+- [Obsidian](https://obsidian.md/) - 마크다운 기반 노트 앱
+- [Claude Code](https://claude.ai/code) - AI 코딩 에이전트
+- [obsidian-claude-til](https://github.com/SongYunSeop/obsidian-claude-til) - Claude Code와 Obsidian을 연동하는 플러그인. MCP 서버를 통해 vault 읽기/검색/TIL 관리 기능을 제공한다
