@@ -103,3 +103,4 @@ tags:
 19. [[til/claude-code/status-line|Status Line]]
 20. [[til/claude-code/mcp-server-hands-on|MCP Server 개발 실습(MCP Server Hands-on)]]
 21. [[til/claude-code/rules|Rules]]
+22. [[til/claude-code/slash-commands|슬래시 커맨드와 커스텀 커맨드]]
