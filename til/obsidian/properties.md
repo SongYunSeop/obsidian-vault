@@ -49,7 +49,7 @@ Obsidian이 특별히 인식하는 내장 property:
 
 | Property | 타입 | 역할 |
 |----------|------|------|
-| `tags` | List | 태그 목록. 검색, 필터, [[til/obsidian/graph-view|Graph View]]에서 활용 |
+| `tags` | List | 태그 목록. 검색, 필터, [[til/obsidian/graph-view\|Graph View]]에서 활용 |
 | `aliases` | List | 노트 별칭. Quick Switcher나 `[[` 링크에서 별칭 검색 가능 |
 | `cssclasses` | List | 노트에 적용할 CSS 클래스. 노트별 스타일링 |
 

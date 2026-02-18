@@ -130,7 +130,7 @@ stateDiagram-v2
 
 ### Hooks 연동
 
-| [[til/claude-code/hooks|Hook]] | 용도 |
+| [[til/claude-code/hooks\|Hook]] | 용도 |
 |------|------|
 | **TeammateIdle** | 팀원이 멈추려 할 때 검증. exit 2로 계속 작업 강제 |
 | **TaskCompleted** | 작업 완료 시 검증. exit 2로 완료 차단 |

@@ -37,18 +37,18 @@ aliases:
 
 | 유형 | 용도 | 예시 |
 |------|------|------|
-| **Metric** | [[til/datadog/metrics|메트릭]]이 임계값을 넘었을 때 | CPU > 80%, 디스크 > 90% |
+| **Metric** | [[til/datadog/metrics\|메트릭]]이 임계값을 넘었을 때 | CPU > 80%, 디스크 > 90% |
 | **Anomaly** | 과거 패턴 기반 이상 탐지 | 평소보다 트래픽 급감/급증 |
 | **Forecast** | 미래 값 예측 후 임계값 비교 | 1주 내 디스크 풀 예상 |
 | **Change** | 값의 변화량/변화율 감지 | 에러율이 5분 전 대비 200% 증가 |
 | **Composite** | 여러 모니터를 AND/OR로 조합 | CPU 높음 AND 메모리 높음 |
-| **Log** | [[til/datadog/log-management|로그]] 패턴/개수 기반 알림 | 5분간 ERROR 로그 100건 초과 |
-| **APM** | [[til/datadog/apm-distributed-tracing|레이턴시]], 에러율, 처리량 | p99 레이턴시 > 2초 |
+| **Log** | [[til/datadog/log-management\|로그]] 패턴/개수 기반 알림 | 5분간 ERROR 로그 100건 초과 |
+| **APM** | [[til/datadog/apm-distributed-tracing\|레이턴시]], 에러율, 처리량 | p99 레이턴시 > 2초 |
 | **Process** | 프로세스 상태/리소스 | nginx 프로세스 수 < 1 |
 | **Synthetic** | API/브라우저 테스트 실패 | 로그인 시나리오 실패 |
 | **Event** | 이벤트 발생 감지 | 서비스 재시작 이벤트 |
 | **Service Check** | 서비스 가용성 확인 | 헬스체크 실패 |
-| **SLO** | [[til/devops/sli-slo-sla|SLO]] 에러 버짓 소진율 | 에러 버짓 80% 소진 |
+| **SLO** | [[til/devops/sli-slo-sla\|SLO]] 에러 버짓 소진율 | 에러 버짓 80% 소진 |
 
 ### 모니터 설정 핵심 요소
 
@@ -57,7 +57,7 @@ aliases:
 | **Detection Method** | Threshold(고정), Change(변화량), Anomaly(이상 탐지), Forecast(예측), Outlier(이상치) |
 | **Evaluation Window** | 조건을 평가하는 시간 범위 (예: 최근 5분간 평균) |
 | **Alert/Warning Threshold** | 알림과 경고 각각의 임계값 |
-| **Multi-Alert vs Simple Alert** | [[til/datadog/tagging|태그]] 그룹별 개별 알림(host별, service별) vs 전체 집계 하나 |
+| **Multi-Alert vs Simple Alert** | [[til/datadog/tagging\|태그]] 그룹별 개별 알림(host별, service별) vs 전체 집계 하나 |
 | **No Data 처리** | 데이터가 없을 때 알림 여부 및 대기 시간 |
 | **Auto-Resolve** | 일정 시간 후 자동으로 OK 전환 |
 | **Renotification** | 미해결 상태에서 주기적 재알림 (예: 30분마다) |

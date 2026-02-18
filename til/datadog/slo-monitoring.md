@@ -39,8 +39,8 @@ SLO 목표: 99.9%
 
 | 유형 | SLI 계산 방식 | 사용 사례 | 특징 |
 |------|-------------|----------|------|
-| **Metric-based** | 좋은 이벤트 수 / 전체 이벤트 수 (count 기반) | 결제 성공률, API 에러율 | 모니터 불필요, [[til/datadog/metrics|메트릭]] 쿼리 직접 작성 |
-| **Monitor-based** | [[til/datadog/monitors-and-alerts|모니터]] uptime (time 기반) | 기존 모니터 활용, Synthetic 테스트 | 여러 모니터 조합 가능 |
+| **Metric-based** | 좋은 이벤트 수 / 전체 이벤트 수 (count 기반) | 결제 성공률, API 에러율 | 모니터 불필요, [[til/datadog/metrics\|메트릭]] 쿼리 직접 작성 |
+| **Monitor-based** | [[til/datadog/monitors-and-alerts\|모니터]] uptime (time 기반) | 기존 모니터 활용, Synthetic 테스트 | 여러 모니터 조합 가능 |
 | **Time Slice** | 커스텀 uptime 정의 (time 기반) | 레이턴시 기반 SLO | 1분/5분 슬라이스, 생성 시 즉시 과거 데이터 미리보기 |
 
 **Metric-based 예시**: 결제 API에서 `status:2xx` 요청 수 / 전체 요청 수 = SLI

@@ -52,9 +52,9 @@ export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 | 작업 관리 | `tasks all`, `tasks pending` | 체크박스 일괄 처리 |
 | 템플릿 | `templates list`, `templates apply` | 템플릿 적용 |
 | 플러그인 | `plugins list`, `plugins versions` | 플러그인 관리 |
-| 속성 | `properties read`, `properties set` | [[til/obsidian/properties|frontmatter]] 조작 |
+| 속성 | `properties read`, `properties set` | [[til/obsidian/properties\|frontmatter]] 조작 |
 | 태그 | `tags all`, `tags counts` | 태그 통계 |
-| Vault 정보 | `vault`, `files total` | [[til/obsidian/vault|vault]] 통계 |
+| Vault 정보 | `vault`, `files total` | [[til/obsidian/vault\|vault]] 통계 |
 | 개발자 | `dev:eval` | JavaScript 실행 |
 | 파일 관리 | `move` | 이동/이름 변경 (링크 자동 업데이트) |
 

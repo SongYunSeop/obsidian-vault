@@ -103,7 +103,7 @@ cd ../project-fix-bug && claude
 | 좋은 CLAUDE.md | 반복 설명 불필요 → 50-70% 절감 |
 | 모델 선택 | 단순 작업은 Haiku, 표준은 Sonnet, 복잡한 건 Opus |
 | `--max-turns` 제한 | CI/CD에서 비용 폭주 방지 |
-| [[til/claude-code/mcp|MCP]] Tool Search | 도구 토큰 최대 95% 절감 |
+| [[til/claude-code/mcp\|MCP]] Tool Search | 도구 토큰 최대 95% 절감 |
 
 > [!tip] 비용 상세
 > [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]에서 모델별 가격, 토큰 모니터링 등을 더 자세히 다룰 예정.

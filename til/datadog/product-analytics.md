@@ -30,7 +30,7 @@ RUM SDK가 이미 설치되어 있으면 **추가 설정 없이** 사용할 수 
 
 ### RUM과의 차이
 
-| | [[til/datadog/rum|RUM]] | Product Analytics |
+| | [[til/datadog/rum\|RUM]] | Product Analytics |
 |---|---|---|
 | **관점** | 엔지니어링 (성능) | 프로덕트 (행동) |
 | **질문** | "페이지가 얼마나 빨리 로드되는가?" | "사용자가 어디서 이탈하는가?" |

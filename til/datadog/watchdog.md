@@ -51,7 +51,7 @@ Log Explorer, Trace Analytics를 열면 **Insights 패널**이 자동으로 나�
 
 ### 모니터와의 차이
 
-| | [[til/datadog/monitors-and-alerts|모니터]] | Watchdog |
+| | [[til/datadog/monitors-and-alerts\|모니터]] | Watchdog |
 |---|---|---|
 | **방식** | 임계치를 **직접 설정** | 기준선을 **자동 학습** |
 | **적합한 상황** | "반드시 알아야 하는" 명시적 조건 | "예상하지 못한" 이상 징후 |

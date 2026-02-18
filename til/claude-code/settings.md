@@ -61,7 +61,7 @@ Claude Code의 **동작, 권한, 환경변수**를 제어하는 JSON 설정 파�
 
 ### CLAUDE.md와의 차이
 
-| 구분 | [[til/claude-code/claude-md|CLAUDE.md]] | settings.json |
+| 구분 | [[til/claude-code/claude-md\|CLAUDE.md]] | settings.json |
 |------|-----------|---------------|
 | 역할 | 지시사항, 컨텍스트 | 권한, 환경변수, 동작 설정 |
 | 형식 | 자유 마크다운 | 구조화된 JSON |

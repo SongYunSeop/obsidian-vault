@@ -126,7 +126,7 @@ sequenceDiagram
 |------|----------|------|
 | **프론트 → 백엔드** | RUM SDK의 `allowedTracingUrls` | 어떤 API에 트레이스 헤더를 붙일지 지정 |
 | **백엔드 → 백엔드** | dd-trace가 **자동 전파** | HTTP 클라이언트 계측 시 자동 |
-| **백엔드 → DB** | dd-trace가 DB 쿼리 자동 계측 | [[til/datadog/database-monitoring|DBM]] 연동 시 Explain Plan까지 연결 |
+| **백엔드 → DB** | dd-trace가 DB 쿼리 자동 계측 | [[til/datadog/database-monitoring\|DBM]] 연동 시 Explain Plan까지 연결 |
 
 #### 전파 방식 (Propagation Style)
 

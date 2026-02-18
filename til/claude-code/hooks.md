@@ -133,7 +133,7 @@ Hooks는 Claude Code의 **라이프사이클 특정 시점에 자동 실행**되
 
 | 결정 | 효과 |
 |------|------|
-| `"allow"` | [[til/claude-code/permission-mode|Permission]] 시스템 우회, 즉시 실행 |
+| `"allow"` | [[til/claude-code/permission-mode\|Permission]] 시스템 우회, 즉시 실행 |
 | `"deny"` | 차단, 이유를 Claude에게 전달 |
 | `"ask"` | 사용자에게 권한 프롬프트 표시 |
 

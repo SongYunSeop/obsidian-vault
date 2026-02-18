@@ -70,13 +70,13 @@ graph LR
 
 ## PARA vs Zettelkasten 비교
 
-| | PARA | [[til/obsidian/zettelkasten|Zettelkasten]] |
+| | PARA | [[til/obsidian/zettelkasten\|Zettelkasten]] |
 |---|---|---|
 | 철학 | **행동** 중심 | **사고** 중심 |
 | 구조 | 폴더 기반 계층 | 링크 기반 네트워크 |
 | 단위 | 프로젝트/영역 | 원자적 노트 |
 | 적합한 사람 | 실행/프로젝트 관리 중심 | 연구/아이디어 탐구 중심 |
-| Obsidian 활용 | 폴더 구조 + [[Properties]] | [[Wikilink와 Backlink]] + [[til/obsidian/graph-view|Graph View]] |
+| Obsidian 활용 | 폴더 구조 + [[Properties]] | [[Wikilink와 Backlink]] + [[til/obsidian/graph-view\|Graph View]] |
 
 > [!tip] 하이브리드 접근
 > 두 방법론은 배타적이지 않다. PARA로 전체 구조를 잡고, 개별 노트는 Zettelkasten 방식으로 연결하는 혼합 접근이 실용적이다.

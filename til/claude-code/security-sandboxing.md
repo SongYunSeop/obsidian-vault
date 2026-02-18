@@ -121,7 +121,7 @@ Permission 규칙으로 특정 명령을 차단할 수 있다:
 | 기능 | 설명 |
 |------|------|
 | **Managed Settings** | 관리자가 조직 전체에 보안 정책 강제 |
-| **allowedMcpServers** | 허용할 [[til/claude-code/mcp|MCP]] 서버 화이트리스트 |
+| **allowedMcpServers** | 허용할 [[til/claude-code/mcp\|MCP]] 서버 화이트리스트 |
 | **Audit Logs** | API 호출, 도구 사용 기록 추적 |
 | **OIDC** | AWS Bedrock/Vertex AI에서 장기 키 없는 인증 |
 

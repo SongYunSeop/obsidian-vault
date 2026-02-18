@@ -60,7 +60,7 @@ aliases:
 
 | 플래그 | 설명 |
 |--------|------|
-| `--permission-mode` | [[til/claude-code/permission-mode|Permission 모드]] 지정 |
+| `--permission-mode` | [[til/claude-code/permission-mode\|Permission 모드]] 지정 |
 | `--allowedTools "Bash(git *)" "Read"` | 자동 승인할 도구 |
 | `--disallowedTools "Edit"` | 차단할 도구 |
 | `--tools "Bash,Edit,Read"` | 사용 가능한 도구 제한 |
@@ -112,7 +112,7 @@ aliases:
 | `/config` | 설정 UI |
 | `/model` | 모델 변경 |
 | `/permissions` | 권한 규칙 관리 |
-| `/init` | [[til/claude-code/claude-md|CLAUDE.md]] 초기화 |
+| `/init` | [[til/claude-code/claude-md\|CLAUDE.md]] 초기화 |
 | `/memory` | CLAUDE.md 메모리 편집 |
 | `/doctor` | 설치 상태 진단 |
 
@@ -137,7 +137,7 @@ aliases:
 
 | 키 | 기능 |
 |----|------|
-| `Shift+Tab` | [[til/claude-code/permission-mode|Permission 모드]] 전환 |
+| `Shift+Tab` | [[til/claude-code/permission-mode\|Permission 모드]] 전환 |
 | `Alt+P` | 모델 전환 |
 | `Ctrl+C` | 현재 생성 취소 |
 | `Ctrl+B` | 작업 백그라운드로 전환 |

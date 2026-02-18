@@ -184,7 +184,7 @@ WAL에 얼마나 상세한 정보를 기록할지 결정한다.
 |-----------|------|--------|
 | `minimal` | 크래시 복구만 | 가장 적음 |
 | `replica` (기본) | 스트리밍 복제 + PITR | 중간 |
-| `logical` | [[til/postgresql/logical-replication|논리적 복제]] (테이블 단위) | 가장 많음 |
+| `logical` | [[til/postgresql/logical-replication\|논리적 복제]] (테이블 단위) | 가장 많음 |
 
 ## 아카이빙과 PITR
 
@@ -209,7 +209,7 @@ WAL 아카이빙은 세그먼트가 가득 찰 때 외부 저장소에 복사해
 | 프로세스 | 역할 |
 |---------|------|
 | **WAL Writer** | WAL 버퍼를 주기적으로 WAL 파일에 기록 (COMMIT 전에도) |
-| **Checkpointer** | 주기적으로 [[til/postgresql/shared-buffer|Shared Buffer]]의 dirty 페이지를 데이터 파일에 flush |
+| **Checkpointer** | 주기적으로 [[til/postgresql/shared-buffer\|Shared Buffer]]의 dirty 페이지를 데이터 파일에 flush |
 | **Archiver** | 가득 찬 WAL 세그먼트를 아카이브 저장소에 복사 |
 
 ## 예시

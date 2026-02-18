@@ -35,7 +35,7 @@ aliases:
 | `tp.date` | `tp.date.now("YYYY-MM-DD", -7)` | 날짜 조회/계산. 오프셋으로 과거·미래 날짜 |
 | `tp.file` | `tp.file.title`, `tp.file.creation_date()`, `tp.file.move()`, `tp.file.cursor()` | 파일 정보, 이동, 커서 위치 지정 |
 | `tp.system` | `tp.system.prompt("질문")`, `tp.system.suggester(labels, values)` | 사용자 입력 프롬프트, 선택 UI |
-| `tp.frontmatter` | `tp.frontmatter.tags` | YAML [[til/obsidian/yaml-frontmatter|frontmatter]] 값 접근 |
+| `tp.frontmatter` | `tp.frontmatter.tags` | YAML [[til/obsidian/yaml-frontmatter\|frontmatter]] 값 접근 |
 | `tp.web` | `tp.web.daily_quote()` | 웹에서 데이터 가져오기 |
 | `tp.obsidian` | Obsidian API 접근 | 내부 API 활용 |
 | `tp.config` | 실행 컨텍스트 정보 | 현재 설정 접근 |

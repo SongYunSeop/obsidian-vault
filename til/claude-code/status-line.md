@@ -41,7 +41,7 @@ Claude Code가 세션 데이터를 JSON으로 사용자 스크립트(bash/node/p
 | `cost.total_cost_usd` | 세션 총 비용 (USD) |
 | `cost.total_duration_ms` | 세션 경과 시간 (밀리초) |
 | `cost.total_lines_added` / `removed` | 추가/삭제된 라인 수 |
-| `context_window.used_percentage` | [[til/claude-code/context-management|컨텍스트 윈도우]] 사용률 (%) |
+| `context_window.used_percentage` | [[til/claude-code/context-management\|컨텍스트 윈도우]] 사용률 (%) |
 | `context_window.context_window_size` | 컨텍스트 윈도우 크기 (200,000) |
 | `workspace.current_dir` / `project_dir` | 현재/프로젝트 디렉토리 |
 | `vim.mode` | Vim 모드 활성화 시에만 존재 |

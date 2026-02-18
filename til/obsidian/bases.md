@@ -73,9 +73,9 @@ aliases:
 
 ### Dataview와의 비교
 
-| | Bases | [[til/obsidian/dataview|Dataview]] |
+| | Bases | [[til/obsidian/dataview\|Dataview]] |
 |---|---|---|
-| 종류 | [[til/obsidian/core-plugins|코어 플러그인]] | [[til/obsidian/community-plugins|커뮤니티 플러그인]] |
+| 종류 | [[til/obsidian/core-plugins\|코어 플러그인]] | [[til/obsidian/community-plugins\|커뮤니티 플러그인]] |
 | 인터페이스 | GUI (노코드) | DQL / JavaScript 쿼리 |
 | 뷰 타입 | Table, List, Cards, Map | Table, List, Task |
 | 인라인 편집 | 가능 (테이블에서 직접 수정) | 불가 |

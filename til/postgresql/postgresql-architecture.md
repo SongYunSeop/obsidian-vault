@@ -91,7 +91,7 @@ Postmaster가 시작 시 fork하는 상주 프로세스들이다.
 | 프로세스 | 역할 |
 |---------|------|
 | **Background Writer** | 주기적으로 Shared Buffer의 dirty 페이지를 디스크에 기록 |
-| **WAL Writer** | WAL 버퍼를 [[til/postgresql/wal|WAL]] 파일로 기록 |
+| **WAL Writer** | WAL 버퍼를 [[til/postgresql/wal\|WAL]] 파일로 기록 |
 | **Checkpointer** | 체크포인트 시 모든 dirty 버퍼를 디스크에 flush |
 | **Autovacuum Launcher** | [[VACUUM]]이 필요한 테이블을 감지해 worker 기동 요청 |
 | **Logger** | 에러 메시지를 로그 파일에 기록 |

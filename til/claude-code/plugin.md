@@ -71,7 +71,7 @@ my-plugin/
 |----------|------|------|
 | **Skills** | `skills/` | Claude가 자동 또는 `/name`으로 호출하는 확장 |
 | **Commands** | `commands/` | 슬래시 커맨드 (legacy, skills 권장) |
-| **Agents** | `agents/` | 전문 [[til/claude-code/agent|서브에이전트]] |
+| **Agents** | `agents/` | 전문 [[til/claude-code/agent\|서브에이전트]] |
 | **Hooks** | `hooks/hooks.json` | 이벤트 핸들러 (PreToolUse, PostToolUse 등) |
 | **MCP Servers** | `.mcp.json` | 외부 서비스 연결 |
 | **LSP Servers** | `.lsp.json` | 코드 인텔리전스 (타입 에러, 정의 이동 등) |
