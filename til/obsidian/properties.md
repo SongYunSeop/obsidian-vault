@@ -88,7 +88,7 @@ Obsidian 검색(`Cmd+Shift+F`)에서 property 기반 필터링:
 ### 다른 기능과의 연동
 
 - **[[Dataview]]**: `TABLE date, category FROM #til SORT date DESC` 같은 쿼리의 데이터 소스
-- **[[Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준
+- **[[til/obsidian/bases|Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준
 - **[[Templater]]**: `tp.frontmatter.date`로 템플릿에서 참조
 - **[[til/obsidian/graph-view|Graph View]]**: property 값으로 그래프 노드 필터링
 
@@ -123,4 +123,4 @@ aliases:
 - [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - Properties의 저장 포맷
 - [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - aliases property로 링크 검색 확장
 - [[Dataview]] - Properties를 쿼리하는 플러그인
-- [[Bases]] - Properties 기반 데이터베이스 뷰
+- [[til/obsidian/bases|Bases]] - Properties 기반 데이터베이스 뷰

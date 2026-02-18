@@ -14,7 +14,7 @@ tags:
 3. [[til/devops/sli-slo-sla|SLI / SLO / SLA]]
 
 ### datadog
-- [[til/datadog/backlog|학습 백로그]]
+- [[til/datadog/backlog|Backlog]]
 1. [[til/datadog/datadog-agent|Datadog Agent]]
 2. [[til/datadog/tagging|태깅(Tagging)]]
 3. [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
@@ -38,14 +38,14 @@ tags:
 21. [[til/datadog/workflow-automation|Workflow Automation]]
 
 ### postgresql
-- [[til/postgresql/backlog|학습 백로그]]
+- [[til/postgresql/backlog|Backlog]]
 1. [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처(PostgreSQL Architecture)]]
 2. [[til/postgresql/mvcc|MVCC (Multi-Version Concurrency Control)]]
 3. [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
 4. [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
 
 ### obsidian
-- [[til/obsidian/backlog|학습 백로그]]
+- [[til/obsidian/backlog|Backlog]]
 1. [[til/obsidian/yaml-frontmatter|YAML Frontmatter]]
 2. [[til/obsidian/pkm|PKM(Personal Knowledge Management)]]
 3. [[til/obsidian/vault|Vault]]
@@ -66,16 +66,17 @@ tags:
 18. [[til/obsidian/canvas|Canvas]]
 19. [[til/obsidian/dataview|Dataview]]
 20. [[til/obsidian/obsidian-git|Obsidian Git]]
+21. [[til/obsidian/bases|Bases]]
 
 ### 도시정비사업
-- [[til/도시정비사업/backlog|학습 백로그]]
+- [[til/도시정비사업/backlog|Backlog]]
 1. [[til/도시정비사업/도시-및-주거환경정비법|도시 및 주거환경정비법]]
 2. [[til/도시정비사업/정비기반시설|정비기반시설]]
 3. [[til/도시정비사업/노후불량건축물|노후불량건축물]]
 4. [[til/도시정비사업/정비기본계획|정비기본계획]]
 
 ### claude-code
-- [[til/claude-code/backlog|학습 백로그]]
+- [[til/claude-code/backlog|Backlog]]
 1. [[til/claude-code/overview|Claude Code 개요]]
 2. [[til/claude-code/agent|Claude Code Agent 동작 방식]]
 3. [[til/claude-code/skill|Claude Code Skill]]
