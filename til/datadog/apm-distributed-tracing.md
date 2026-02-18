@@ -153,7 +153,7 @@ span.set_tag("customer.tier", "premium")
 | **Flame Graph** | 하나의 Trace를 타임라인으로 시각화, 어디서 시간이 소비되었는지 파악 |
 | **Trace Explorer** | 태그/서비스/상태 기반으로 트레이스 검색, 에러·느린 요청 필터링 |
 
-### 자동 생성 APM [[메트릭(Metrics)|메트릭]]
+### 자동 생성 APM [[til/datadog/metrics|메트릭]]
 
 | 메트릭 | 설명 |
 |--------|------|
@@ -223,5 +223,5 @@ def process_payment(order):
 - [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
 - [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
 - [[til/datadog/metrics|메트릭(Metrics)]]
-- [[로그-트레이스 상관관계(Log-Trace Correlation)]]
-- [[로그 관리(Log Management)]]
+- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
+- [[til/datadog/log-management|로그 관리(Log Management)]]

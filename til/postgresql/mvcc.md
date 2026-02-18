@@ -219,5 +219,5 @@ ORDER BY n_dead_tup DESC;
 - [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처]]
 - [[VACUUM]]
 - [[트랜잭션 격리 수준(Isolation Level)]]
-- [[WAL(Write-Ahead Logging)]]
-- [[공유 메모리와 버퍼 풀(Shared Buffer)]]
+- [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
+- [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]

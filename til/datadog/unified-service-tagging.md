@@ -27,7 +27,7 @@ aliases:
 
 ### 왜 필요한가?
 
-통합 서비스 태깅이 없으면 같은 서비스인데 [[태깅(Tagging)|태그]]명이 제각각이라 연결이 안 된다:
+통합 서비스 태깅이 없으면 같은 서비스인데 [[til/datadog/tagging|태그]]명이 제각각이라 연결이 안 된다:
 
 ```
 메트릭:  service=checkout, environment=prod
@@ -48,7 +48,7 @@ aliases:
 1. **서비스 맵**: `service` 태그 기반으로 서비스 간 의존관계를 자동 시각화
 2. **배포 추적(Deployment Tracking)**: `version` 태그로 특정 배포 후 에러율/지연 시간 변화를 비교
 3. **환경 간 비교**: `env` 태그로 staging과 production의 성능 차이를 비교
-4. **원클릭 전환**: [[메트릭(Metrics)|메트릭]] → [[로그 관리(Log Management)|로그]] → [[APM과 분산 트레이싱(Distributed Tracing)|트레이스]]를 동일한 컨텍스트로 즉시 전환
+4. **원클릭 전환**: [[til/datadog/metrics|메트릭]] → [[til/datadog/log-management|로그]] → [[til/datadog/apm-distributed-tracing|트레이스]]를 동일한 컨텍스트로 즉시 전환
 
 ### 설정 방법
 
@@ -117,7 +117,7 @@ spec:
 
 > [!example] 장애 대응 시나리오
 > 1. 알림: "`checkout` 서비스의 에러율 급증"
-> 2. `env:production service:checkout`으로 [[대시보드(Dashboards)|대시보드]] 필터링 → version별 에러율 비교
+> 2. `env:production service:checkout`으로 [[til/datadog/dashboards|대시보드]] 필터링 → version별 에러율 비교
 > 3. `version:1.2.3`에서만 에러 발생 확인 → 해당 버전 배포가 원인
 > 4. 같은 태그로 트레이스 조회 → 실패 Span에서 스택트레이스 확인
 > 5. 같은 태그로 로그 검색 → 구체적인 에러 메시지 확인
@@ -134,7 +134,7 @@ spec:
 
 - [[til/datadog/tagging|태깅(Tagging)]]
 - [[til/datadog/datadog-agent|Datadog Agent]]
-- [[메트릭(Metrics)]]
-- [[로그 관리(Log Management)]]
-- [[APM과 분산 트레이싱(Distributed Tracing)]]
-- [[로그-트레이스 상관관계(Log-Trace Correlation)]]
+- [[til/datadog/metrics|메트릭(Metrics)]]
+- [[til/datadog/log-management|로그 관리(Log Management)]]
+- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
+- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]

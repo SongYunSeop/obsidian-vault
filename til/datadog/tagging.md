@@ -41,7 +41,7 @@ key:value
 
 ### 태그 상속(Tag Inheritance)
 
-Datadog의 강력한 기능 중 하나. **호스트에 붙인 태그가 해당 호스트에서 발생하는 모든 [[메트릭(Metrics)|메트릭]], [[로그 관리(Log Management)|로그]], [[APM과 분산 트레이싱(Distributed Tracing)|트레이스]]에 자동 상속**된다.
+Datadog의 강력한 기능 중 하나. **호스트에 붙인 태그가 해당 호스트에서 발생하는 모든 [[til/datadog/metrics|메트릭]], [[til/datadog/log-management|로그]], [[til/datadog/apm-distributed-tracing|트레이스]]에 자동 상속**된다.
 
 ```
 호스트 태그: env:production, team:backend
@@ -64,7 +64,7 @@ Datadog이 특별하게 취급하는 태그들:
 | `service` | 서비스명 | `service:checkout` |
 | `version` | 배포 버전 | `version:1.2.3` |
 
-이 중 **env, service, version**은 [[통합 서비스 태깅(Unified Service Tagging)]]의 3대 표준 태그다.
+이 중 **env, service, version**은 [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]의 3대 표준 태그다.
 
 ### 태그 네이밍 베스트 프랙티스
 
@@ -153,7 +153,7 @@ spec:
 ## 관련 노트
 
 - [[til/datadog/datadog-agent|Datadog Agent]]
-- [[통합 서비스 태깅(Unified Service Tagging)]]
+- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
 - [[메트릭(Metrics)]]
 - [[대시보드(Dashboards)]]
 - [[모니터와 알림(Monitors & Alerts)]]

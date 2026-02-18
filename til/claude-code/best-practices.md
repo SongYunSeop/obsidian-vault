@@ -106,7 +106,7 @@ cd ../project-fix-bug && claude
 | [[til/claude-code/mcp|MCP]] Tool Search | 도구 토큰 최대 95% 절감 |
 
 > [!tip] 비용 상세
-> [[Cost 최적화(Cost Optimization)]]에서 모델별 가격, 토큰 모니터링 등을 더 자세히 다룰 예정.
+> [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]에서 모델별 가격, 토큰 모니터링 등을 더 자세히 다룰 예정.
 
 ### TDD 워크플로우
 
@@ -171,4 +171,4 @@ cd ../my-app-auth && claude
 - [[til/claude-code/context-management|Context 관리(Context Management)]]
 - [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
 - [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[Cost 최적화(Cost Optimization)]]
+- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]

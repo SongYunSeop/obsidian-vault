@@ -149,6 +149,6 @@ graph TB
 
 - [[til/devops/observability|옵저버빌리티(Observability)]]
 - [[SLI-SLO-SLA]]
-- [[APM과 분산 트레이싱(Distributed Tracing)]]
+- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
 - [[OpenTelemetry 연동]]
 - [[모니터와 알림(Monitors & Alerts)]]

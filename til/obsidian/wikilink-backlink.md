@@ -153,5 +153,5 @@ Wikilink로 구현된다.
 
 - [[til/obsidian/vault|Vault]] - Wikilink는 같은 Vault 안에서만 동작한다
 - [[til/obsidian/pkm|PKM]] - 지식 연결의 핵심 도구로서의 Wikilink
-- [[Graph View]] - Wikilink로 만든 연결을 시각화하는 기능
-- [[Map of Content]] - Wikilink를 활용한 노트 조직 패턴
+- [[til/obsidian/graph-view|Graph View]] - Wikilink로 만든 연결을 시각화하는 기능
+- [[til/obsidian/map-of-content|Map of Content]] - Wikilink를 활용한 노트 조직 패턴

@@ -185,4 +185,4 @@ Target: 99% (30일 rolling)
 - [[til/datadog/metrics|메트릭(Metrics)]]
 - [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
 - [[til/datadog/dashboards|대시보드(Dashboards)]]
-- [[RUM(Real User Monitoring)]]
+- [[til/datadog/rum|RUM(Real User Monitoring)]]

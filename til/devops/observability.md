@@ -37,7 +37,7 @@ aliases:
 
 ### 세 기둥(Three Pillars)
 
-전통적으로 **[[메트릭(Metrics)]], [[로그 관리(Log Management)|로그(Logs)]], [[APM과 분산 트레이싱(Distributed Tracing)|트레이스(Traces)]]** 를 "옵저버빌리티의 3기둥"이라 부른다.
+전통적으로 **[[til/datadog/metrics|메트릭(Metrics)]], [[til/datadog/log-management|로그(Logs)]], [[til/datadog/apm-distributed-tracing|트레이스(Traces)]]** 를 "옵저버빌리티의 3기둥"이라 부른다.
 
 **1. 메트릭(Metrics)** — 숫자로 표현되는 정량 데이터
 - CPU 사용률, 응답 시간, 에러율 등
@@ -112,7 +112,7 @@ graph TB
 
 ## 관련 노트
 
-- [[분산 시스템 모니터링(Distributed System Monitoring)]]
+- [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
 - [[SLI-SLO-SLA]]
-- [[태깅(Tagging)]]
-- [[로그-트레이스 상관관계(Log-Trace Correlation)]]
+- [[til/datadog/tagging|태깅(Tagging)]]
+- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]

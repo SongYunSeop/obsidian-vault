@@ -199,4 +199,4 @@ log_with_trace("Payment processed", order_id=123)
 - [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
 - [[til/datadog/tagging|태깅(Tagging)]]
 - [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-- [[RUM(Real User Monitoring)]]
+- [[til/datadog/rum|RUM(Real User Monitoring)]]

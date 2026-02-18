@@ -101,7 +101,7 @@ Settings > Editor > Properties in document에서 선택:
 ### 활용처
 
 - **검색/필터**: `[tags:til]`, `[date:2026-02-16]` 형태로 property 기반 검색
-- **[[Dataview]]**: `TABLE date, category FROM #til WHERE date >= date(2026-02-01)` 같은 쿼리로 조회
+- **[[til/obsidian/dataview|Dataview]]**: `TABLE date, category FROM #til WHERE date >= date(2026-02-01)` 같은 쿼리로 조회
 - **[[Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준으로 활용
 - **[[Templater]]**: `tp.frontmatter.date` 같은 형태로 템플릿에서 참조
 
@@ -143,6 +143,6 @@ aliases:
 ## 관련 노트
 
 - [[Properties]] - Obsidian의 Properties 시스템 상세
-- [[Dataview]] - frontmatter 데이터를 쿼리하는 플러그인
+- [[til/obsidian/dataview|Dataview]] - frontmatter 데이터를 쿼리하는 플러그인
 - [[Bases]] - frontmatter 기반 데이터베이스 뷰
 - [[Templater]] - frontmatter 값을 템플릿에서 활용

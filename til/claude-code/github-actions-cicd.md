@@ -174,7 +174,7 @@ result = query(
 | **캐싱** | 동일 분석 반복 방지 |
 
 > [!tip] 비용 참고
-> Sonnet 기준 개발자당 월 $100-200 수준. [[Cost 최적화(Cost Optimization)]]에서 상세히 다룰 예정.
+> Sonnet 기준 개발자당 월 $100-200 수준. [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]에서 상세히 다룰 예정.
 
 ## 예시
 
@@ -238,5 +238,5 @@ jobs:
 - [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
 - [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
 - [[til/claude-code/hooks|Hooks]]
-- [[Cost 최적화(Cost Optimization)]]
+- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
 - [[Security와 Sandboxing]]

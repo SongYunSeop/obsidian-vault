@@ -159,4 +159,4 @@ claude /init    # 대화형으로 CLAUDE.md 생성
 - [[til/claude-code/claude-md|CLAUDE.md]]
 - [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
 - [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[Cost 최적화(Cost Optimization)]]
+- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]

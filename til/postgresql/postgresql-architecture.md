@@ -74,7 +74,7 @@ graph TB
 
 - TCP 포트(기본 5432)에서 클라이언트 연결 대기
 - 연결 요청 시 Backend 프로세스를 `fork()`하여 할당
-- 서버 시작 시 복구(Recovery), [[공유 메모리와 버퍼 풀(Shared Buffer)|공유 메모리]] 초기화, 백그라운드 프로세스 기동
+- 서버 시작 시 복구(Recovery), [[til/postgresql/shared-buffer|공유 메모리]] 초기화, 백그라운드 프로세스 기동
 
 ### Backend 프로세스
 
@@ -91,7 +91,7 @@ Postmaster가 시작 시 fork하는 상주 프로세스들이다.
 | 프로세스 | 역할 |
 |---------|------|
 | **Background Writer** | 주기적으로 Shared Buffer의 dirty 페이지를 디스크에 기록 |
-| **WAL Writer** | WAL 버퍼를 [[WAL(Write-Ahead Logging)|WAL]] 파일로 기록 |
+| **WAL Writer** | WAL 버퍼를 [[til/postgresql/wal|WAL]] 파일로 기록 |
 | **Checkpointer** | 체크포인트 시 모든 dirty 버퍼를 디스크에 flush |
 | **Autovacuum Launcher** | [[VACUUM]]이 필요한 테이블을 감지해 worker 기동 요청 |
 | **Logger** | 에러 메시지를 로그 파일에 기록 |
@@ -206,7 +206,7 @@ SHOW max_connections;    -- 기본 100
 ## 관련 노트
 
 - [[til/postgresql/backlog|PostgreSQL 학습 백로그]]
-- [[공유 메모리와 버퍼 풀(Shared Buffer)]]
-- [[WAL(Write-Ahead Logging)]]
+- [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
+- [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
 - [[MVCC]]
 - [[VACUUM]]

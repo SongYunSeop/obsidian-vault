@@ -22,7 +22,7 @@ aliases:
 
 ### RUM이란
 
-**Real User Monitoring** — 실제 사용자의 브라우저/모바일에서 발생하는 경험을 수집·분석하는 프론트엔드 모니터링이다. [[신서틱 모니터링(Synthetic Monitoring)]]이 "가상 사용자로 능동적 테스트"라면, RUM은 "실제 사용자의 수동적 관측"이다.
+**Real User Monitoring** — 실제 사용자의 브라우저/모바일에서 발생하는 경험을 수집·분석하는 프론트엔드 모니터링이다. [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]이 "가상 사용자로 능동적 테스트"라면, RUM은 "실제 사용자의 수동적 관측"이다.
 
 RUM SDK를 앱에 삽입하면 자동으로 수집이 시작된다:
 - 페이지 로딩 성능 (Core Web Vitals)
@@ -276,4 +276,4 @@ try {
 - [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
 - [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
 - [[til/devops/observability|옵저버빌리티(Observability)]]
-- [[신서틱 모니터링(Synthetic Monitoring)]]
+- [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
