@@ -52,7 +52,7 @@ aliases:
 | 설치 | 내장 (ON/OFF) | 마켓플레이스에서 설치 |
 | 안정성 | 높음 (버전 호환 보장) | 개발자에 따라 다름 |
 | 기능 | 범용적, 기본적 | 특화되고 강력함 |
-| 예시 | Templates (`{{date}}` 변수) | [[til/obsidian/templater|Templater]] (JavaScript, 조건문) |
+| 예시 | [[til/obsidian/templates\|Templates]] (`{{date}}` 변수) | [[til/obsidian/templater\|Templater]] (JavaScript, 조건문) |
 
 ### 인기 플러그인 TOP 10
 
