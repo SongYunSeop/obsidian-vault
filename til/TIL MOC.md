@@ -65,6 +65,7 @@ tags:
 17. [[til/obsidian/templater|Templater]]
 18. [[til/obsidian/canvas|Canvas]]
 19. [[til/obsidian/dataview|Dataview]]
+20. [[til/obsidian/obsidian-git|Obsidian Git]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|학습 백로그]]
