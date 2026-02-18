@@ -61,6 +61,10 @@ tags:
 13. [[til/obsidian/zettelkasten|체텔카스텐(Zettelkasten)]]
 14. [[til/obsidian/community-plugins|Community Plugins]]
 15. [[til/obsidian/obsidian-cli|Obsidian CLI]]
+16. [[til/obsidian/templates|Templates]]
+17. [[til/obsidian/templater|Templater]]
+18. [[til/obsidian/canvas|Canvas]]
+19. [[til/obsidian/dataview|Dataview]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|학습 백로그]]
