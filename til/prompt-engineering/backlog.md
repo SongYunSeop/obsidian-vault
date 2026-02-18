@@ -10,7 +10,7 @@ updated: 2026-02-18
 # Prompt Engineering 학습 백로그
 
 ## 선행 지식
-- [ ] [[til/prompt-engineering/llm-settings|LLM 기초 설정(LLM Settings)]] - temperature, top-p, max tokens 등 생성 제어 파라미터
+- [x] [[til/prompt-engineering/llm-settings|LLM 기초 설정(LLM Settings)]] - temperature, top-p, max tokens 등 생성 제어 파라미터
 - [ ] [[til/prompt-engineering/prompt-elements|프롬프트 구성 요소(Prompt Elements)]] - 역할, 지시, 컨텍스트, 입력 데이터, 출력 형식의 5가지 구성 요소
 - [ ] [[til/prompt-engineering/tokens-and-context-window|토큰과 컨텍스트 윈도우(Tokens & Context Window)]] - 토큰화 방식, 컨텍스트 윈도우 크기가 프롬프트 설계에 미치는 영향
 

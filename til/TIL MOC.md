@@ -82,6 +82,7 @@ tags:
 
 ### prompt-engineering
 - [[til/prompt-engineering/backlog|Backlog]]
+1. [[til/prompt-engineering/llm-settings|LLM 기초 설정(LLM Settings)]]
 
 ### claude
 1. [[til/claude/model-family|Claude 모델 패밀리(Claude Model Family)]]
