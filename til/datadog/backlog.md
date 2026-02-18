@@ -2,6 +2,8 @@
 tags:
   - backlog
   - datadog
+aliases:
+  - "Backlog - Datadog"
 updated: 2026-02-16
 ---
 

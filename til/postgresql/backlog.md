@@ -2,6 +2,8 @@
 tags:
   - backlog
   - postgresql
+aliases:
+  - "Backlog - PostgreSQL"
 updated: 2026-02-15
 ---
 

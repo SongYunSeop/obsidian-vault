@@ -2,6 +2,8 @@
 tags:
   - backlog
   - claude-code
+aliases:
+  - "Backlog - Claude Code"
 updated: 2026-02-16
 ---
 
