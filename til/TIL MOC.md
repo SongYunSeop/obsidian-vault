@@ -67,6 +67,7 @@ tags:
 19. [[til/obsidian/dataview|Dataview]]
 20. [[til/obsidian/obsidian-git|Obsidian Git]]
 21. [[til/obsidian/bases|Bases]]
+22. [[til/obsidian/obsidian-sync|Obsidian Sync]]
 
 ### 도시정비사업
 - [[til/도시정비사업/backlog|Backlog]]

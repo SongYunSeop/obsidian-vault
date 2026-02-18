@@ -31,7 +31,8 @@ updated: 2026-02-18
 - [x] [[til/obsidian/obsidian-git|Obsidian Git]] - Obsidian 내에서 Git 자동 커밋/동기화. GitHub 연동과 버전 관리
 - [x] [[til/obsidian/canvas|Canvas]] - 무한 화이트보드. 노트, 이미지, 카드를 자유 배치하는 시각적 도구
 - [x] [[til/obsidian/bases|Bases]] - 노트를 데이터베이스 뷰로 편집/정렬/필터링하는 기능 (2025년 출시)
-- [ ] [[til/obsidian/sync-publish|Obsidian Sync와 Publish]] - E2E 암호화 동기화 서비스와 웹 퍼블리싱 기능
+- [x] [[til/obsidian/obsidian-sync|Obsidian Sync]] - E2E 암호화 기반 디바이스 간 vault 동기화 서비스
+- [ ] [[til/obsidian/obsidian-publish|Obsidian Publish]] - 선택한 노트를 웹사이트로 공개하는 퍼블리싱 서비스
 - [x] [[til/obsidian/plugin-development|Plugin 개발]] - TypeScript API, Plugin 클래스 라이프사이클, esbuild 빌드 시스템
 - [ ] [[til/obsidian/css-snippets-themes|CSS Snippets과 테마]] - CSS를 통한 외관 커스터마이징과 커뮤니티 테마 적용
 - [ ] [[til/obsidian/hotkeys|Hotkeys 커스터마이징]] - 단축키 설정과 hotkeys.json 직접 편집으로 워크플로우 최적화
