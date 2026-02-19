@@ -4,7 +4,7 @@ tags:
   - claude-code
 aliases:
   - "Backlog - Claude Code"
-updated: 2026-02-16
+updated: 2026-02-19
 ---
 
 # Claude Code 학습 백로그
@@ -38,7 +38,7 @@ updated: 2026-02-16
 - [ ] [[til/claude-code/custom-tools|커스텀 도구(Custom Tools)]] - createSdkMcpServer로 인프로세스 MCP 서버를 만들어 에이전트에 도구 추가
 - [ ] [[til/claude-code/sessions|세션 관리(Sessions)]] - 세션 ID로 대화 재개, 세션 포킹(forking), 자동 컴팩션
 - [ ] [[til/claude-code/sdk-hooks|훅(SDK Hooks)]] - PreToolUse/PostToolUse/Stop 등 에이전트 실행 시점에 커스텀 로직 삽입
-- [ ] [[til/claude-code/subagents|서브에이전트(Subagents)]] - 메인 에이전트가 전문화된 하위 에이전트를 생성하여 병렬/분업 처리
+- [x] [[til/claude-code/subagents|서브에이전트(Subagents)]] - 메인 에이전트가 전문화된 하위 에이전트를 생성하여 병렬/분업 처리
 - [ ] [[til/claude-code/hosting-secure-deployment|프로덕션 배포(Hosting & Secure Deployment)]] - 컨테이너 격리, 자격 증명 관리, OpenTelemetry 관찰성, 보안 모범 사례
 - [ ] [[til/claude-code/cicd-automation|CI/CD 자동화 실습]] - Agent SDK로 PR 리뷰, 코드 분석, 테스트 자동화 파이프라인 구축
 
