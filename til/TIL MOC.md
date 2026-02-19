@@ -80,6 +80,9 @@ tags:
 6. [[til/도시정비사업/정비구역-지정|정비구역 지정]]
 7. [[til/도시정비사업/조합설립추진위원회|조합설립추진위원회]]
 
+### aws
+- [[til/aws/backlog|Backlog]]
+
 ### prompt-engineering
 - [[til/prompt-engineering/backlog|Backlog]]
 1. [[til/prompt-engineering/llm-settings|LLM 기초 설정(LLM Settings)]]
