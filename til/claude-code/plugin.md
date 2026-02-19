@@ -258,7 +258,7 @@ Claude가 작업을 끝내려 할 때 Agent Hook이 실제 코드를 검사한�
 
 | 플러그인 | 구성 요소 | 학습 포인트 |
 |---------|----------|-----------|
-| **plugin-dev** | 7 스킬 + 3 에이전트 + 커맨드 | 전체 구조를 가르치는 메타 플러그인. Hook/MCP/구조/설정/커맨드/에이전트/스킬 단계별 학습 |
+| **[[til/claude-code/plugin-dev\|plugin-dev]]** | 7 스킬 + 3 에이전트 + 커맨드 | 전체 구조를 가르치는 메타 플러그인. Hook/MCP/구조/설정/커맨드/에이전트/스킬 단계별 학습 |
 | **code-review** | 4 병렬 에이전트 + 커맨드 | 멀티 에이전트 병렬 실행, 신뢰도 스코어링(0~100)으로 false positive 필터링 |
 | **hookify** | 4 커맨드 + 에이전트 + 스킬 | 커맨드→에이전트→스킬 협력 구조, Rule 기반 hook 생성 시스템 |
 | **security-guidance** | PreToolUse Hook | 9가지 보안 패턴(injection, XSS, eval 등) 실시간 감시 |
@@ -301,4 +301,5 @@ claude plugin install formatter --scope project
 - [[til/claude-code/hooks|Hooks]]
 - [[til/claude-code/mcp|MCP(Model Context Protocol)]]
 - [[til/claude-code/subagents|서브에이전트(Subagents)]]
+- [[til/claude-code/plugin-dev|plugin-dev (플러그인 개발 도구킷)]]
 - [[til/claude-code/security-sandboxing|Security와 Sandboxing]]
