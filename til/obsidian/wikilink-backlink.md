@@ -1,5 +1,6 @@
 ---
 date: 2026-02-16
+updated: 2026-02-20
 category: obsidian
 tags:
   - til
@@ -114,16 +115,81 @@ Settings > Files & Links > New link format에서 선택:
 
 ### Wikilink vs Markdown Link
 
+#### 본문(Body)에서의 동작
+
+본문에서는 두 형식 모두 Obsidian의 메타데이터 캐시에 **동일하게 추적**된다. Backlink, Graph View, Outgoing Links 패널 모두 정상 동작한다.
+
 | | Wikilink | Markdown Link |
 |---|---|---|
 | 문법 | `[[노트]]` | `[텍스트](노트.md)` |
-| Backlink | 자동 생성 | 지원 안 됨 |
+| 본문 Backlink | 자동 생성 | 자동 생성 |
 | 자동완성 | `[[` 입력 시 노트 목록 표시 | 없음 |
-| 파일 이동 시 | 경로 자동 업데이트 | 수동 수정 필요 |
+| 파일 이동 시 | 경로 자동 업데이트 | 자동 업데이트 (본문 한정) |
+| 공백 처리 | `[[My Note]]` 그대로 | `[My Note](My%20Note.md)` URL 인코딩 필요 |
+| 임베딩 | `![[노트#헤딩]]` 노트/섹션/블록 모두 가능 | `![](이미지.png)` 이미지만 가능 |
 | 호환성 | Obsidian 전용 | 표준 Markdown |
 
+#### Properties(Frontmatter)에서의 차이 — 핵심 갈림길
+
+두 형식의 차이가 **가장 극명하게** 드러나는 영역이다. Obsidian의 [[til/obsidian/properties|Properties]] 시스템은 YAML 파싱 위에 자체 링크 해석 레이어를 얹은 구조로, `[[노트]]`는 "내부 링크"로 인식하지만 `[텍스트](노트.md)`는 **일반 문자열**로 취급한다.
+
+```yaml
+# Obsidian이 링크로 인식
+related:
+  - "[[til/obsidian/vault]]"
+
+# Obsidian이 그냥 문자열로 취급
+related:
+  - "[Vault](til/obsidian/vault.md)"
+```
+
+| 기능 | Wikilink | Markdown Link |
+|------|----------|---------------|
+| Properties에서 렌더링 | 클릭 가능한 링크 | 원본 텍스트 그대로 표시 |
+| Reading View | 링크로 동작 | 텍스트로만 표시 |
+| Backlink 추적 | 정상 | 추적 안 됨 |
+| 파일 이름 변경 시 | 자동 업데이트 | 업데이트 안 됨 |
+| [[til/obsidian/bases\|Bases]] 테이블 | 클릭 가능한 링크 | 마크다운 문법이 그대로 노출 |
+| [[til/obsidian/graph-view\|Graph View]] | 연결 반영 | 연결 안 됨 |
+
+> [!important] Frontmatter에서는 Wikilink가 사실상 필수
+> [[til/obsidian/dataview\|Dataview]] 쿼리(`WHERE contains(related, [[노트]])`), [[til/obsidian/bases\|Bases]] 테이블 렌더링, [[til/obsidian/graph-view\|Graph View]] 노드 연결 등 Obsidian의 핵심 기능이 frontmatter의 Wikilink에만 반응한다. Markdown Link로는 양방향 연결 자체가 작동하지 않는다.
+
+#### 자동 링크 업데이트
+
+Settings > Files & Links > "Automatically update internal links"를 켜면:
+
+| 위치 | Wikilink | Markdown Link |
+|------|----------|---------------|
+| 본문 | 자동 업데이트 | 자동 업데이트 |
+| Frontmatter | 자동 업데이트 | **업데이트 안 됨** |
+
+#### 외부 도구 호환성
+
+Markdown Link가 유리한 영역:
+
+| 외부 도구 | Wikilink | Markdown Link |
+|-----------|----------|---------------|
+| GitHub 렌더링 | 텍스트로만 표시 | 링크로 동작 (경로가 맞으면) |
+| Jekyll / Hugo | 미지원 (별도 플러그인 필요) | 네이티브 지원 |
+| VS Code | 텍스트로만 표시 | 링크로 인식 |
+| Typora 등 다른 MD 에디터 | 미지원 | 지원 |
+
+#### 혼용 전략
+
+| 전략 | 설명 | 추천 상황 |
+|------|------|-----------|
+| **Wikilink 올인** | 모든 링크에 Wikilink 사용 | Obsidian 생태계 내에서만 사용할 때 |
+| **이미지만 Markdown** | 이미지는 `![alt](image.png)`, 노트 링크는 `[[wikilink]]` | 이미지 파일만 외부 호환 필요할 때 |
+| **Markdown 올인** | 모든 링크에 Markdown Link 사용 | GitHub Pages, Jekyll 블로그 퍼블리싱이 핵심일 때 |
+
+#### 변환 도구
+
+- **Wikilinks to MDLinks 플러그인**: 단축키(`Cmd+Shift+L`)로 개별 링크를 Wikilink ↔ Markdown Link 토글
+- **Settings > Files & Links > "Use `[[Wikilinks]]`"**: 새로 생성하는 링크의 기본 형식 변경 (기존 링크는 변환되지 않음)
+
 > [!warning] 호환성 vs 편의성
-> Obsidian 내에서만 사용한다면 Wikilink가 압도적으로 편리하다. GitHub, Jekyll 등 외부 도구와 호환이 필요하면 Settings에서 Markdown Link로 전환할 수 있다.
+> Obsidian 내에서만 사용한다면 Wikilink가 압도적으로 편리하다. GitHub, Jekyll 등 외부 도구와 호환이 필요하면 Settings에서 Markdown Link로 전환할 수 있다. 단, frontmatter에서는 어떤 전략을 쓰든 **Wikilink만 정상 동작**한다는 점에 주의.
 
 ## 예시
 
@@ -148,6 +214,9 @@ Wikilink로 구현된다.
 
 - [Internal links - Obsidian Help](https://help.obsidian.md/links)
 - [Backlinks - Obsidian Help](https://help.obsidian.md/plugins/backlinks)
+- [Internal Links and Backlinks - DeepWiki](https://deepwiki.com/obsidianmd/obsidian-help/4.2-internal-links-and-backlinks)
+- [Wikilink vs Markdown Link 포럼 토론](https://forum.obsidian.md/t/wikilink-vs-markdown-the-latter-suffers-from-lack-of-support/86920)
+- [Wikilinks to MDLinks 플러그인](https://github.com/agathauy/wikilinks-to-mdlinks-obsidian)
 
 ## 관련 노트
 
@@ -155,3 +224,6 @@ Wikilink로 구현된다.
 - [[til/obsidian/pkm|PKM]] - 지식 연결의 핵심 도구로서의 Wikilink
 - [[til/obsidian/graph-view|Graph View]] - Wikilink로 만든 연결을 시각화하는 기능
 - [[til/obsidian/map-of-content|Map of Content]] - Wikilink를 활용한 노트 조직 패턴
+- [[til/obsidian/properties|Properties]] - Frontmatter에서 Wikilink만 링크로 인식되는 핵심 영역
+- [[til/obsidian/dataview|Dataview]] - Wikilink 기반 쿼리 필터링이 가능한 플러그인
+- [[til/obsidian/bases|Bases]] - Wikilink만 테이블에서 클릭 가능한 링크로 렌더링
