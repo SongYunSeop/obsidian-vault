@@ -45,6 +45,7 @@ tags:
 3. [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
 4. [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
 5. [[til/postgresql/gin-index|GIN 인덱스(GIN Index)]]
+6. [[til/postgresql/dead-tuple|죽은 튜플(Dead Tuple)]]
 
 ### obsidian
 - [[til/obsidian/backlog|Backlog]]
