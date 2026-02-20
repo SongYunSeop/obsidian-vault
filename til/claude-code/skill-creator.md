@@ -22,13 +22,13 @@ aliases:
 
 ### Skill Creator란?
 
-[anthropics/skills](https://github.com/anthropics/skills) 리포지토리에 포함된 공식 메타 스킬이다. `skill-creator` 자체가 하나의 [[til/claude-code/skill|스킬(Skill)]]이며, Claude에게 새로운 스킬을 설계하는 방법론과 베스트 프랙티스를 주입한다.
+[anthropics/skills](https://github.com/anthropics/skills) 리포지토리에 포함된 공식 메타 스킬이다. `skill-creator` 자체가 하나의 [스킬(Skill)](til/claude-code/skill.md)이며, Claude에게 새로운 스킬을 설계하는 방법론과 베스트 프랙티스를 주입한다.
 
 ### 3가지 핵심 원칙
 
 #### 1. 간결함이 핵심(Concise is Key)
 
-[[til/claude-code/context-management|컨텍스트 윈도우]]는 공공재다. 스킬은 시스템 프롬프트, 대화 이력, 다른 스킬의 메타데이터와 공간을 나눠 쓴다. Claude는 이미 충분히 똑똑하므로 **Claude가 모르는 정보만** 담아야 한다. 각 문단에 대해 "이 설명이 토큰 비용을 정당화하는가?"를 자문한다.
+[컨텍스트 윈도우](til/claude-code/context-management.md)는 공공재다. 스킬은 시스템 프롬프트, 대화 이력, 다른 스킬의 메타데이터와 공간을 나눠 쓴다. Claude는 이미 충분히 똑똑하므로 **Claude가 모르는 정보만** 담아야 한다. 각 문단에 대해 "이 설명이 토큰 비용을 정당화하는가?"를 자문한다.
 
 #### 2. 자유도 조절(Degrees of Freedom)
 
@@ -154,7 +154,7 @@ Research $ARGUMENTS thoroughly...
 > [!example] 점진적 공개 적용
 > - **항상 로드**: `save-rules.md` (40줄) — 경로/wikilink 규칙
 > - **트리거 시 로드**: `/save` (257줄) — 상세 템플릿/워크플로우
-> - **필요 시 로드**: [[til/claude-code/mcp|MCP]] 도구로 기존 TIL/백로그 파일 읽기
+> - **필요 시 로드**: [MCP](til/claude-code/mcp.md) 도구로 기존 TIL/백로그 파일 읽기
 
 관심사별로 3개 스킬을 분리해 컨텍스트 효율을 높이고, rules 파일로 "항상 필요한 규칙"을 별도 관리하는 패턴은 Skill Creator 공식 예시에 없는 실용적 응용이다.
 
@@ -167,8 +167,8 @@ Research $ARGUMENTS thoroughly...
 
 ## 관련 노트
 
-- [[til/claude-code/skill|Claude Code Skill (커스텀 슬래시 커맨드)]]
-- [[til/claude-code/context-management|Context 관리(Context Management)]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
-- [[til/claude-code/hooks|Hooks]]
+- [Claude Code Skill (커스텀 슬래시 커맨드)](til/claude-code/skill.md)
+- [Context 관리(Context Management)](til/claude-code/context-management.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)
+- [Hooks](til/claude-code/hooks.md)

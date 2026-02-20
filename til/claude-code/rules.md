@@ -20,7 +20,7 @@ aliases:
 
 ### CLAUDE.md와의 관계
 
-[[til/claude-code/claude-md|CLAUDE.md]]와 Rules는 대체 관계가 아니라 **보완 관계**이다. CLAUDE.md에 핵심 지침을 두고, 세부 규칙을 `.claude/rules/`로 분리하는 패턴이 일반적이다.
+[CLAUDE.md](til/claude-code/claude-md.md)와 Rules는 대체 관계가 아니라 **보완 관계**이다. CLAUDE.md에 핵심 지침을 두고, 세부 규칙을 `.claude/rules/`로 분리하는 패턴이 일반적이다.
 
 | | CLAUDE.md | .claude/rules/ |
 |---|---|---|
@@ -75,7 +75,7 @@ paths:
 
 ### Permission Rules와의 차이
 
-[[til/claude-code/settings|settings.json]]의 Permission Rules와 혼동하지 말아야 한다:
+[settings.json](til/claude-code/settings.md)의 Permission Rules와 혼동하지 말아야 한다:
 
 | | Rules (`.claude/rules/`) | Permission Rules (`settings.json`) |
 |---|---|---|
@@ -172,7 +172,7 @@ paths:
 
 ## 관련 노트
 
-- [[til/claude-code/claude-md|CLAUDE.md]] — Rules의 기반이 되는 프로젝트 지침 파일
-- [[til/claude-code/settings|Settings와 Configuration]] — Permission Rules가 정의되는 설정 체계
-- [[til/claude-code/permission-mode|Permission 모드]] — 도구 실행 승인을 제어하는 보안 모델
-- [[til/claude-code/best-practices|Best Practices]] — CLAUDE.md/Rules 작성 원칙 포함
+- [CLAUDE.md](til/claude-code/claude-md.md) — Rules의 기반이 되는 프로젝트 지침 파일
+- [Settings와 Configuration](til/claude-code/settings.md) — Permission Rules가 정의되는 설정 체계
+- [Permission 모드](til/claude-code/permission-mode.md) — 도구 실행 승인을 제어하는 보안 모델
+- [Best Practices](til/claude-code/best-practices.md) — CLAUDE.md/Rules 작성 원칙 포함

@@ -18,7 +18,7 @@ aliases:
 # Claude Code Plugin
 
 > [!tldr] 한줄 요약
-> Plugin은 [[til/claude-code/skill|Skills]], [[til/claude-code/agent|Agents]], [[til/claude-code/hooks|Hooks]], [[til/claude-code/mcp|MCP]], LSP를 하나의 패키지로 묶어 공유하는 시스템이며, 3가지 Hook 타입(command/prompt/agent)과 구성 요소 간 조합을 통해 복합적인 자동화 파이프라인을 구축할 수 있다.
+> Plugin은 [Skills](til/claude-code/skill.md), [Agents](til/claude-code/agent.md), [Hooks](til/claude-code/hooks.md), [MCP](til/claude-code/mcp.md), LSP를 하나의 패키지로 묶어 공유하는 시스템이며, 3가지 Hook 타입(command/prompt/agent)과 구성 요소 간 조합을 통해 복합적인 자동화 파이프라인을 구축할 수 있다.
 
 ## 핵심 내용
 
@@ -75,7 +75,7 @@ my-plugin/
 |----------|------|------|
 | **Skills** | `skills/` | Claude가 자동 또는 `/name`으로 호출하는 확장 |
 | **Commands** | `commands/` | 슬래시 커맨드 (legacy, skills 권장) |
-| **Agents** | `agents/` | 전문 [[til/claude-code/agent\|서브에이전트]] |
+| **Agents** | `agents/` | 전문 [서브에이전트](til/claude-code/agent.md) |
 | **Hooks** | `hooks/hooks.json` | 이벤트 핸들러 (PreToolUse, PostToolUse 등) |
 | **MCP Servers** | `.mcp.json` | 외부 서비스 연결 |
 | **LSP Servers** | `.lsp.json` | 코드 인텔리전스 (타입 에러, 정의 이동 등) |
@@ -125,7 +125,7 @@ graph TB
 
 ### 3가지 Hook 타입 계층
 
-플러그인의 [[til/claude-code/hooks|Hooks]]는 복잡도에 따라 3가지 타입으로 나뉜다:
+플러그인의 [Hooks](til/claude-code/hooks.md)는 복잡도에 따라 3가지 타입으로 나뉜다:
 
 #### Command Hook (결정론적)
 
@@ -197,7 +197,7 @@ graph TB
 
 #### Hook으로 MCP 도구 감시
 
-[[til/claude-code/mcp|MCP]] 도구 이름은 `mcp__<서버>__<도구>` 형식이므로, matcher에서 regex로 특정 MCP 서버의 모든 호출을 게이트키핑할 수 있다:
+[MCP](til/claude-code/mcp.md) 도구 이름은 `mcp__<서버>__<도구>` 형식이므로, matcher에서 regex로 특정 MCP 서버의 모든 호출을 게이트키핑할 수 있다:
 
 ```json
 {
@@ -258,7 +258,7 @@ Claude가 작업을 끝내려 할 때 Agent Hook이 실제 코드를 검사한�
 
 | 플러그인 | 구성 요소 | 학습 포인트 |
 |---------|----------|-----------|
-| **[[til/claude-code/plugin-dev\|plugin-dev]]** | 7 스킬 + 3 에이전트 + 커맨드 | 전체 구조를 가르치는 메타 플러그인. Hook/MCP/구조/설정/커맨드/에이전트/스킬 단계별 학습 |
+| **[plugin-dev](til/claude-code/plugin-dev.md)** | 7 스킬 + 3 에이전트 + 커맨드 | 전체 구조를 가르치는 메타 플러그인. Hook/MCP/구조/설정/커맨드/에이전트/스킬 단계별 학습 |
 | **code-review** | 4 병렬 에이전트 + 커맨드 | 멀티 에이전트 병렬 실행, 신뢰도 스코어링(0~100)으로 false positive 필터링 |
 | **hookify** | 4 커맨드 + 에이전트 + 스킬 | 커맨드→에이전트→스킬 협력 구조, Rule 기반 hook 생성 시스템 |
 | **security-guidance** | PreToolUse Hook | 9가지 보안 패턴(injection, XSS, eval 등) 실시간 감시 |
@@ -295,11 +295,11 @@ claude plugin install formatter --scope project
 
 ## 관련 노트
 
-- [[til/claude-code/overview|Claude Code 개요]]
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/subagents|서브에이전트(Subagents)]]
-- [[til/claude-code/plugin-dev|plugin-dev (플러그인 개발 도구킷)]]
-- [[til/claude-code/security-sandboxing|Security와 Sandboxing]]
+- [Claude Code 개요](til/claude-code/overview.md)
+- [Claude Code Skill](til/claude-code/skill.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Hooks](til/claude-code/hooks.md)
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [서브에이전트(Subagents)](til/claude-code/subagents.md)
+- [plugin-dev (플러그인 개발 도구킷)](til/claude-code/plugin-dev.md)
+- [Security와 Sandboxing](til/claude-code/security-sandboxing.md)

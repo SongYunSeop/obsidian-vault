@@ -13,7 +13,7 @@ aliases:
 # Community Plugins
 
 > [!tldr] 한줄 요약
-> Obsidian의 커뮤니티 플러그인은 2,700개 이상의 서드파티 확장 기능으로, Restricted Mode를 해제한 뒤 내장 브라우저에서 설치할 수 있다. Dataview, Templater, Excalidraw 등이 대표적이며, [[til/obsidian/core-plugins|Core Plugins]]의 기본 기능을 특화된 방향으로 크게 확장한다.
+> Obsidian의 커뮤니티 플러그인은 2,700개 이상의 서드파티 확장 기능으로, Restricted Mode를 해제한 뒤 내장 브라우저에서 설치할 수 있다. Dataview, Templater, Excalidraw 등이 대표적이며, [Core Plugins](til/obsidian/core-plugins.md)의 기본 기능을 특화된 방향으로 크게 확장한다.
 
 ## 핵심 내용
 
@@ -46,13 +46,13 @@ aliases:
 
 ### Core Plugins와의 비교
 
-| 구분 | [[til/obsidian/core-plugins\|Core Plugins]] | Community Plugins |
+| 구분 | [Core Plugins](til/obsidian/core-plugins.md) | Community Plugins |
 |------|------|-----------|
 | 관리 | Obsidian 팀 직접 | 커뮤니티 개발자 |
 | 설치 | 내장 (ON/OFF) | 마켓플레이스에서 설치 |
 | 안정성 | 높음 (버전 호환 보장) | 개발자에 따라 다름 |
 | 기능 | 범용적, 기본적 | 특화되고 강력함 |
-| 예시 | [[til/obsidian/templates\|Templates]] (`{{date}}` 변수) | [[til/obsidian/templater\|Templater]] (JavaScript, 조건문) |
+| 예시 | [Templates](til/obsidian/templates.md) (`{{date}}` 변수) | [Templater](til/obsidian/templater.md) (JavaScript, 조건문) |
 
 ### 인기 플러그인 TOP 10
 
@@ -61,10 +61,10 @@ aliases:
 | 순위 | 플러그인 | 다운로드 | 설명 |
 |------|---------|---------|------|
 | 1 | **Excalidraw** | 1.9M | 드로잉/다이어그램 도구. Canvas의 상위 호환 |
-| 2 | **[[til/obsidian/templater\|Templater]]** | 1.5M | JavaScript/조건문 지원 고급 템플릿 엔진 |
-| 3 | **[[til/obsidian/dataview\|Dataview]]** | 1.2M | SQL 유사 쿼리로 노트를 DB처럼 조회 |
+| 2 | **[Templater](til/obsidian/templater.md)** | 1.5M | JavaScript/조건문 지원 고급 템플릿 엔진 |
+| 3 | **[Dataview](til/obsidian/dataview.md)** | 1.2M | SQL 유사 쿼리로 노트를 DB처럼 조회 |
 | 4 | **Tasks** | 1.1M | 체크리스트 기반 작업 관리, 날짜/필터 지원 |
-| 5 | **[[til/obsidian/obsidian-git\|Git]]** | 753K | Vault의 Git 자동 커밋/동기화 |
+| 5 | **[Git](til/obsidian/obsidian-git.md)** | 753K | Vault의 Git 자동 커밋/동기화 |
 | 6 | **Calendar** | 690K | 월별 Daily Note 탐색 인터페이스 |
 | 7 | **Kanban** | - | 마크다운 기반 칸반 보드 |
 | 8 | **QuickAdd** | - | 빠른 노트 생성 + 매크로 체인 |
@@ -74,16 +74,16 @@ aliases:
 ### 기능별 분류
 
 **데이터/쿼리**
-- [[til/obsidian/dataview|Dataview]] - 노트 메타데이터를 SQL 유사 쿼리로 조회. 테이블, 리스트, 인라인 쿼리 지원
-- [[til/obsidian/bases|Bases]] - Obsidian 공식 데이터베이스 뷰 (2025년 출시)
+- [Dataview](til/obsidian/dataview.md) - 노트 메타데이터를 SQL 유사 쿼리로 조회. 테이블, 리스트, 인라인 쿼리 지원
+- [Bases](til/obsidian/bases.md) - Obsidian 공식 데이터베이스 뷰 (2025년 출시)
 
 **템플릿/자동화**
-- [[til/obsidian/templater|Templater]] - Core Templates의 상위 호환. JavaScript, 조건문, 자동 적용 지원
+- [Templater](til/obsidian/templater.md) - Core Templates의 상위 호환. JavaScript, 조건문, 자동 적용 지원
 - QuickAdd - 템플릿 기반 빠른 노트 생성과 매크로 워크플로우
 
 **시각화/드로잉**
-- Excalidraw - 노트로 저장되는 드로잉 도구. [[til/obsidian/graph-view|Graph View]]와 검색에서도 발견 가능
-- [[til/obsidian/canvas|Canvas]]와 유사하지만 더 풍부한 드로잉 기능 제공
+- Excalidraw - 노트로 저장되는 드로잉 도구. [Graph View](til/obsidian/graph-view.md)와 검색에서도 발견 가능
+- [Canvas](til/obsidian/canvas.md)와 유사하지만 더 풍부한 드로잉 기능 제공
 
 **일정/작업 관리**
 - Calendar - Daily Note를 캘린더 UI로 탐색
@@ -92,10 +92,10 @@ aliases:
 - Kanban - 마크다운 파일 기반 칸반 보드
 
 **동기화/버전 관리**
-- [[til/obsidian/obsidian-git|Obsidian Git]] - Vault를 Git으로 자동 백업/동기화
+- [Obsidian Git](til/obsidian/obsidian-git.md) - Vault를 Git으로 자동 백업/동기화
 
 **외관/편집**
-- [[til/obsidian/css-snippets-themes|테마]] - 커뮤니티 테마 (Minimal, Things, Blue Topaz 등)
+- [테마](til/obsidian/css-snippets-themes.md) - 커뮤니티 테마 (Minimal, Things, Blue Topaz 등)
 - Linter - 마크다운 서식 자동 정리 (heading, spacing, YAML)
 - Style Settings - 테마의 세부 옵션을 GUI로 조정
 
@@ -139,8 +139,8 @@ aliases:
 
 ## 관련 노트
 
-- [[til/obsidian/core-plugins|Core Plugins]] - 커뮤니티 플러그인과 대비되는 내장 플러그인
-- [[til/obsidian/plugin-development|Plugin 개발]] - 커뮤니티 플러그인을 직접 만드는 방법
-- [[til/obsidian/dataview|Dataview]] - 가장 강력한 커뮤니티 플러그인 중 하나
-- [[til/obsidian/templater|Templater]] - Core Templates의 상위 호환 플러그인
-- [[til/obsidian/obsidian-git|Obsidian Git]] - Git 기반 동기화 플러그인
+- [Core Plugins](til/obsidian/core-plugins.md) - 커뮤니티 플러그인과 대비되는 내장 플러그인
+- [Plugin 개발](til/obsidian/plugin-development.md) - 커뮤니티 플러그인을 직접 만드는 방법
+- [Dataview](til/obsidian/dataview.md) - 가장 강력한 커뮤니티 플러그인 중 하나
+- [Templater](til/obsidian/templater.md) - Core Templates의 상위 호환 플러그인
+- [Obsidian Git](til/obsidian/obsidian-git.md) - Git 기반 동기화 플러그인

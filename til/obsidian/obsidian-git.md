@@ -14,7 +14,7 @@ aliases:
 # Obsidian Git
 
 > [!tldr] 한줄 요약
-> Obsidian 내에서 Git 버전 관리(자동 커밋, pull/push, diff, history)를 통합하는 [[til/obsidian/community-plugins|커뮤니티 플러그인]]
+> Obsidian 내에서 Git 버전 관리(자동 커밋, pull/push, diff, history)를 통합하는 [커뮤니티 플러그인](til/obsidian/community-plugins.md)
 
 ## 핵심 내용
 
@@ -130,6 +130,6 @@ Git: Commit with specific message  # 의미 있는 커밋 메시지로 수동 �
 
 ## 관련 노트
 
-- [[til/obsidian/community-plugins|Community Plugins]] - 커뮤니티 플러그인 생태계
-- [[til/obsidian/vault|Vault]] - Obsidian의 로컬 파일시스템 기반 저장 구조
-- [[til/obsidian/plugin-development|Plugin 개발]] - Obsidian 플러그인 개발 기초
+- [Community Plugins](til/obsidian/community-plugins.md) - 커뮤니티 플러그인 생태계
+- [Vault](til/obsidian/vault.md) - Obsidian의 로컬 파일시스템 기반 저장 구조
+- [Plugin 개발](til/obsidian/plugin-development.md) - Obsidian 플러그인 개발 기초

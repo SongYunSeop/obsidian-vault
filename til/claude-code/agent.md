@@ -105,7 +105,7 @@ memory: user          # 세션 간 영구 메모리
 
 | 개념 | 설명 |
 |------|------|
-| **컨텍스트 윈도우** | 대화 히스토리 + 파일 + 명령 출력 + [[til/claude-code/claude-md\|CLAUDE.md]] + [[til/claude-code/skill\|스킬]] |
+| **컨텍스트 윈도우** | 대화 히스토리 + 파일 + 명령 출력 + [CLAUDE.md](til/claude-code/claude-md.md) + [스킬](til/claude-code/skill.md) |
 | **자동 압축** | 한계 도달 시 오래된 도구 출력 제거 후 대화 요약 |
 | **CLAUDE.md** | 압축에서 보존되는 영구 지시사항 |
 | **서브에이전트 격리** | 별도 컨텍스트 사용으로 메인 대화 공간 보호 |
@@ -138,6 +138,6 @@ memory: user          # 세션 간 영구 메모리
 
 ## 관련 노트
 
-- [[til/claude-code/overview|Claude Code 개요]]
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
+- [Claude Code 개요](til/claude-code/overview.md)
+- [Claude Code Skill](til/claude-code/skill.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)

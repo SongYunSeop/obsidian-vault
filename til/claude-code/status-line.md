@@ -27,7 +27,7 @@ Claude Code가 세션 데이터를 JSON으로 사용자 스크립트(bash/node/p
 **업데이트 타이밍**:
 - 새로운 assistant 메시지 이후
 - 권한 모드(Permission Mode) 변경 시
-- [[til/claude-code/cli-reference|Vim 모드]] 토글 시
+- [Vim 모드](til/claude-code/cli-reference.md) 토글 시
 - 300ms 디바운스(Debounce) 적용 — 빠른 변경은 묶여서 처리
 - 스크립트 실행 중 새 업데이트 발생 시 기존 실행 취소
 
@@ -41,7 +41,7 @@ Claude Code가 세션 데이터를 JSON으로 사용자 스크립트(bash/node/p
 | `cost.total_cost_usd` | 세션 총 비용 (USD) |
 | `cost.total_duration_ms` | 세션 경과 시간 (밀리초) |
 | `cost.total_lines_added` / `removed` | 추가/삭제된 라인 수 |
-| `context_window.used_percentage` | [[til/claude-code/context-management\|컨텍스트 윈도우]] 사용률 (%) |
+| `context_window.used_percentage` | [컨텍스트 윈도우](til/claude-code/context-management.md) 사용률 (%) |
 | `context_window.context_window_size` | 컨텍스트 윈도우 크기 (200,000) |
 | `workspace.current_dir` / `project_dir` | 현재/프로젝트 디렉토리 |
 | `vim.mode` | Vim 모드 활성화 시에만 존재 |
@@ -79,7 +79,7 @@ echo "[$MODEL] $PCT% context"
 chmod +x ~/.claude/statusline.sh
 ```
 
-3단계 — [[til/claude-code/settings|settings.json]]에 등록:
+3단계 — [settings.json](til/claude-code/settings.md)에 등록:
 
 ```json
 {
@@ -170,8 +170,8 @@ echo '{"model":{"display_name":"Opus"},"context_window":{"used_percentage":25},"
 
 ## 관련 노트
 
-- [[til/claude-code/settings|Settings와 Configuration]] — Status Line은 settings.json에서 설정
-- [[til/claude-code/context-management|Context 관리(Context Management)]] — 컨텍스트 사용률 모니터링
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]] — 비용 추적 표시
-- [[til/claude-code/hooks|Hooks]] — `disableAllHooks: true` 시 Status Line도 비활성화
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]] — `/statusline` 명령어
+- [Settings와 Configuration](til/claude-code/settings.md) — Status Line은 settings.json에서 설정
+- [Context 관리(Context Management)](til/claude-code/context-management.md) — 컨텍스트 사용률 모니터링
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md) — 비용 추적 표시
+- [Hooks](til/claude-code/hooks.md) — `disableAllHooks: true` 시 Status Line도 비활성화
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md) — `/statusline` 명령어

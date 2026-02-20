@@ -121,7 +121,7 @@ permissions:
   issues: write           # 이슈 코멘트 작성
 ```
 
-CI 환경에서도 [[til/claude-code/permission-mode|Permission 모드]]와 샌드박싱이 적용된다.
+CI 환경에서도 [Permission 모드](til/claude-code/permission-mode.md)와 샌드박싱이 적용된다.
 
 ### GitLab CI/CD
 
@@ -174,7 +174,7 @@ result = query(
 | **캐싱** | 동일 분석 반복 방지 |
 
 > [!tip] 비용 참고
-> Sonnet 기준 개발자당 월 $100-200 수준. [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]에서 상세히 다룰 예정.
+> Sonnet 기준 개발자당 월 $100-200 수준. [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)에서 상세히 다룰 예정.
 
 ## 예시
 
@@ -235,8 +235,8 @@ jobs:
 
 ## 관련 노트
 
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
-- [[Security와 Sandboxing]]
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [Hooks](til/claude-code/hooks.md)
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)
+- [Security와 Sandboxing](Security와 Sandboxing.md)

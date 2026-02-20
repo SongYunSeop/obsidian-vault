@@ -14,7 +14,7 @@ aliases:
 # Workflow Automation
 
 > [!tldr] 한줄 요약
-> [[til/datadog/monitors-and-alerts|모니터]] 알림, 보안 시그널, 스케줄 등을 트리거로 1,750+ 내장 액션을 연결하여 인시던트 대응과 인프라 운영을 자동화하는 Datadog 기능
+> [모니터](til/datadog/monitors-and-alerts.md) 알림, 보안 시그널, 스케줄 등을 트리거로 1,750+ 내장 액션을 연결하여 인시던트 대응과 인프라 운영을 자동화하는 Datadog 기능
 
 ## 핵심 내용
 
@@ -29,13 +29,13 @@ aliases:
 | **Schedule** | 크론 방식의 주기적 실행 | 매일 미사용 EC2 키 페어 점검 |
 | **Manual** | 대시보드, Slack 등에서 수동 실행 | 피처 플래그 토글, Lambda 롤백 |
 
-추가로 2025년에 도입된 **Automation Rules**는 [[til/datadog/workflow-automation|Datastore]] 데이터 변경(추가/수정/삭제) 시 워크플로우를 트리거하는 이벤트 드리븐 방식이다.
+추가로 2025년에 도입된 **Automation Rules**는 [Datastore](til/datadog/workflow-automation.md) 데이터 변경(추가/수정/삭제) 시 워크플로우를 트리거하는 이벤트 드리븐 방식이다.
 
 ### 액션 카테고리
 
 워크플로우의 각 단계에서 실행할 수 있는 액션은 4가지로 분류된다:
 
-- **Datadog 네이티브 액션**: [[til/datadog/metrics|메트릭]] 조회, [[til/datadog/log-management|로그]] 검색, [[til/datadog/dashboards|대시보드]] 생성
+- **Datadog 네이티브 액션**: [메트릭](til/datadog/metrics.md) 조회, [로그](til/datadog/log-management.md) 검색, [대시보드](til/datadog/dashboards.md) 생성
 - **외부 통합 액션**: AWS, Slack, Jira, GitHub, Okta, CloudFlare, ArgoCD 등
 - **데이터 오퍼레이터**: 단계 간 데이터 변환 (JSON 파싱, 필터링, 매핑)
 - **휴먼 어프루벌(Human Approval)**: Slack 메시지로 승인/거부를 받는 중간 단계
@@ -97,7 +97,7 @@ aliases:
 
 ## 관련 노트
 
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]] - 워크플로우의 주요 트리거
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱]] - 워크플로우에서 트레이스 데이터 활용
-- [[til/datadog/log-management|로그 관리]] - 워크플로우 액션으로 로그 조회
-- [[til/datadog/bits-ai|Bits AI]] - 자연어 워크플로우 생성
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md) - 워크플로우의 주요 트리거
+- [APM과 분산 트레이싱](til/datadog/apm-distributed-tracing.md) - 워크플로우에서 트레이스 데이터 활용
+- [로그 관리](til/datadog/log-management.md) - 워크플로우 액션으로 로그 조회
+- [Bits AI](til/datadog/bits-ai.md) - 자연어 워크플로우 생성

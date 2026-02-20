@@ -192,8 +192,8 @@ Task: {{ARGUMENTS}}   ← 사용자 입력이 여기로 전달
 
 ## 관련 노트
 
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
-- [[til/claude-code/best-practices|Best Practices]]
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Claude Code Skill](til/claude-code/skill.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)
+- [Best Practices](til/claude-code/best-practices.md)

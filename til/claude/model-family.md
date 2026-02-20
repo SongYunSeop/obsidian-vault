@@ -50,7 +50,7 @@ Claude 3부터 도입된 3티어 체계는 용도에 따라 속도-지능 트레
 |--|----------|-----------|-----------|
 | **API ID** | `claude-opus-4-6` | `claude-sonnet-4-6` | `claude-haiku-4-5` |
 | **가격 (입/출력 MTok)** | $5 / $25 | $3 / $15 | $1 / $5 |
-| **[[til/claude-code/context-management\|컨텍스트]]** | 200K (1M 베타) | 200K (1M 베타) | 200K |
+| **[컨텍스트](til/claude-code/context-management.md)** | 200K (1M 베타) | 200K (1M 베타) | 200K |
 | **최대 출력** | 128K | 64K | 64K |
 | **Extended Thinking** | O | O | O |
 | **Adaptive Thinking** | O | O | X |
@@ -64,7 +64,7 @@ Opus급 성능의 민주화가 핵심 트렌드다.
 - Claude Opus 4.5: $5/$25 → **67% 인하**
 - Sonnet 4.6: $3/$15인데 Opus 4.6에 근접한 성능
 
-[[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]] 관점에서, 모델 티어 선택만으로도 70-80% 비용 절감이 가능하다.
+[Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md) 관점에서, 모델 티어 선택만으로도 70-80% 비용 절감이 가능하다.
 
 ### 주요 기능
 
@@ -136,7 +136,7 @@ response = client.messages.create(
 
 ## 관련 노트
 
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
-- [[til/claude-code/context-management|Context 관리(Context Management)]]
-- [[til/claude/constitutional-ai|Constitutional AI]]
-- [[til/claude/extended-thinking|Extended Thinking]]
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)
+- [Context 관리(Context Management)](til/claude-code/context-management.md)
+- [Constitutional AI](til/claude/constitutional-ai.md)
+- [Extended Thinking](til/claude/extended-thinking.md)

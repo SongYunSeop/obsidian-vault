@@ -41,7 +41,7 @@ key:value
 
 ### 태그 상속(Tag Inheritance)
 
-Datadog의 강력한 기능 중 하나. **호스트에 붙인 태그가 해당 호스트에서 발생하는 모든 [[til/datadog/metrics|메트릭]], [[til/datadog/log-management|로그]], [[til/datadog/apm-distributed-tracing|트레이스]]에 자동 상속**된다.
+Datadog의 강력한 기능 중 하나. **호스트에 붙인 태그가 해당 호스트에서 발생하는 모든 [메트릭](til/datadog/metrics.md), [로그](til/datadog/log-management.md), [트레이스](til/datadog/apm-distributed-tracing.md)에 자동 상속**된다.
 
 ```
 호스트 태그: env:production, team:backend
@@ -64,7 +64,7 @@ Datadog이 특별하게 취급하는 태그들:
 | `service` | 서비스명 | `service:checkout` |
 | `version` | 배포 버전 | `version:1.2.3` |
 
-이 중 **env, service, version**은 [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]의 3대 표준 태그다.
+이 중 **env, service, version**은 [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)의 3대 표준 태그다.
 
 ### 태그 네이밍 베스트 프랙티스
 
@@ -84,8 +84,8 @@ Datadog이 특별하게 취급하는 태그들:
 
 ### 태그 활용처
 
-- **[[대시보드(Dashboards)]]**: 태그로 필터링하여 특정 환경/서비스만 표시
-- **[[모니터와 알림(Monitors & Alerts)]]**: `env:production AND service:checkout`에만 알림 설정
+- **[대시보드(Dashboards)](대시보드(Dashboards).md)**: 태그로 필터링하여 특정 환경/서비스만 표시
+- **[모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)**: `env:production AND service:checkout`에만 알림 설정
 - **APM**: 서비스 맵에서 태그별 성능 비교
 - **로그**: 태그 기반 로그 검색 및 집계
 - **비용 관리**: 팀별/서비스별 Datadog 사용량 어트리뷰션
@@ -152,8 +152,8 @@ spec:
 
 ## 관련 노트
 
-- [[til/datadog/datadog-agent|Datadog Agent]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[메트릭(Metrics)]]
-- [[대시보드(Dashboards)]]
-- [[모니터와 알림(Monitors & Alerts)]]
+- [Datadog Agent](til/datadog/datadog-agent.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [메트릭(Metrics)](메트릭(Metrics).md)
+- [대시보드(Dashboards)](대시보드(Dashboards).md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)

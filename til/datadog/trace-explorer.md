@@ -22,7 +22,7 @@ aliases:
 
 ### Trace Pipeline 전체 구조
 
-[[til/datadog/apm-distributed-tracing|APM]]에서 트레이스가 수집되고 저장되는 흐름은 수집(Ingestion) → 보존(Retention) → 분석(Explorer) 3단계이며, 수집 단계에서 커스텀 메트릭도 별도로 생성(15개월 보존)할 수 있다.
+[APM](til/datadog/apm-distributed-tracing.md)에서 트레이스가 수집되고 저장되는 흐름은 수집(Ingestion) → 보존(Retention) → 분석(Explorer) 3단계이며, 수집 단계에서 커스텀 메트릭도 별도로 생성(15개월 보존)할 수 있다.
 
 - **수집(Ingestion)**: 모든 Span을 100% 수집 가능
 - **보존(Retention)**: 보존 필터로 어떤 Span을 15일간 저장할지 결정
@@ -126,7 +126,7 @@ sequenceDiagram
 |------|----------|------|
 | **프론트 → 백엔드** | RUM SDK의 `allowedTracingUrls` | 어떤 API에 트레이스 헤더를 붙일지 지정 |
 | **백엔드 → 백엔드** | dd-trace가 **자동 전파** | HTTP 클라이언트 계측 시 자동 |
-| **백엔드 → DB** | dd-trace가 DB 쿼리 자동 계측 | [[til/datadog/database-monitoring\|DBM]] 연동 시 Explain Plan까지 연결 |
+| **백엔드 → DB** | dd-trace가 DB 쿼리 자동 계측 | [DBM](til/datadog/database-monitoring.md) 연동 시 Explain Plan까지 연결 |
 
 #### 전파 방식 (Propagation Style)
 
@@ -139,7 +139,7 @@ sequenceDiagram
 dd-trace는 기본적으로 Datadog + W3C 방식을 둘 다 지원한다.
 
 > [!tip] 프론트 연결이 끊기는 경우
-> [[til/datadog/rum|RUM]]에서 `allowedTracingUrls`를 설정하지 않으면 프론트 → 백엔드 구간이 끊긴다. 이 경우 RUM과 APM이 별개의 트레이스로 존재하여 "이 API 호출이 어느 사용자 세션에서 온 건지" 연결할 수 없다.
+> [RUM](til/datadog/rum.md)에서 `allowedTracingUrls`를 설정하지 않으면 프론트 → 백엔드 구간이 끊긴다. 이 경우 RUM과 APM이 별개의 트레이스로 존재하여 "이 API 호출이 어느 사용자 세션에서 온 건지" 연결할 수 없다.
 
 ## 예시
 
@@ -180,9 +180,9 @@ dd-trace는 기본적으로 Datadog + W3C 방식을 둘 다 지원한다.
 
 ## 관련 노트
 
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
-- [[til/datadog/rum|RUM(Real User Monitoring)]]
-- [[til/datadog/database-monitoring|Database Monitoring(DBM)]]
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/dashboards|대시보드(Dashboards)]]
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그-트레이스 상관관계(Log-Trace Correlation)](til/datadog/log-trace-correlation.md)
+- [RUM(Real User Monitoring)](til/datadog/rum.md)
+- [Database Monitoring(DBM)](til/datadog/database-monitoring.md)
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [대시보드(Dashboards)](til/datadog/dashboards.md)

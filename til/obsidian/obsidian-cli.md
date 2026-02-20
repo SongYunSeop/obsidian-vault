@@ -18,7 +18,7 @@ aliases:
 
 ## 핵심 내용
 
-Obsidian CLI는 **v1.12.0** (2026-02-10, Early Access)에서 공식 출시되었다. 현재 [[til/obsidian/community-plugins|커뮤니티 플러그인]] 생태계에 NotesMD CLI 같은 서드파티 도구가 있었지만, 공식 CLI는 Obsidian 내부 API에 완전 접근할 수 있다는 점이 차별화된다.
+Obsidian CLI는 **v1.12.0** (2026-02-10, Early Access)에서 공식 출시되었다. 현재 [커뮤니티 플러그인](til/obsidian/community-plugins.md) 생태계에 NotesMD CLI 같은 서드파티 도구가 있었지만, 공식 CLI는 Obsidian 내부 API에 완전 접근할 수 있다는 점이 차별화된다.
 
 ### 요구사항
 
@@ -52,9 +52,9 @@ export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 | 작업 관리 | `tasks all`, `tasks pending` | 체크박스 일괄 처리 |
 | 템플릿 | `templates list`, `templates apply` | 템플릿 적용 |
 | 플러그인 | `plugins list`, `plugins versions` | 플러그인 관리 |
-| 속성 | `properties read`, `properties set` | [[til/obsidian/properties\|frontmatter]] 조작 |
+| 속성 | `properties read`, `properties set` | [frontmatter](til/obsidian/properties.md) 조작 |
 | 태그 | `tags all`, `tags counts` | 태그 통계 |
-| Vault 정보 | `vault`, `files total` | [[til/obsidian/vault\|vault]] 통계 |
+| Vault 정보 | `vault`, `files total` | [vault](til/obsidian/vault.md) 통계 |
 | 개발자 | `dev:eval` | JavaScript 실행 |
 | 파일 관리 | `move` | 이동/이름 변경 (링크 자동 업데이트) |
 
@@ -135,8 +135,8 @@ obsidian help
 
 ## 관련 노트
 
-- [[til/obsidian/vault|Vault]]
-- [[til/obsidian/core-plugins|Core Plugins]]
-- [[til/obsidian/community-plugins|Community Plugins]]
-- [[til/obsidian/plugin-development|Plugin 개발]]
-- [[til/obsidian/properties|Properties]]
+- [Vault](til/obsidian/vault.md)
+- [Core Plugins](til/obsidian/core-plugins.md)
+- [Community Plugins](til/obsidian/community-plugins.md)
+- [Plugin 개발](til/obsidian/plugin-development.md)
+- [Properties](til/obsidian/properties.md)

@@ -48,7 +48,7 @@ sequenceDiagram
 > [!tip] WAL의 4가지 이점
 > 1. **장애 복구** — 크래시 후 WAL을 재생하여 데이터 복구
 > 2. **성능 향상** — 랜덤 I/O 대신 순차 I/O로 COMMIT
-> 3. **복제** — WAL을 다른 서버에 전송하면 [[til/postgresql/streaming-replication|Streaming Replication]] 가능
+> 3. **복제** — WAL을 다른 서버에 전송하면 [Streaming Replication](til/postgresql/streaming-replication.md) 가능
 > 4. **PITR** — 특정 시점까지 WAL 재생으로 Point-in-Time Recovery
 
 ## 순차 I/O가 빠른 이유
@@ -184,7 +184,7 @@ WAL에 얼마나 상세한 정보를 기록할지 결정한다.
 |-----------|------|--------|
 | `minimal` | 크래시 복구만 | 가장 적음 |
 | `replica` (기본) | 스트리밍 복제 + PITR | 중간 |
-| `logical` | [[til/postgresql/logical-replication\|논리적 복제]] (테이블 단위) | 가장 많음 |
+| `logical` | [논리적 복제](til/postgresql/logical-replication.md) (테이블 단위) | 가장 많음 |
 
 ## 아카이빙과 PITR
 
@@ -209,7 +209,7 @@ WAL 아카이빙은 세그먼트가 가득 찰 때 외부 저장소에 복사해
 | 프로세스 | 역할 |
 |---------|------|
 | **WAL Writer** | WAL 버퍼를 주기적으로 WAL 파일에 기록 (COMMIT 전에도) |
-| **Checkpointer** | 주기적으로 [[til/postgresql/shared-buffer\|Shared Buffer]]의 dirty 페이지를 데이터 파일에 flush |
+| **Checkpointer** | 주기적으로 [Shared Buffer](til/postgresql/shared-buffer.md)의 dirty 페이지를 데이터 파일에 flush |
 | **Archiver** | 가득 찬 WAL 세그먼트를 아카이브 저장소에 복사 |
 
 ## 예시
@@ -254,9 +254,9 @@ SELECT * FROM pg_control_checkpoint();
 
 ## 관련 노트
 
-- [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처]]
-- [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
-- [[til/postgresql/mvcc|MVCC]]
-- [[VACUUM]]
-- [[til/postgresql/streaming-replication|스트리밍 복제(Streaming Replication)]]
-- [[til/postgresql/rds-backup-restore|RDS 백업과 복원]]
+- [PostgreSQL 아키텍처](til/postgresql/postgresql-architecture.md)
+- [공유 메모리와 버퍼 풀(Shared Buffer)](til/postgresql/shared-buffer.md)
+- [MVCC](til/postgresql/mvcc.md)
+- [VACUUM](VACUUM.md)
+- [스트리밍 복제(Streaming Replication)](til/postgresql/streaming-replication.md)
+- [RDS 백업과 복원](til/postgresql/rds-backup-restore.md)

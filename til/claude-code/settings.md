@@ -21,7 +21,7 @@ aliases:
 
 ### settings.json이란?
 
-Claude Code의 **동작, 권한, 환경변수**를 제어하는 JSON 설정 파일. [[til/claude-code/claude-md|CLAUDE.md]]가 "지시사항"이라면, settings.json은 "시스템 설정"이다.
+Claude Code의 **동작, 권한, 환경변수**를 제어하는 JSON 설정 파일. [CLAUDE.md](til/claude-code/claude-md.md)가 "지시사항"이라면, settings.json은 "시스템 설정"이다.
 
 ### 4단계 설정 범위
 
@@ -61,7 +61,7 @@ Claude Code의 **동작, 권한, 환경변수**를 제어하는 JSON 설정 파�
 
 ### CLAUDE.md와의 차이
 
-| 구분 | [[til/claude-code/claude-md\|CLAUDE.md]] | settings.json |
+| 구분 | [CLAUDE.md](til/claude-code/claude-md.md) | settings.json |
 |------|-----------|---------------|
 | 역할 | 지시사항, 컨텍스트 | 권한, 환경변수, 동작 설정 |
 | 형식 | 자유 마크다운 | 구조화된 JSON |
@@ -109,6 +109,6 @@ Claude Code의 **동작, 권한, 환경변수**를 제어하는 JSON 설정 파�
 
 ## 관련 노트
 
-- [[til/claude-code/claude-md|CLAUDE.md]]
-- [[til/claude-code/overview|Claude Code 개요]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
+- [CLAUDE.md](til/claude-code/claude-md.md)
+- [Claude Code 개요](til/claude-code/overview.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)

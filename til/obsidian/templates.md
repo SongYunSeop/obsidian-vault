@@ -12,7 +12,7 @@ aliases:
 # Templates
 
 > [!tldr] 한줄 요약
-> Obsidian의 코어 Templates 플러그인은 `{{title}}`, `{{date}}`, `{{time}}` 3개 변수로 정적 템플릿을 삽입하며, 동적 로직이 필요하면 커뮤니티 플러그인 [[til/obsidian/templater|Templater]]를 사용한다.
+> Obsidian의 코어 Templates 플러그인은 `{{title}}`, `{{date}}`, `{{time}}` 3개 변수로 정적 템플릿을 삽입하며, 동적 로직이 필요하면 커뮤니티 플러그인 [Templater](til/obsidian/templater.md)를 사용한다.
 
 ## 핵심 내용
 
@@ -43,13 +43,13 @@ Obsidian에 내장된 코어 플러그인으로, 미리 만들어둔 템플릿 �
 
 ### Daily Notes와의 연동
 
-[[til/obsidian/core-plugins|Daily Notes]] 플러그인과 Unique note creator 플러그인도 동일한 `{{date}}`, `{{time}}` 변수를 지원한다. Daily Notes 설정에서 Template file location을 지정하면 새 Daily Note 생성 시 자동으로 템플릿이 적용된다.
+[Daily Notes](til/obsidian/core-plugins.md) 플러그인과 Unique note creator 플러그인도 동일한 `{{date}}`, `{{time}}` 변수를 지원한다. Daily Notes 설정에서 Template file location을 지정하면 새 Daily Note 생성 시 자동으로 템플릿이 적용된다.
 
 ### 코어 Templates의 한계
 
 - 변수가 3개뿐이라 조건문, 반복문, 사용자 입력 프롬프트가 불가능하다
 - 폴더별 자동 템플릿 적용이 안 된다
-- [[til/obsidian/properties|frontmatter]] 값을 읽거나 클립보드에 접근할 수 없다
+- [frontmatter](til/obsidian/properties.md) 값을 읽거나 클립보드에 접근할 수 없다
 - 본질적으로 정적 텍스트 삽입에 가깝다
 
 ### Templater와의 비교
@@ -97,7 +97,7 @@ tags:
 
 ## 관련 노트
 
-- [[til/obsidian/core-plugins|Core Plugins]] - Templates는 코어 플러그인 중 하나
-- [[til/obsidian/templater|Templater]] - 고급 템플릿 플러그인
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - 템플릿에서 frontmatter를 미리 세팅
-- [[til/obsidian/properties|Properties]] - 템플릿으로 Properties 기본값 설정
+- [Core Plugins](til/obsidian/core-plugins.md) - Templates는 코어 플러그인 중 하나
+- [Templater](til/obsidian/templater.md) - 고급 템플릿 플러그인
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - 템플릿에서 frontmatter를 미리 세팅
+- [Properties](til/obsidian/properties.md) - 템플릿으로 Properties 기본값 설정

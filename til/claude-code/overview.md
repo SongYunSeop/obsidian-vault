@@ -34,11 +34,11 @@ Anthropic이 만든 **에이전틱 코딩 도구**. 터미널에서 자연어로
 
 ### 핵심 개념 6가지
 
-1. **[[til/claude-code/skill|Skill]]**: 재사용 가능한 커스텀 슬래시 커맨드
-2. **[[til/claude-code/claude-md|CLAUDE.md]]**: 프로젝트 루트 설정 파일. 매 세션마다 읽어서 코딩 규칙을 따름
+1. **[Skill](til/claude-code/skill.md)**: 재사용 가능한 커스텀 슬래시 커맨드
+2. **[CLAUDE.md](til/claude-code/claude-md.md)**: 프로젝트 루트 설정 파일. 매 세션마다 읽어서 코딩 규칙을 따름
 3. **Hooks**: Claude Code 동작 전후 자동 실행되는 셸 명령
 4. **MCP(Model Context Protocol)**: 외부 서비스와 연결하는 개방형 표준
-5. **[[til/claude-code/agent|Multi-Agent]]**: 여러 에이전트를 동시에 생성해 병렬 작업
+5. **[Multi-Agent](til/claude-code/agent.md)**: 여러 에이전트를 동시에 생성해 병렬 작업
 6. **Permission 모드**: 파일 수정/명령 실행 전 사용자 승인 요청
 
 ## 예시
@@ -71,6 +71,6 @@ claude commit
 
 ## 관련 노트
 
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
+- [Claude Code Skill](til/claude-code/skill.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)

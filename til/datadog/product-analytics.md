@@ -22,7 +22,7 @@ aliases:
 
 ### Product Analytics란
 
-[[til/datadog/rum|RUM]] 데이터를 기반으로 **사용자 행동을 분석**하는 기능. RUM이 "성능이 어떤가"에 초점을 둔다면, Product Analytics는 **"사용자가 무엇을 하는가"**에 초점을 둔다.
+[RUM](til/datadog/rum.md) 데이터를 기반으로 **사용자 행동을 분석**하는 기능. RUM이 "성능이 어떤가"에 초점을 둔다면, Product Analytics는 **"사용자가 무엇을 하는가"**에 초점을 둔다.
 
 RUM SDK가 수집하는 동일한 데이터(Session/View/Action)를 RUM은 성능 관점(LCP, INP, CLS)으로, Product Analytics는 행동 관점(퍼널, 리텐션, 경로)으로 분석한다.
 
@@ -30,7 +30,7 @@ RUM SDK가 이미 설치되어 있으면 **추가 설정 없이** 사용할 수 
 
 ### RUM과의 차이
 
-| | [[til/datadog/rum\|RUM]] | Product Analytics |
+| | [RUM](til/datadog/rum.md) | Product Analytics |
 |---|---|---|
 | **관점** | 엔지니어링 (성능) | 프로덕트 (행동) |
 | **질문** | "페이지가 얼마나 빨리 로드되는가?" | "사용자가 어디서 이탈하는가?" |
@@ -177,7 +177,7 @@ Funnel: 온보딩 흐름 분석
 
 ## 관련 노트
 
-- [[til/datadog/rum|RUM(Real User Monitoring)]]
-- [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
-- [[til/datadog/error-tracking|Error Tracking]]
-- [[til/datadog/dashboards|대시보드(Dashboards)]]
+- [RUM(Real User Monitoring)](til/datadog/rum.md)
+- [신서틱 모니터링(Synthetic Monitoring)](til/datadog/synthetic-monitoring.md)
+- [Error Tracking](til/datadog/error-tracking.md)
+- [대시보드(Dashboards)](til/datadog/dashboards.md)

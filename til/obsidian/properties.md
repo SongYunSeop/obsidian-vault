@@ -13,13 +13,13 @@ aliases:
 # Properties
 
 > [!tldr] 한줄 요약
-> [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] 위에 Obsidian이 올린 타입 시스템과 시각적 에디터. Vault 전체에서 property 타입을 강제하고, GUI로 편집하며, 검색/Dataview/Bases의 데이터 소스로 활용된다.
+> [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) 위에 Obsidian이 올린 타입 시스템과 시각적 에디터. Vault 전체에서 property 타입을 강제하고, GUI로 편집하며, 검색/Dataview/Bases의 데이터 소스로 활용된다.
 
 ## 핵심 내용
 
 ### YAML Frontmatter와의 관계
 
-| | [[til/obsidian/yaml-frontmatter\|YAML Frontmatter]] | Properties |
+| | [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) | Properties |
 |---|---|---|
 | 레벨 | 마크다운 표준 (어떤 도구에서든 동작) | Obsidian 전용 기능 |
 | 편집 | 텍스트로 직접 작성 | GUI 에디터 (드롭다운, 체크박스, 날짜 피커) |
@@ -49,7 +49,7 @@ Obsidian이 특별히 인식하는 내장 property:
 
 | Property | 타입 | 역할 |
 |----------|------|------|
-| `tags` | List | 태그 목록. 검색, 필터, [[til/obsidian/graph-view\|Graph View]]에서 활용 |
+| `tags` | List | 태그 목록. 검색, 필터, [Graph View](til/obsidian/graph-view.md)에서 활용 |
 | `aliases` | List | 노트 별칭. Quick Switcher나 `[[` 링크에서 별칭 검색 가능 |
 | `cssclasses` | List | 노트에 적용할 CSS 클래스. 노트별 스타일링 |
 
@@ -87,10 +87,10 @@ Obsidian 검색(`Cmd+Shift+F`)에서 property 기반 필터링:
 
 ### 다른 기능과의 연동
 
-- **[[Dataview]]**: `TABLE date, category FROM #til SORT date DESC` 같은 쿼리의 데이터 소스
-- **[[til/obsidian/bases|Bases]]**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준
-- **[[Templater]]**: `tp.frontmatter.date`로 템플릿에서 참조
-- **[[til/obsidian/graph-view|Graph View]]**: property 값으로 그래프 노드 필터링
+- **[Dataview](Dataview.md)**: `TABLE date, category FROM #til SORT date DESC` 같은 쿼리의 데이터 소스
+- **[Bases](til/obsidian/bases.md)**: 데이터베이스 뷰에서 정렬/필터/그룹핑 기준
+- **[Templater](Templater.md)**: `tp.frontmatter.date`로 템플릿에서 참조
+- **[Graph View](til/obsidian/graph-view.md)**: property 값으로 그래프 노드 필터링
 
 ## 예시
 
@@ -120,7 +120,7 @@ aliases:
 
 ## 관련 노트
 
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - Properties의 저장 포맷
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - aliases property로 링크 검색 확장
-- [[Dataview]] - Properties를 쿼리하는 플러그인
-- [[til/obsidian/bases|Bases]] - Properties 기반 데이터베이스 뷰
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - Properties의 저장 포맷
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) - aliases property로 링크 검색 확장
+- [Dataview](Dataview.md) - Properties를 쿼리하는 플러그인
+- [Bases](til/obsidian/bases.md) - Properties 기반 데이터베이스 뷰

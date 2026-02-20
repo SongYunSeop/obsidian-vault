@@ -12,7 +12,7 @@ aliases:
 # Graph View
 
 > [!tldr] 한줄 요약
-> [[til/obsidian/wikilink-backlink|Wikilink]]로 만든 노트 간 연결을 시각적 그래프로 보여주는 코어 플러그인. 노트는 노드(점), 링크는 엣지(선)로 표시되며, 지식 네트워크의 구조와 빈틈을 진단하는 도구로 활용된다.
+> [Wikilink](til/obsidian/wikilink-backlink.md)로 만든 노트 간 연결을 시각적 그래프로 보여주는 코어 플러그인. 노트는 노드(점), 링크는 엣지(선)로 표시되며, 지식 네트워크의 구조와 빈틈을 진단하는 도구로 활용된다.
 
 ## 핵심 내용
 
@@ -76,7 +76,7 @@ tag:#backlog       → 주황색
 
 1. **고립 노트(Orphan) 발견** - 링크가 없는 노트를 찾아 네트워크에 통합
 2. **클러스터 파악** - 밀집된 노트 그룹이 어떤 주제인지 확인, 주제 간 연결이 약한 곳 발견
-3. **허브 노트 식별** - 연결이 많은 노트(큰 노드)가 핵심 허브. [[til/obsidian/map-of-content|Map of Content]] 후보
+3. **허브 노트 식별** - 연결이 많은 노트(큰 노드)가 핵심 허브. [Map of Content](til/obsidian/map-of-content.md) 후보
 4. **빈틈 발견** - 연결이 있어야 할 것 같은데 없는 곳을 찾아 connector 노트 작성
 5. **네비게이션** - 그래프에서 노드를 클릭하면 해당 노트로 직접 이동
 
@@ -108,7 +108,7 @@ tag:#til tag:#obsidian
 
 ## 관련 노트
 
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - Graph View가 시각화하는 연결의 원천
-- [[til/obsidian/properties|Properties]] - tag, path 기반 필터링의 데이터 소스
-- [[til/obsidian/map-of-content|Map of Content]] - Graph에서 발견한 허브 노트를 MOC로 발전
-- [[til/obsidian/zettelkasten|Zettelkasten]] - 연결 기반 지식 관리의 방법론적 배경
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) - Graph View가 시각화하는 연결의 원천
+- [Properties](til/obsidian/properties.md) - tag, path 기반 필터링의 데이터 소스
+- [Map of Content](til/obsidian/map-of-content.md) - Graph에서 발견한 허브 노트를 MOC로 발전
+- [Zettelkasten](til/obsidian/zettelkasten.md) - 연결 기반 지식 관리의 방법론적 배경

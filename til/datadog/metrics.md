@@ -33,7 +33,7 @@ aliases:
 
 #### Agent 측 집계 (Count, Rate, Gauge, Histogram)
 
-[[til/datadog/datadog-agent|Datadog Agent]] 안의 DogStatsD가 **10초 flush interval**마다 수신한 데이터를 집계한 뒤 Datadog 백엔드로 전송한다.
+[Datadog Agent](til/datadog/datadog-agent.md) 안의 DogStatsD가 **10초 flush interval**마다 수신한 데이터를 집계한 뒤 Datadog 백엔드로 전송한다.
 
 Histogram의 경우 Agent가 avg, max, median, p95, count를 계산하여 **5개의 별도 메트릭**으로 변환 후 전송한다:
 
@@ -71,7 +71,7 @@ CPU, 메모리, 디스크 같은 시스템 메트릭은 Agent의 Collector가 **
 
 ### 메트릭 쿼리와 집계
 
-[[대시보드(Dashboards)|대시보드]]나 [[모니터와 알림(Monitors & Alerts)|모니터]]에서 메트릭을 조회할 때 두 단계 집계가 일어난다:
+[대시보드](대시보드(Dashboards).md)나 [모니터](모니터와 알림(Monitors & Alerts).md)에서 메트릭을 조회할 때 두 단계 집계가 일어난다:
 
 **1단계 — 시간 집계(Time Aggregation)**
 - 그래프의 해상도에 맞춰 데이터 포인트를 묶음
@@ -79,7 +79,7 @@ CPU, 메모리, 디스크 같은 시스템 메트릭은 Agent의 Collector가 **
 - 함수: `avg`, `sum`, `min`, `max`, `count`
 
 **2단계 — 공간 집계(Space Aggregation)**
-- 여러 호스트/서비스의 데이터를 [[태깅(Tagging)|태그]]별로 그룹핑
+- 여러 호스트/서비스의 데이터를 [태그](태깅(Tagging).md)별로 그룹핑
 - `avg by {service}` — 서비스별 평균
 - `sum by {env}` — 환경별 합계
 
@@ -121,9 +121,9 @@ statsd.distribution('api.latency.global', 0.235, tags=['endpoint:/api/orders'])
 
 ## 관련 노트
 
-- [[til/datadog/datadog-agent|Datadog Agent]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[대시보드(Dashboards)]]
-- [[모니터와 알림(Monitors & Alerts)]]
-- [[til/devops/sli-slo-sla|SLI / SLO / SLA]]
+- [Datadog Agent](til/datadog/datadog-agent.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [대시보드(Dashboards)](대시보드(Dashboards).md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)
+- [SLI / SLO / SLA](til/devops/sli-slo-sla.md)

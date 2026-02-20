@@ -20,7 +20,7 @@ aliases:
 
 ### Error Tracking이란
 
-APM, 로그, [[til/datadog/rum|RUM]]에서 발생하는 에러를 **자동으로 그룹핑하여 이슈(Issue) 단위로 추적**하는 기능. 개별 에러 수천 개를 일일이 보는 게 아니라, 같은 원인의 에러를 하나의 이슈로 묶어서 빈도·영향 범위·최초 발생 시점을 파악한다.
+APM, 로그, [RUM](til/datadog/rum.md)에서 발생하는 에러를 **자동으로 그룹핑하여 이슈(Issue) 단위로 추적**하는 기능. 개별 에러 수천 개를 일일이 보는 게 아니라, 같은 원인의 에러를 하나의 이슈로 묶어서 빈도·영향 범위·최초 발생 시점을 파악한다.
 
 APM이 이미 동작 중이면 **추가 설정 없이 자동 활성화**된다. 별도 SDK나 설정 변경이 불필요하다.
 
@@ -98,7 +98,7 @@ Error Tracking은 세 곳에서 에러를 수집하여 하나의 화면에서 �
 
 #### Error Tracking Monitor
 
-[[til/datadog/monitors-and-alerts|모니터]]를 설정하여 알림을 받을 수 있다:
+[모니터](til/datadog/monitors-and-alerts.md)를 설정하여 알림을 받을 수 있다:
 - 새로운 이슈 발생 시
 - 에러 볼륨이 임계치 초과 시
 - Regression 발생 시
@@ -153,8 +153,8 @@ Error Tracking은 세 곳에서 에러를 수집하여 하나의 화면에서 �
 
 ## 관련 노트
 
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
-- [[til/datadog/rum|RUM(Real User Monitoring)]]
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [로그-트레이스 상관관계(Log-Trace Correlation)](til/datadog/log-trace-correlation.md)
+- [RUM(Real User Monitoring)](til/datadog/rum.md)
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)

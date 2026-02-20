@@ -77,7 +77,7 @@ APM에서 느린 엔드포인트를 발견하면 Profiler로 드릴다운하여 
 
 #### Code Hotspots
 
-[[til/datadog/apm-distributed-tracing|APM]]의 Flame Graph에서 느린 Span을 클릭하면 **"Code Hotspots" 탭**이 나타난다. 해당 Span이 실행되는 동안 어떤 코드가 CPU/Wall Time을 많이 썼는지 바로 확인 가능.
+[APM](til/datadog/apm-distributed-tracing.md)의 Flame Graph에서 느린 Span을 클릭하면 **"Code Hotspots" 탭**이 나타난다. 해당 Span이 실행되는 동안 어떤 코드가 CPU/Wall Time을 많이 썼는지 바로 확인 가능.
 
 ```mermaid
 graph LR
@@ -119,7 +119,7 @@ DD_PROFILING_ENABLED=true ddtrace-run python app.py
 | **`DD_PROFILING_ENABLED=true`** | 프로파일러 활성화 | 유일하게 추가할 설정 |
 
 > [!tip] APM이 이미 있다면
-> dd-trace 라이브러리에 프로파일러가 내장되어 있고, [[til/datadog/unified-service-tagging|통합 서비스 태깅]]도 이미 설정되어 있을 것이다. `DD_PROFILING_ENABLED=true` **하나만 추가**하면 된다.
+> dd-trace 라이브러리에 프로파일러가 내장되어 있고, [통합 서비스 태깅](til/datadog/unified-service-tagging.md)도 이미 설정되어 있을 것이다. `DD_PROFILING_ENABLED=true` **하나만 추가**하면 된다.
 
 ### 지원 언어
 
@@ -173,8 +173,8 @@ DD_PROFILING_ENABLED=true ddtrace-run python app.py
 
 ## 관련 노트
 
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/infrastructure-monitoring|인프라스트럭처 모니터링(Infrastructure Monitoring)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[til/datadog/dashboards|대시보드(Dashboards)]]
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [인프라스트럭처 모니터링(Infrastructure Monitoring)](til/datadog/infrastructure-monitoring.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [대시보드(Dashboards)](til/datadog/dashboards.md)

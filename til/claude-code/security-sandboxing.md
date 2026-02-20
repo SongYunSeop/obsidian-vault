@@ -22,7 +22,7 @@ aliases:
 
 Claude Code는 **코드를 직접 실행하는 AI 에이전트**다. 파일 읽기/쓰기, 셸 명령 실행, 네트워크 접근이 가능하므로 격리 없이는 위험하다. 매번 사용자에게 승인을 요청하면 **승인 피로(Approval Fatigue)**가 생기고, 무심코 위험한 명령을 승인하게 된다.
 
-샌드박싱은 **OS 수준에서 접근을 제한**하여, [[til/claude-code/permission-mode|Permission 모드]]를 `dontAsk`로 완화해도 안전하게 자율 실행할 수 있게 한다.
+샌드박싱은 **OS 수준에서 접근을 제한**하여, [Permission 모드](til/claude-code/permission-mode.md)를 `dontAsk`로 완화해도 안전하게 자율 실행할 수 있게 한다.
 
 ### OS별 샌드박스 메커니즘
 
@@ -76,7 +76,7 @@ Claude Code는 **코드를 직접 실행하는 AI 에이전트**다. 파일 읽�
 
 ### Permission 모드와 샌드박싱의 관계
 
-[[til/claude-code/permission-mode|Permission 모드]]는 **사용자 승인 레벨**, 샌드박싱은 **OS 수준 강제 격리**다. 둘은 독립적으로 동작하며 함께 사용할 때 가장 효과적이다.
+[Permission 모드](til/claude-code/permission-mode.md)는 **사용자 승인 레벨**, 샌드박싱은 **OS 수준 강제 격리**다. 둘은 독립적으로 동작하며 함께 사용할 때 가장 효과적이다.
 
 ```
                     샌드박스 OFF          샌드박스 ON
@@ -121,7 +121,7 @@ Permission 규칙으로 특정 명령을 차단할 수 있다:
 | 기능 | 설명 |
 |------|------|
 | **Managed Settings** | 관리자가 조직 전체에 보안 정책 강제 |
-| **allowedMcpServers** | 허용할 [[til/claude-code/mcp\|MCP]] 서버 화이트리스트 |
+| **allowedMcpServers** | 허용할 [MCP](til/claude-code/mcp.md) 서버 화이트리스트 |
 | **Audit Logs** | API 호출, 도구 사용 기록 추적 |
 | **OIDC** | AWS Bedrock/Vertex AI에서 장기 키 없는 인증 |
 
@@ -160,7 +160,7 @@ Permission 규칙으로 특정 명령을 차단할 수 있다:
 
 ## 관련 노트
 
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/settings|Settings와 Configuration]]
-- [[til/claude-code/github-actions-cicd|GitHub Actions와 CI/CD]]
-- [[til/claude-code/hooks|Hooks]]
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [Settings와 Configuration](til/claude-code/settings.md)
+- [GitHub Actions와 CI/CD](til/claude-code/github-actions-cicd.md)
+- [Hooks](til/claude-code/hooks.md)

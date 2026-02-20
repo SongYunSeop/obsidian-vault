@@ -16,7 +16,7 @@ aliases:
 
 ## 핵심 내용
 
-### 코어 [[til/obsidian/templates|Templates]]와의 차이
+### 코어 [Templates](til/obsidian/templates.md)와의 차이
 
 코어 플러그인은 `{{title}}`, `{{date}}`, `{{time}}` 3개 변수만 지원하는 정적 삽입이다. Templater는 9개 내장 모듈과 사용자 스크립트로 동적 템플릿을 만들 수 있다.
 
@@ -35,7 +35,7 @@ aliases:
 | `tp.date` | `tp.date.now("YYYY-MM-DD", -7)` | 날짜 조회/계산. 오프셋으로 과거·미래 날짜 |
 | `tp.file` | `tp.file.title`, `tp.file.creation_date()`, `tp.file.move()`, `tp.file.cursor()` | 파일 정보, 이동, 커서 위치 지정 |
 | `tp.system` | `tp.system.prompt("질문")`, `tp.system.suggester(labels, values)` | 사용자 입력 프롬프트, 선택 UI |
-| `tp.frontmatter` | `tp.frontmatter.tags` | YAML [[til/obsidian/yaml-frontmatter\|frontmatter]] 값 접근 |
+| `tp.frontmatter` | `tp.frontmatter.tags` | YAML [frontmatter](til/obsidian/yaml-frontmatter.md) 값 접근 |
 | `tp.web` | `tp.web.daily_quote()` | 웹에서 데이터 가져오기 |
 | `tp.obsidian` | Obsidian API 접근 | 내부 API 활용 |
 | `tp.config` | 실행 컨텍스트 정보 | 현재 설정 접근 |
@@ -159,7 +159,7 @@ await tp.file.move("Projects/" + title)
 
 ## 관련 노트
 
-- [[til/obsidian/templates|Templates]] - 코어 Templates 플러그인과의 비교
-- [[til/obsidian/community-plugins|Community Plugins]] - Templater는 대표적인 커뮤니티 플러그인
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - `tp.frontmatter`로 접근
-- [[til/obsidian/plugin-development|Plugin 개발]] - Templater의 User Script는 플러그인 개발의 경량 대안
+- [Templates](til/obsidian/templates.md) - 코어 Templates 플러그인과의 비교
+- [Community Plugins](til/obsidian/community-plugins.md) - Templater는 대표적인 커뮤니티 플러그인
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - `tp.frontmatter`로 접근
+- [Plugin 개발](til/obsidian/plugin-development.md) - Templater의 User Script는 플러그인 개발의 경량 대안

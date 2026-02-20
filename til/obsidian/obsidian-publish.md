@@ -89,7 +89,7 @@ Obsidian 앱 안에서 직접 노트를 선택하여 공개한다. vault 전체�
 > [!tip] Publish vs 무료 대안의 핵심 차이
 > Publish는 **설정 없이 앱에서 바로** 공개할 수 있다. 무료 대안들은 Git, 빌드 도구, 호스팅(GitHub Pages/Vercel/Netlify)을 직접 구성해야 한다. 커스터마이징 자유도는 대안이 더 높지만, 진입 장벽도 높다.
 
-### [[til/obsidian/obsidian-sync|Obsidian Sync]]와의 관계
+### [Obsidian Sync](til/obsidian/obsidian-sync.md)와의 관계
 
 두 서비스는 **완전히 독립적**이다:
 
@@ -139,7 +139,7 @@ h1, h2, h3 {
 
 ## 관련 노트
 
-- [[til/obsidian/obsidian-sync|Obsidian Sync]] — 디바이스 간 동기화 서비스 (Publish와 독립적)
-- [[til/obsidian/graph-view|Graph View]] — Publish 사이트에서도 제공되는 시각적 그래프
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] — Publish에서 백링크가 자동 생성되는 기반
-- [[til/obsidian/community-plugins|Community Plugins]] — Obsidian Digital Garden 등 Publish 대안 플러그인
+- [Obsidian Sync](til/obsidian/obsidian-sync.md) — 디바이스 간 동기화 서비스 (Publish와 독립적)
+- [Graph View](til/obsidian/graph-view.md) — Publish 사이트에서도 제공되는 시각적 그래프
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) — Publish에서 백링크가 자동 생성되는 기반
+- [Community Plugins](til/obsidian/community-plugins.md) — Obsidian Digital Garden 등 Publish 대안 플러그인

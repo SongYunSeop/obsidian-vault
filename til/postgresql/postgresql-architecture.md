@@ -74,7 +74,7 @@ graph TB
 
 - TCP 포트(기본 5432)에서 클라이언트 연결 대기
 - 연결 요청 시 Backend 프로세스를 `fork()`하여 할당
-- 서버 시작 시 복구(Recovery), [[til/postgresql/shared-buffer|공유 메모리]] 초기화, 백그라운드 프로세스 기동
+- 서버 시작 시 복구(Recovery), [공유 메모리](til/postgresql/shared-buffer.md) 초기화, 백그라운드 프로세스 기동
 
 ### Backend 프로세스
 
@@ -91,9 +91,9 @@ Postmaster가 시작 시 fork하는 상주 프로세스들이다.
 | 프로세스 | 역할 |
 |---------|------|
 | **Background Writer** | 주기적으로 Shared Buffer의 dirty 페이지를 디스크에 기록 |
-| **WAL Writer** | WAL 버퍼를 [[til/postgresql/wal\|WAL]] 파일로 기록 |
+| **WAL Writer** | WAL 버퍼를 [WAL](til/postgresql/wal.md) 파일로 기록 |
 | **Checkpointer** | 체크포인트 시 모든 dirty 버퍼를 디스크에 flush |
-| **Autovacuum Launcher** | [[VACUUM]]이 필요한 테이블을 감지해 worker 기동 요청 |
+| **Autovacuum Launcher** | [VACUUM](VACUUM.md)이 필요한 테이블을 감지해 worker 기동 요청 |
 | **Logger** | 에러 메시지를 로그 파일에 기록 |
 | **Stats Collector** | 테이블/인덱스 통계 정보 수집 |
 
@@ -177,7 +177,7 @@ COMMIT 시에는 WAL 순차 쓰기만 하면 되어 빠르고, 무거운 랜덤 
 > [!tip] WAL의 4가지 이점
 > 1. **장애 복구** — 크래시 후 WAL을 재생하여 데이터 복구
 > 2. **성능 향상** — 랜덤 I/O 대신 순차 I/O로 COMMIT
-> 3. **복제** — WAL을 다른 서버에 전송하면 [[스트리밍 복제(Streaming Replication)|Streaming Replication]] 가능
+> 3. **복제** — WAL을 다른 서버에 전송하면 [Streaming Replication](스트리밍 복제(Streaming Replication).md) 가능
 > 4. **PITR** — 특정 시점까지 WAL 재생으로 Point-in-Time Recovery
 
 ## 예시
@@ -205,8 +205,8 @@ SHOW max_connections;    -- 기본 100
 
 ## 관련 노트
 
-- [[til/postgresql/backlog|PostgreSQL 학습 백로그]]
-- [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
-- [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
-- [[MVCC]]
-- [[VACUUM]]
+- [PostgreSQL 학습 백로그](til/postgresql/backlog.md)
+- [공유 메모리와 버퍼 풀(Shared Buffer)](til/postgresql/shared-buffer.md)
+- [WAL(Write-Ahead Logging)](til/postgresql/wal.md)
+- [MVCC](MVCC.md)
+- [VACUUM](VACUUM.md)

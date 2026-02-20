@@ -9,117 +9,117 @@ tags:
 ## 카테고리
 
 ### devops
-1. [[til/devops/observability|옵저버빌리티(Observability)]]
-2. [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
-3. [[til/devops/sli-slo-sla|SLI / SLO / SLA]]
+1. [옵저버빌리티(Observability)](til/devops/observability.md)
+2. [분산 시스템 모니터링(Distributed System Monitoring)](til/devops/distributed-system-monitoring.md)
+3. [SLI / SLO / SLA](til/devops/sli-slo-sla.md)
 
 ### datadog
-- [[til/datadog/backlog|Backlog]]
-1. [[til/datadog/datadog-agent|Datadog Agent]]
-2. [[til/datadog/tagging|태깅(Tagging)]]
-3. [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-4. [[til/datadog/metrics|메트릭(Metrics)]]
-5. [[til/datadog/infrastructure-monitoring|인프라스트럭처 모니터링(Infrastructure Monitoring)]]
-6. [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-7. [[til/datadog/log-management|로그 관리(Log Management)]]
-8. [[til/datadog/dashboards|대시보드(Dashboards)]]
-9. [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-10. [[til/datadog/slo-monitoring|SLO 모니터링(SLO Monitoring)]]
-11. [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
-12. [[til/datadog/rum|RUM(Real User Monitoring)]]
-13. [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
-14. [[til/datadog/error-tracking|Error Tracking]]
-15. [[til/datadog/continuous-profiler|Continuous Profiler]]
-16. [[til/datadog/database-monitoring|Database Monitoring(DBM)]]
-17. [[til/datadog/watchdog|Watchdog]]
-18. [[til/datadog/product-analytics|Product Analytics]]
-19. [[til/datadog/trace-explorer|Trace Explorer 고급 기능]]
-20. [[til/datadog/cost-management|비용 관리(Cost Management)]]
-21. [[til/datadog/workflow-automation|Workflow Automation]]
-22. [[til/datadog/bits-ai|Bits AI]]
+- [Backlog](til/datadog/backlog.md)
+1. [Datadog Agent](til/datadog/datadog-agent.md)
+2. [태깅(Tagging)](til/datadog/tagging.md)
+3. [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+4. [메트릭(Metrics)](til/datadog/metrics.md)
+5. [인프라스트럭처 모니터링(Infrastructure Monitoring)](til/datadog/infrastructure-monitoring.md)
+6. [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+7. [로그 관리(Log Management)](til/datadog/log-management.md)
+8. [대시보드(Dashboards)](til/datadog/dashboards.md)
+9. [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
+10. [SLO 모니터링(SLO Monitoring)](til/datadog/slo-monitoring.md)
+11. [로그-트레이스 상관관계(Log-Trace Correlation)](til/datadog/log-trace-correlation.md)
+12. [RUM(Real User Monitoring)](til/datadog/rum.md)
+13. [신서틱 모니터링(Synthetic Monitoring)](til/datadog/synthetic-monitoring.md)
+14. [Error Tracking](til/datadog/error-tracking.md)
+15. [Continuous Profiler](til/datadog/continuous-profiler.md)
+16. [Database Monitoring(DBM)](til/datadog/database-monitoring.md)
+17. [Watchdog](til/datadog/watchdog.md)
+18. [Product Analytics](til/datadog/product-analytics.md)
+19. [Trace Explorer 고급 기능](til/datadog/trace-explorer.md)
+20. [비용 관리(Cost Management)](til/datadog/cost-management.md)
+21. [Workflow Automation](til/datadog/workflow-automation.md)
+22. [Bits AI](til/datadog/bits-ai.md)
 
 ### postgresql
-- [[til/postgresql/backlog|Backlog]]
-1. [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처(PostgreSQL Architecture)]]
-2. [[til/postgresql/mvcc|MVCC (Multi-Version Concurrency Control)]]
-3. [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
-4. [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
-5. [[til/postgresql/gin-index|GIN 인덱스(GIN Index)]]
-6. [[til/postgresql/dead-tuple|죽은 튜플(Dead Tuple)]]
+- [Backlog](til/postgresql/backlog.md)
+1. [PostgreSQL 아키텍처(PostgreSQL Architecture)](til/postgresql/postgresql-architecture.md)
+2. [MVCC (Multi-Version Concurrency Control)](til/postgresql/mvcc.md)
+3. [공유 메모리와 버퍼 풀(Shared Buffer)](til/postgresql/shared-buffer.md)
+4. [WAL(Write-Ahead Logging)](til/postgresql/wal.md)
+5. [GIN 인덱스(GIN Index)](til/postgresql/gin-index.md)
+6. [죽은 튜플(Dead Tuple)](til/postgresql/dead-tuple.md)
 
 ### obsidian
-- [[til/obsidian/backlog|Backlog]]
-1. [[til/obsidian/yaml-frontmatter|YAML Frontmatter]]
-2. [[til/obsidian/pkm|PKM(Personal Knowledge Management)]]
-3. [[til/obsidian/vault|Vault]]
-4. [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]]
-5. [[til/obsidian/properties|Properties]]
-6. [[til/obsidian/graph-view|Graph View]]
-7. [[til/obsidian/core-plugins|Core Plugins]]
-8. [[til/obsidian/search-and-tags|검색과 태그]]
-9. [[til/obsidian/callout-embed|Callout과 Embed]]
-10. [[til/obsidian/plugin-development|Plugin 개발]]
-11. [[til/obsidian/obsidian-til-plugin-spec|obsidian-claude-til 프로젝트 명세]]
-12. [[til/obsidian/map-of-content|Map of Content (MOC)]]
-13. [[til/obsidian/zettelkasten|체텔카스텐(Zettelkasten)]]
-14. [[til/obsidian/community-plugins|Community Plugins]]
-15. [[til/obsidian/obsidian-cli|Obsidian CLI]]
-16. [[til/obsidian/templates|Templates]]
-17. [[til/obsidian/templater|Templater]]
-18. [[til/obsidian/canvas|Canvas]]
-19. [[til/obsidian/dataview|Dataview]]
-20. [[til/obsidian/obsidian-git|Obsidian Git]]
-21. [[til/obsidian/bases|Bases]]
-22. [[til/obsidian/obsidian-sync|Obsidian Sync]]
-23. [[til/obsidian/obsidian-publish|Obsidian Publish]]
+- [Backlog](til/obsidian/backlog.md)
+1. [YAML Frontmatter](til/obsidian/yaml-frontmatter.md)
+2. [PKM(Personal Knowledge Management)](til/obsidian/pkm.md)
+3. [Vault](til/obsidian/vault.md)
+4. [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md)
+5. [Properties](til/obsidian/properties.md)
+6. [Graph View](til/obsidian/graph-view.md)
+7. [Core Plugins](til/obsidian/core-plugins.md)
+8. [검색과 태그](til/obsidian/search-and-tags.md)
+9. [Callout과 Embed](til/obsidian/callout-embed.md)
+10. [Plugin 개발](til/obsidian/plugin-development.md)
+11. [obsidian-claude-til 프로젝트 명세](til/obsidian/obsidian-til-plugin-spec.md)
+12. [Map of Content (MOC)](til/obsidian/map-of-content.md)
+13. [체텔카스텐(Zettelkasten)](til/obsidian/zettelkasten.md)
+14. [Community Plugins](til/obsidian/community-plugins.md)
+15. [Obsidian CLI](til/obsidian/obsidian-cli.md)
+16. [Templates](til/obsidian/templates.md)
+17. [Templater](til/obsidian/templater.md)
+18. [Canvas](til/obsidian/canvas.md)
+19. [Dataview](til/obsidian/dataview.md)
+20. [Obsidian Git](til/obsidian/obsidian-git.md)
+21. [Bases](til/obsidian/bases.md)
+22. [Obsidian Sync](til/obsidian/obsidian-sync.md)
+23. [Obsidian Publish](til/obsidian/obsidian-publish.md)
 
 ### 도시정비사업
-- [[til/도시정비사업/backlog|Backlog]]
-1. [[til/도시정비사업/도시-및-주거환경정비법|도시 및 주거환경정비법]]
-2. [[til/도시정비사업/정비기반시설|정비기반시설]]
-3. [[til/도시정비사업/노후불량건축물|노후불량건축물]]
-4. [[til/도시정비사업/정비기본계획|정비기본계획]]
-5. [[til/도시정비사업/정비사업-유형|정비사업의 유형]]
-6. [[til/도시정비사업/정비구역-지정|정비구역 지정]]
-7. [[til/도시정비사업/조합설립추진위원회|조합설립추진위원회]]
+- [Backlog](til/도시정비사업/backlog.md)
+1. [도시 및 주거환경정비법](til/도시정비사업/도시-및-주거환경정비법.md)
+2. [정비기반시설](til/도시정비사업/정비기반시설.md)
+3. [노후불량건축물](til/도시정비사업/노후불량건축물.md)
+4. [정비기본계획](til/도시정비사업/정비기본계획.md)
+5. [정비사업의 유형](til/도시정비사업/정비사업-유형.md)
+6. [정비구역 지정](til/도시정비사업/정비구역-지정.md)
+7. [조합설립추진위원회](til/도시정비사업/조합설립추진위원회.md)
 
 ### aws
-- [[til/aws/backlog|Backlog]]
+- [Backlog](til/aws/backlog.md)
 
 ### prompt-engineering
-- [[til/prompt-engineering/backlog|Backlog]]
-1. [[til/prompt-engineering/llm-settings|LLM 기초 설정(LLM Settings)]]
+- [Backlog](til/prompt-engineering/backlog.md)
+1. [LLM 기초 설정(LLM Settings)](til/prompt-engineering/llm-settings.md)
 
 ### claude
-1. [[til/claude/model-family|Claude 모델 패밀리(Claude Model Family)]]
+1. [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
 
 ### spline
-- [[til/spline/backlog|Backlog]]
+- [Backlog](til/spline/backlog.md)
 
 ### claude-code
-- [[til/claude-code/backlog|Backlog]]
-1. [[til/claude-code/overview|Claude Code 개요]]
-2. [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-3. [[til/claude-code/skill|Claude Code Skill]]
-4. [[til/claude-code/plugin|Claude Code Plugin]]
-5. [[til/claude-code/claude-md|CLAUDE.md]]
-6. [[til/claude-code/settings|Settings와 Configuration]]
-7. [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-8. [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-9. [[til/claude-code/hooks|Hooks]]
-10. [[til/claude-code/agent-teams|Agent Teams]]
-11. [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-12. [[til/claude-code/context-management|Context 관리(Context Management)]]
-13. [[til/claude-code/github-actions-cicd|GitHub Actions와 CI/CD]]
-14. [[til/claude-code/security-sandboxing|Security와 Sandboxing]]
-15. [[til/claude-code/best-practices|Best Practices]]
-16. [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
-17. [[til/claude-code/mcp-server-development|MCP Server 개발(MCP Server Development)]]
-18. [[til/claude-code/oh-my-claudecode|oh-my-claudecode (OMC)]]
-19. [[til/claude-code/status-line|Status Line]]
-20. [[til/claude-code/mcp-server-hands-on|MCP Server 개발 실습(MCP Server Hands-on)]]
-21. [[til/claude-code/rules|Rules]]
-22. [[til/claude-code/slash-commands|슬래시 커맨드와 커스텀 커맨드]]
-23. [[til/claude-code/skill-creator|스킬 생성기(Skill Creator)]]
-24. [[til/claude-code/subagents|서브에이전트(Subagents)]]
-25. [[til/claude-code/plugin-dev|plugin-dev (플러그인 개발 도구킷)]]
+- [Backlog](til/claude-code/backlog.md)
+1. [Claude Code 개요](til/claude-code/overview.md)
+2. [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+3. [Claude Code Skill](til/claude-code/skill.md)
+4. [Claude Code Plugin](til/claude-code/plugin.md)
+5. [CLAUDE.md](til/claude-code/claude-md.md)
+6. [Settings와 Configuration](til/claude-code/settings.md)
+7. [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+8. [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+9. [Hooks](til/claude-code/hooks.md)
+10. [Agent Teams](til/claude-code/agent-teams.md)
+11. [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+12. [Context 관리(Context Management)](til/claude-code/context-management.md)
+13. [GitHub Actions와 CI/CD](til/claude-code/github-actions-cicd.md)
+14. [Security와 Sandboxing](til/claude-code/security-sandboxing.md)
+15. [Best Practices](til/claude-code/best-practices.md)
+16. [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)
+17. [MCP Server 개발(MCP Server Development)](til/claude-code/mcp-server-development.md)
+18. [oh-my-claudecode (OMC)](til/claude-code/oh-my-claudecode.md)
+19. [Status Line](til/claude-code/status-line.md)
+20. [MCP Server 개발 실습(MCP Server Hands-on)](til/claude-code/mcp-server-hands-on.md)
+21. [Rules](til/claude-code/rules.md)
+22. [슬래시 커맨드와 커스텀 커맨드](til/claude-code/slash-commands.md)
+23. [스킬 생성기(Skill Creator)](til/claude-code/skill-creator.md)
+24. [서브에이전트(Subagents)](til/claude-code/subagents.md)
+25. [plugin-dev (플러그인 개발 도구킷)](til/claude-code/plugin-dev.md)

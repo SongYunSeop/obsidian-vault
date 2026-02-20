@@ -22,7 +22,7 @@ aliases:
 
 #### 1. Infrastructure List (인프라 목록)
 
-Datadog이 모니터링하는 **모든 호스트의 목록**. 호스트별 CPU, 메모리, 로드 등 핵심 [[메트릭(Metrics)|메트릭]]과 적용된 [[태깅(Tagging)|태그]]를 한눈에 볼 수 있다.
+Datadog이 모니터링하는 **모든 호스트의 목록**. 호스트별 CPU, 메모리, 로드 등 핵심 [메트릭](메트릭(Metrics).md)과 적용된 [태그](태깅(Tagging).md)를 한눈에 볼 수 있다.
 
 - 호스트별 상태(UP/DOWN), Agent 버전, 플랫폼 정보
 - 태그 기반 필터링과 검색
@@ -66,11 +66,11 @@ Datadog이 모니터링하는 **모든 호스트의 목록**. 호스트별 CPU, 
 | **네트워크** | `system.net.bytes_sent`, `system.net.bytes_rcvd` | 네트워크 트래픽 |
 | **컨테이너** | `container.cpu.usage`, `container.memory.usage` | 컨테이너 리소스 |
 
-이 메트릭들은 [[til/datadog/datadog-agent|Datadog Agent]]의 Collector가 15초 간격으로 자동 수집한다.
+이 메트릭들은 [Datadog Agent](til/datadog/datadog-agent.md)의 Collector가 15초 간격으로 자동 수집한다.
 
 ### 통합(Integration)과 Autodiscovery
 
-**통합(Integration)**: 1,000개 이상의 기술 스택과 연동. 설치 즉시 기본 [[대시보드(Dashboards)|대시보드]]와 메트릭 수집이 활성화된다.
+**통합(Integration)**: 1,000개 이상의 기술 스택과 연동. 설치 즉시 기본 [대시보드](대시보드(Dashboards).md)와 메트릭 수집이 활성화된다.
 
 - AWS(90+ 서비스), GCP, Azure 등 클라우드 서비스
 - MySQL, Redis, Nginx, Kafka 등 미들웨어
@@ -122,9 +122,9 @@ AWS Lambda, Fargate 같은 Agent를 설치할 수 없는 환경도 지원:
 
 ## 관련 노트
 
-- [[til/datadog/datadog-agent|Datadog Agent]]
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[대시보드(Dashboards)]]
-- [[모니터와 알림(Monitors & Alerts)]]
-- [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
+- [Datadog Agent](til/datadog/datadog-agent.md)
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [대시보드(Dashboards)](대시보드(Dashboards).md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)
+- [분산 시스템 모니터링(Distributed System Monitoring)](til/devops/distributed-system-monitoring.md)

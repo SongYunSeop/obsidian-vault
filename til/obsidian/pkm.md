@@ -60,7 +60,7 @@ graph LR
 - **Resources** - 관심사, 참고 자료, 언젠가 쓸 수 있는 것
 - **Archives** - 완료되거나 보류된 비활성 항목
 
-### [[til/obsidian/zettelkasten|Zettelkasten]] (니클라스 루만)
+### [Zettelkasten](til/obsidian/zettelkasten.md) (니클라스 루만)
 
 **사고 중심**의 지식 네트워크 구축법:
 
@@ -70,13 +70,13 @@ graph LR
 
 ## PARA vs Zettelkasten 비교
 
-| | PARA | [[til/obsidian/zettelkasten\|Zettelkasten]] |
+| | PARA | [Zettelkasten](til/obsidian/zettelkasten.md) |
 |---|---|---|
 | 철학 | **행동** 중심 | **사고** 중심 |
 | 구조 | 폴더 기반 계층 | 링크 기반 네트워크 |
 | 단위 | 프로젝트/영역 | 원자적 노트 |
 | 적합한 사람 | 실행/프로젝트 관리 중심 | 연구/아이디어 탐구 중심 |
-| Obsidian 활용 | 폴더 구조 + [[Properties]] | [[Wikilink와 Backlink]] + [[til/obsidian/graph-view\|Graph View]] |
+| Obsidian 활용 | 폴더 구조 + [Properties](Properties.md) | [Wikilink와 Backlink](Wikilink와 Backlink.md) + [Graph View](til/obsidian/graph-view.md) |
 
 > [!tip] 하이브리드 접근
 > 두 방법론은 배타적이지 않다. PARA로 전체 구조를 잡고, 개별 노트는 Zettelkasten 방식으로 연결하는 혼합 접근이 실용적이다.
@@ -97,10 +97,10 @@ Obsidian에서의 PKM 실천:
 
 > [!example] Obsidian 도구 매핑
 > - Capture → Daily Notes, Web Clipper
-> - Organize → 폴더, 태그, [[Properties]]
-> - Distill → [[til/obsidian/map-of-content|Map of Content]], 점진적 요약
+> - Organize → 폴더, 태그, [Properties](Properties.md)
+> - Distill → [Map of Content](til/obsidian/map-of-content.md), 점진적 요약
 > - Express → Obsidian Publish, GitHub
-> - Review → [[til/obsidian/dataview|Dataview]] 쿼리, [[til/obsidian/graph-view|Graph View]]
+> - Review → [Dataview](til/obsidian/dataview.md) 쿼리, [Graph View](til/obsidian/graph-view.md)
 
 ## 참고 자료
 
@@ -111,6 +111,6 @@ Obsidian에서의 PKM 실천:
 
 ## 관련 노트
 
-- [[til/obsidian/zettelkasten|Zettelkasten]] - 원자적 노트와 연결 기반 지식 관리 방법론
-- [[til/obsidian/map-of-content|Map of Content]] - 노트들을 체계적으로 조직하는 허브 노트 패턴
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - PKM에서 메타데이터 관리의 기반
+- [Zettelkasten](til/obsidian/zettelkasten.md) - 원자적 노트와 연결 기반 지식 관리 방법론
+- [Map of Content](til/obsidian/map-of-content.md) - 노트들을 체계적으로 조직하는 허브 노트 패턴
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - PKM에서 메타데이터 관리의 기반

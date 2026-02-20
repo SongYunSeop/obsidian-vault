@@ -214,5 +214,5 @@ export default class MyPlugin extends Plugin {
 
 ## 관련 노트
 
-- [[til/obsidian/core-plugins|Core Plugins]]
-- [[til/obsidian/community-plugins|Community Plugins]]
+- [Core Plugins](til/obsidian/core-plugins.md)
+- [Community Plugins](til/obsidian/community-plugins.md)

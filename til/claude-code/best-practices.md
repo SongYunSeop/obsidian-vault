@@ -32,7 +32,7 @@ aliases:
 
 ### CLAUDE.md 최적화
 
-[[til/claude-code/claude-md|CLAUDE.md]]는 매 턴마다 로드되므로 **간결하고 구조화**해야 한다.
+[CLAUDE.md](til/claude-code/claude-md.md)는 매 턴마다 로드되므로 **간결하고 구조화**해야 한다.
 
 **권장 구조** (300줄 이하):
 - 프로젝트 개요 (2-3줄)
@@ -85,7 +85,7 @@ cd ../project-fix-bug && claude
 
 ### 컨텍스트 관리 전략
 
-[[til/claude-code/context-management|컨텍스트 윈도우]]를 효율적으로 사용하는 방법:
+[컨텍스트 윈도우](til/claude-code/context-management.md)를 효율적으로 사용하는 방법:
 
 | 전략 | 설명 |
 |------|------|
@@ -103,10 +103,10 @@ cd ../project-fix-bug && claude
 | 좋은 CLAUDE.md | 반복 설명 불필요 → 50-70% 절감 |
 | 모델 선택 | 단순 작업은 Haiku, 표준은 Sonnet, 복잡한 건 Opus |
 | `--max-turns` 제한 | CI/CD에서 비용 폭주 방지 |
-| [[til/claude-code/mcp\|MCP]] Tool Search | 도구 토큰 최대 95% 절감 |
+| [MCP](til/claude-code/mcp.md) Tool Search | 도구 토큰 최대 95% 절감 |
 
 > [!tip] 비용 상세
-> [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]에서 모델별 가격, 토큰 모니터링 등을 더 자세히 다룰 예정.
+> [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)에서 모델별 가격, 토큰 모니터링 등을 더 자세히 다룰 예정.
 
 ### TDD 워크플로우
 
@@ -167,8 +167,8 @@ cd ../my-app-auth && claude
 
 ## 관련 노트
 
-- [[til/claude-code/claude-md|CLAUDE.md]]
-- [[til/claude-code/context-management|Context 관리(Context Management)]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
+- [CLAUDE.md](til/claude-code/claude-md.md)
+- [Context 관리(Context Management)](til/claude-code/context-management.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)

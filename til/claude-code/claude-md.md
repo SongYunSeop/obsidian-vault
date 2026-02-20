@@ -110,6 +110,6 @@ paths:
 
 ## 관련 노트
 
-- [[til/claude-code/overview|Claude Code 개요]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/skill|Claude Code Skill]]
+- [Claude Code 개요](til/claude-code/overview.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Claude Code Skill](til/claude-code/skill.md)

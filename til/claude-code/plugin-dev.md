@@ -15,7 +15,7 @@ aliases:
 # plugin-dev (플러그인 개발 도구킷)
 
 > [!tldr] 한줄 요약
-> plugin-dev는 [[til/claude-code/plugin|Claude Code Plugin]]을 만드는 법을 가르치는 공식 메타 플러그인으로, 8단계 가이드 워크플로우 + 3개 전문 에이전트 + 7개 스킬로 구성된다.
+> plugin-dev는 [Claude Code Plugin](til/claude-code/plugin.md)을 만드는 법을 가르치는 공식 메타 플러그인으로, 8단계 가이드 워크플로우 + 3개 전문 에이전트 + 7개 스킬로 구성된다.
 
 ## 핵심 내용
 
@@ -71,7 +71,7 @@ plugin-dev/
 
 ### 7개 스킬의 공통 설계 패턴
 
-각 [[til/claude-code/skill|스킬]]이 일관되게 따르는 패턴:
+각 [스킬](til/claude-code/skill.md)이 일관되게 따르는 패턴:
 
 **1. 3인칭 description**
 ```yaml
@@ -104,12 +104,12 @@ SKILL.md는 lean하게 유지하고, 상세 내용은 하위 디렉토리로 분
 
 | 스킬 | 핵심 내용 |
 |------|----------|
-| **hook-development** | command/prompt/agent 3가지 [[til/claude-code/hooks\|Hook]] 타입, `${CLAUDE_PLUGIN_ROOT}` 활용, 검증 스크립트 3개 |
-| **mcp-integration** | `.mcp.json` 설정, stdio/SSE/HTTP 서버 타입, [[til/claude-code/mcp\|MCP]] 인증 패턴 |
+| **hook-development** | command/prompt/agent 3가지 [Hook](til/claude-code/hooks.md) 타입, `${CLAUDE_PLUGIN_ROOT}` 활용, 검증 스크립트 3개 |
+| **mcp-integration** | `.mcp.json` 설정, stdio/SSE/HTTP 서버 타입, [MCP](til/claude-code/mcp.md) 인증 패턴 |
 | **plugin-structure** | 디렉토리 레이아웃, plugin.json 매니페스트, 자동 발견(auto-discovery) 규칙 |
 | **plugin-settings** | `.claude/plugin-name.local.md` 패턴, YAML frontmatter + 마크다운 본문 구조 |
 | **command-development** | 커맨드(legacy) 작성법. frontmatter 필드, `$ARGUMENTS` 동적 인수 |
-| **agent-development** | [[til/claude-code/agent\|에이전트]] frontmatter 구조, `<example>` 블록, 시스템 프롬프트 설계, 도구 최소 권한 원칙 |
+| **agent-development** | [에이전트](til/claude-code/agent.md) frontmatter 구조, `<example>` 블록, 시스템 프롬프트 설계, 도구 최소 권한 원칙 |
 | **skill-development** | SKILL.md 구조, Progressive Disclosure, 번들 리소스(scripts/references/assets) 가이드 |
 
 ### plugin-dev가 Command와 Skill을 나눈 이유
@@ -162,10 +162,10 @@ claude --plugin-dir ./my-plugin
 
 ## 관련 노트
 
-- [[til/claude-code/plugin|Claude Code Plugin]]
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/subagents|서브에이전트(Subagents)]]
-- [[til/claude-code/skill-creator|스킬 생성기(Skill Creator)]]
+- [Claude Code Plugin](til/claude-code/plugin.md)
+- [Claude Code Skill](til/claude-code/skill.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Hooks](til/claude-code/hooks.md)
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [서브에이전트(Subagents)](til/claude-code/subagents.md)
+- [스킬 생성기(Skill Creator)](til/claude-code/skill-creator.md)

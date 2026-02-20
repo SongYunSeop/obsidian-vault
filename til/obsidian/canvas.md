@@ -17,13 +17,13 @@ aliases:
 
 ## 핵심 내용
 
-Canvas는 무한 화이트보드 위에 다양한 유형의 카드를 배치하고, 카드 간 관계를 화살표로 연결하는 시각적 도구다. v1.1.0부터 [[til/obsidian/core-plugins|코어 플러그인]]으로 포함되었다.
+Canvas는 무한 화이트보드 위에 다양한 유형의 카드를 배치하고, 카드 간 관계를 화살표로 연결하는 시각적 도구다. v1.1.0부터 [코어 플러그인](til/obsidian/core-plugins.md)으로 포함되었다.
 
 ### 카드 유형
 
 | 타입 | 설명 | 특징 |
 |------|------|------|
-| **Text** | 마크다운을 지원하는 텍스트 카드 | [[til/obsidian/wikilink-backlink\|백링크]]/[[til/obsidian/properties\|프로퍼티]] 미지원 |
+| **Text** | 마크다운을 지원하는 텍스트 카드 | [백링크](til/obsidian/wikilink-backlink.md)/[프로퍼티](til/obsidian/properties.md) 미지원 |
 | **File** | vault 내 노트를 임베드 | 완전한 노트 기능, 내용 자동 동기화 |
 | **Link** | 외부 URL 임베드 | 웹사이트를 인터랙티브하게 표시 |
 | **Group** | 여러 카드를 시각적으로 묶는 박스 | 라벨, 배경 이미지, 색상 지정 가능 |
@@ -80,7 +80,7 @@ Canvas는 노트 내 인라인 다이어그램인 Mermaid를 대체하는 것이
 
 - **학습 맵**: 카테고리 내 TIL들의 관계를 File 카드로 시각화
 - **백로그 로드맵**: 학습 항목의 우선순위와 의존관계를 색상+화살표로 표현
-- **크로스 카테고리 연결**: [[til/TIL MOC|MOC]]의 플랫한 목록으로는 표현하기 어려운 카테고리 간 관계를 시각화
+- **크로스 카테고리 연결**: [MOC](til/TIL MOC.md)의 플랫한 목록으로는 표현하기 어려운 카테고리 간 관계를 시각화
 - **브레인스토밍**: Text 카드로 아이디어를 빠르게 적고, 나중에 TIL로 발전
 
 ## 참고 자료
@@ -92,6 +92,6 @@ Canvas는 노트 내 인라인 다이어그램인 Mermaid를 대체하는 것이
 
 ## 관련 노트
 
-- [[til/obsidian/graph-view|Graph View]] - 노트 연결의 또 다른 시각화 방식
-- [[til/obsidian/core-plugins|Core Plugins]] - Canvas가 포함된 코어 플러그인 목록
-- [[til/obsidian/callout-embed|Callout과 Embed]] - Canvas File 카드에서 사용되는 임베드 기능
+- [Graph View](til/obsidian/graph-view.md) - 노트 연결의 또 다른 시각화 방식
+- [Core Plugins](til/obsidian/core-plugins.md) - Canvas가 포함된 코어 플러그인 목록
+- [Callout과 Embed](til/obsidian/callout-embed.md) - Canvas File 카드에서 사용되는 임베드 기능

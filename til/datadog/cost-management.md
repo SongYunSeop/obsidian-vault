@@ -27,9 +27,9 @@ Datadog 과금에서 비용이 급증하는 주요 원인은 **커스텀 메트�
 
 ### 1. 커스텀 메트릭(Custom Metrics)
 
-Datadog 기본 통합(1,000+개)에서 오는 [[til/datadog/metrics|메트릭]] 외에 직접 전송하는 모든 메트릭이 커스텀 메트릭으로 과금된다. OpenTelemetry(OTel)로 전송하는 메트릭도 모두 커스텀으로 취급된다.
+Datadog 기본 통합(1,000+개)에서 오는 [메트릭](til/datadog/metrics.md) 외에 직접 전송하는 모든 메트릭이 커스텀 메트릭으로 과금된다. OpenTelemetry(OTel)로 전송하는 메트릭도 모두 커스텀으로 취급된다.
 
-**과금 방식**: 메트릭 이름 + [[til/datadog/tagging|태그]] 조합마다 별도 timeseries로 카운트하여 월 평균을 산출한다.
+**과금 방식**: 메트릭 이름 + [태그](til/datadog/tagging.md) 조합마다 별도 timeseries로 카운트하여 월 평균을 산출한다.
 
 > [!warning] 고카디널리티 태그 주의
 > `user_id`, `session_id` 같은 고유값 태그는 timeseries 수를 폭증시킨다. 메트릭 하나에 태그 조합이 10,000개면 10,000개 timeseries로 과금된다.
@@ -51,7 +51,7 @@ Datadog 기본 통합(1,000+개)에서 오는 [[til/datadog/metrics|메트릭]] 
 
 ### 2. 로그(Logs)
 
-[[til/datadog/log-management|로그 관리]] 비용은 수집과 인덱싱 두 단계에서 발생한다.
+[로그 관리](til/datadog/log-management.md) 비용은 수집과 인덱싱 두 단계에서 발생한다.
 
 | 단계 | 비용 |
 |------|------|
@@ -75,7 +75,7 @@ Datadog 기본 통합(1,000+개)에서 오는 [[til/datadog/metrics|메트릭]] 
 
 ### 3. 트레이스(Traces)
 
-[[til/datadog/apm-distributed-tracing|APM]] 트레이스 비용은 수집량 기반이다.
+[APM](til/datadog/apm-distributed-tracing.md) 트레이스 비용은 수집량 기반이다.
 
 - **기본 포함량**: 호스트당 시간당 150GB
 - **초과 비용**: $0.10/GB (추가 수집분)
@@ -163,9 +163,9 @@ Index: debug-logs
 
 ## 관련 노트
 
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/trace-explorer|Trace Explorer 고급 기능]]
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [Trace Explorer 고급 기능](til/datadog/trace-explorer.md)
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)

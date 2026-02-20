@@ -22,7 +22,7 @@ aliases:
 
 Zettelkasten(체텔카스텐)은 독일어로 Zettel(메모, 쪽지) + Kasten(상자), 즉 "메모 상자"라는 뜻이다. 독일 사회학자 **니클라스 루만(Niklas Luhmann)**이 개발한 노트 작성 시스템으로, 루만은 이 방법으로 70권 이상의 책과 400편 이상의 논문을 저술했다.
 
-루만의 원래 시스템은 종이 카드에 번호를 매겨 물리적 상자에 보관하는 방식이었다. 디지털 시대에는 Obsidian 같은 도구가 `[[wikilink]]`와 [[til/obsidian/graph-view|Graph View]]로 이를 대체한다.
+루만의 원래 시스템은 종이 카드에 번호를 매겨 물리적 상자에 보관하는 방식이었다. 디지털 시대에는 Obsidian 같은 도구가 `[[wikilink]]`와 [Graph View](til/obsidian/graph-view.md)로 이를 대체한다.
 
 ### 핵심 원칙
 
@@ -51,16 +51,16 @@ Zettelkasten(체텔카스텐)은 독일어로 Zettel(메모, 쪽지) + Kasten(�
 
 ### Obsidian에서 구현하기
 
-Obsidian은 [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]]를 기본 제공하므로 Zettelkasten 구현에 이상적이다:
+Obsidian은 [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md)를 기본 제공하므로 Zettelkasten 구현에 이상적이다:
 
 - **원자적 노트 작성**: 하나의 `.md` 파일에 하나의 아이디어
 - **링크 규칙**: 모든 노트에 최소 1개의 `[[wikilink]]`를 포함해 고아 노트 방지
 - **Graph View**: 노트 간 연결을 시각적으로 확인
-- **[[til/obsidian/map-of-content|MOC]]**: 영구 노트들을 주제별로 탐색하는 허브
+- **[MOC](til/obsidian/map-of-content.md)**: 영구 노트들을 주제별로 탐색하는 허브
 
 ### MOC와의 관계
 
-Zettelkasten의 약점은 노트가 많아지면 "어디서부터 탐색해야 할지" 길을 잃는 것이다. [[til/obsidian/map-of-content|Map of Content(MOC)]]가 이를 보완한다:
+Zettelkasten의 약점은 노트가 많아지면 "어디서부터 탐색해야 할지" 길을 잃는 것이다. [Map of Content(MOC)](til/obsidian/map-of-content.md)가 이를 보완한다:
 
 - **Zettelkasten**: 원자적 노트 + 링크 (바텀업)
 - **MOC**: 노트들을 조망하는 지도 (탑다운)
@@ -106,7 +106,7 @@ Zettelkasten의 약점은 노트가 많아지면 "어디서부터 탐색해야 �
 
 ## 관련 노트
 
-- [[til/obsidian/pkm|PKM(Personal Knowledge Management)]] - Zettelkasten이 속한 더 큰 맥락
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - Zettelkasten의 연결을 구현하는 메커니즘
-- [[til/obsidian/map-of-content|Map of Content (MOC)]] - Zettelkasten의 탐색 문제를 보완하는 패턴
-- [[til/obsidian/graph-view|Graph View]] - 노트 간 연결을 시각적으로 확인하는 도구
+- [PKM(Personal Knowledge Management)](til/obsidian/pkm.md) - Zettelkasten이 속한 더 큰 맥락
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) - Zettelkasten의 연결을 구현하는 메커니즘
+- [Map of Content (MOC)](til/obsidian/map-of-content.md) - Zettelkasten의 탐색 문제를 보완하는 패턴
+- [Graph View](til/obsidian/graph-view.md) - 노트 간 연결을 시각적으로 확인하는 도구

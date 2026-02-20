@@ -132,7 +132,7 @@ mcp__github__list_repos
 mcp__sentry__list_errors
 ```
 
-[[til/claude-code/permission-mode|Permission 규칙]]으로 제어:
+[Permission 규칙](til/claude-code/permission-mode.md)으로 제어:
 ```json
 {
   "permissions": {
@@ -200,8 +200,8 @@ claude mcp add --transport stdio db -- npx -y @bytebase/dbhub \
 
 ## 관련 노트
 
-- [[til/claude-code/settings|Settings와 Configuration]]
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[MCP Server 개발]]
+- [Settings와 Configuration](til/claude-code/settings.md)
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [Hooks](til/claude-code/hooks.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [MCP Server 개발](MCP Server 개발.md)

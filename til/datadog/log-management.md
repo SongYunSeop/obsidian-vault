@@ -59,7 +59,7 @@ flowchart LR
 | **HTTP API** | 직접 POST 요청 | 서버리스, 외부 시스템 |
 | **클라우드 통합** | AWS CloudWatch, S3 등 | 클라우드 서비스 로그 |
 
-[[til/datadog/datadog-agent|Agent]]에서 로그 수집 활성화:
+[Agent](til/datadog/datadog-agent.md)에서 로그 수집 활성화:
 
 ```yaml
 # datadog.yaml
@@ -135,7 +135,7 @@ message: Payment processed in 235ms
 
 ### 로그-트레이스 연결 (Log-Trace Correlation)
 
-로그에 **Trace ID와 Span ID를 주입**하여 같은 요청의 로그와 [[til/datadog/apm-distributed-tracing|트레이스]]를 매칭한다.
+로그에 **Trace ID와 Span ID를 주입**하여 같은 요청의 로그와 [트레이스](til/datadog/apm-distributed-tracing.md)를 매칭한다.
 
 #### 자동 주입 (권장)
 
@@ -160,7 +160,7 @@ dd-trace가 로깅 프레임워크에 `dd.trace_id`, `dd.span_id`, `dd.env`, `dd
 
 > [!tip] 연결 조건 3가지
 > 1. 로그가 **JSON이거나 올바르게 파싱**되어야 함
-> 2. **[[til/datadog/unified-service-tagging|통합 서비스 태깅]]** 설정 (env, service, version 일치)
+> 2. **[통합 서비스 태깅](til/datadog/unified-service-tagging.md)** 설정 (env, service, version 일치)
 > 3. 같은 Datadog 계정으로 수집
 
 ### 비용 최적화 전략
@@ -194,7 +194,7 @@ logger.error("Payment failed for order #12345")
 ```
 
 > [!example] 장애 대응 시 로그 활용 흐름
-> 1. [[모니터와 알림(Monitors & Alerts)|모니터]] 알림: "checkout 에러율 급증"
+> 1. [모니터](모니터와 알림(Monitors & Alerts).md) 알림: "checkout 에러율 급증"
 > 2. Log Explorer에서 `service:checkout status:error` 검색
 > 3. 에러 로그 클릭 → "View Trace" 버튼으로 트레이스 이동
 > 4. Flame Graph에서 실패한 Span 확인 → 결제 게이트웨이 타임아웃
@@ -211,9 +211,9 @@ logger.error("Payment failed for order #12345")
 
 ## 관련 노트
 
-- [[til/datadog/datadog-agent|Datadog Agent]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[대시보드(Dashboards)]]
-- [[모니터와 알림(Monitors & Alerts)]]
+- [Datadog Agent](til/datadog/datadog-agent.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [대시보드(Dashboards)](대시보드(Dashboards).md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)

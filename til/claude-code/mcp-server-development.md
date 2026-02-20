@@ -224,6 +224,6 @@ weather/
 
 ## 관련 노트
 
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/settings|Settings와 Configuration]]
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [Hooks](til/claude-code/hooks.md)
+- [Settings와 Configuration](til/claude-code/settings.md)

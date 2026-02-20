@@ -21,7 +21,7 @@ aliases:
 - Obsidian 설치 시 함께 제공되며, 별도 설치가 필요 없다
 - 각 플러그인을 **개별적으로 켜고 끌 수 있어** 필요한 기능만 활성화 가능
 - 설정 파일: `.obsidian/core-plugins.json`에 활성화 목록 저장
-- [[til/obsidian/community-plugins|Community Plugins]]과 달리 Obsidian 팀이 직접 관리하므로 안정성이 높다
+- [Community Plugins](til/obsidian/community-plugins.md)과 달리 Obsidian 팀이 직접 관리하므로 안정성이 높다
 
 ### 기능별 분류
 
@@ -41,7 +41,7 @@ aliases:
 | 플러그인 | 기본 상태 | 설명 |
 |---------|----------|------|
 | **Daily Notes** | OFF | 날짜별 노트 자동 생성. 템플릿과 저장 폴더 지정 가능 |
-| **[[til/obsidian/templates\|Templates]]** | OFF | 미리 정의한 템플릿 삽입. `{{date}}`, `{{time}}`, `{{title}}` 변수 지원 |
+| **[Templates](til/obsidian/templates.md)** | OFF | 미리 정의한 템플릿 삽입. `{{date}}`, `{{time}}`, `{{title}}` 변수 지원 |
 | **Outline** | ON | 현재 노트의 헤딩(H1~H6) 구조를 사이드바에 표시 |
 | **Note Composer** | OFF | 노트 병합/분할. 선택 영역을 새 노트로 추출(Extract) |
 | **Unique Note Creator** | OFF | Zettelkasten 스타일 타임스탬프 기반 고유 노트 생성 |
@@ -52,17 +52,17 @@ aliases:
 |---------|------|
 | **Backlinks** | 현재 노트를 참조하는 다른 노트 목록 (linked + unlinked mentions) |
 | **Outgoing Links** | 현재 노트에서 링크하는 노트 목록 |
-| **[[til/obsidian/graph-view\|Graph View]]** | 노트 간 연결을 시각적 그래프로 표시 |
+| **[Graph View](til/obsidian/graph-view.md)** | 노트 간 연결을 시각적 그래프로 표시 |
 | **Tags View** | 태그를 계층적 트리로 탐색. `#parent/child` 중첩 태그 지원 |
 
 #### 편집 도구
 
 | 플러그인 | 설명 |
 |---------|------|
-| **[[til/obsidian/canvas\|Canvas]]** | 무한 화이트보드. 노트, 이미지, 카드를 자유 배치 |
+| **[Canvas](til/obsidian/canvas.md)** | 무한 화이트보드. 노트, 이미지, 카드를 자유 배치 |
 | **Word Count** | 하단 상태바에 단어/글자 수 표시 |
 | **Page Preview** | `Cmd/Ctrl+Hover`로 링크 대상 노트 미리보기 팝업 |
-| **[[til/obsidian/properties\|Properties View]]** | Properties를 GUI 폼으로 편집 |
+| **[Properties View](til/obsidian/properties.md)** | Properties를 GUI 폼으로 편집 |
 | **Slash Commands** | 에디터에서 `/` 입력 시 명령 목록 표시 |
 | **Audio Recorder** | 음성 녹음 후 노트에 첨부 |
 
@@ -96,7 +96,7 @@ aliases:
 | **설치** | 내장 (ON/OFF만) | 마켓플레이스에서 설치 |
 | **안정성** | 높음 (버전 호환 보장) | 개발자에 따라 다름 |
 | **기능** | 기본적이고 범용적 | 특화되고 강력한 기능 |
-| **예시** | Templates (`{{date}}` 변수) | [[til/obsidian/templater\|Templater]] (JavaScript, 조건문) |
+| **예시** | Templates (`{{date}}` 변수) | [Templater](til/obsidian/templater.md) (JavaScript, 조건문) |
 
 ## 예시
 
@@ -134,7 +134,7 @@ Template file location: _templates/daily
 
 ## 관련 노트
 
-- [[til/obsidian/community-plugins|Community Plugins]] - 코어 플러그인을 확장하는 커뮤니티 플러그인 생태계
-- [[til/obsidian/graph-view|Graph View]] - 코어 플러그인 중 하나로 별도 TIL에서 상세 다룸
-- [[til/obsidian/properties|Properties]] - Properties View 코어 플러그인의 데이터 기반
-- [[til/obsidian/templater|Templater]] - Templates 코어 플러그인의 상위 호환 커뮤니티 플러그인
+- [Community Plugins](til/obsidian/community-plugins.md) - 코어 플러그인을 확장하는 커뮤니티 플러그인 생태계
+- [Graph View](til/obsidian/graph-view.md) - 코어 플러그인 중 하나로 별도 TIL에서 상세 다룸
+- [Properties](til/obsidian/properties.md) - Properties View 코어 플러그인의 데이터 기반
+- [Templater](til/obsidian/templater.md) - Templates 코어 플러그인의 상위 호환 커뮤니티 플러그인

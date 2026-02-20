@@ -69,7 +69,7 @@ $ARGUMENTS로 인수 접근
 
 - **`$ARGUMENTS`**: 인수 접근 (`$0`, `$1` 또는 `$ARGUMENTS[0]`)
 - **`` !`command` ``**: 셸 명령 결과를 스킬 내용에 동적 주입
-- **`context: fork`**: [[til/claude-code/agent|서브에이전트]]에서 격리 실행
+- **`context: fork`**: [서브에이전트](til/claude-code/agent.md)에서 격리 실행
 - **Supporting files**: 템플릿, 예시, 스크립트 번들링 가능
 
 ## 예시
@@ -102,6 +102,6 @@ $ARGUMENTS를 프로덕션에 배포:
 
 ## 관련 노트
 
-- [[til/claude-code/overview|Claude Code 개요]]
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/plugin|Claude Code Plugin]]
+- [Claude Code 개요](til/claude-code/overview.md)
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Claude Code Plugin](til/claude-code/plugin.md)

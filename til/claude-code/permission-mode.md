@@ -146,8 +146,8 @@ claude --dangerously-skip-permissions
 
 ## 관련 노트
 
-- [[til/claude-code/claude-md|CLAUDE.md]]
-- [[til/claude-code/settings|Settings와 Configuration]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[Hooks]]
-- [[Security와 Sandboxing]]
+- [CLAUDE.md](til/claude-code/claude-md.md)
+- [Settings와 Configuration](til/claude-code/settings.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [Hooks](Hooks.md)
+- [Security와 Sandboxing](Security와 Sandboxing.md)

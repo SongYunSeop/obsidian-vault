@@ -108,7 +108,7 @@ Map of Content(MOC)는 특정 주제에 관련된 노트들의 링크를 모아�
 카테고리별 섹션으로 구분하고, 번호를 매겨서 학습 순서를 기록하는 맥락형 MOC 패턴이다.
 
 > [!example] Dataview로 자동화한 MOC
-> [[til/obsidian/dataview|Dataview]] 플러그인을 사용하면 수동 관리 없이 동적으로 MOC를 생성할 수 있다:
+> [Dataview](til/obsidian/dataview.md) 플러그인을 사용하면 수동 관리 없이 동적으로 MOC를 생성할 수 있다:
 > ````
 > ```dataview
 > LIST FROM #til AND #javascript
@@ -125,8 +125,8 @@ Map of Content(MOC)는 특정 주제에 관련된 노트들의 링크를 모아�
 
 ## 관련 노트
 
-- [[til/obsidian/pkm|PKM(Personal Knowledge Management)]] - MOC가 속한 더 큰 맥락
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - MOC를 구성하는 핵심 메커니즘
-- [[til/obsidian/graph-view|Graph View]] - MOC 구조를 시각적으로 확인하는 도구
-- [[til/obsidian/search-and-tags|검색과 태그]] - MOC와 함께 사용하는 보완적 조직화 방법
-- [[til/obsidian/dataview|Dataview]] - MOC를 자동화할 수 있는 플러그인
+- [PKM(Personal Knowledge Management)](til/obsidian/pkm.md) - MOC가 속한 더 큰 맥락
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) - MOC를 구성하는 핵심 메커니즘
+- [Graph View](til/obsidian/graph-view.md) - MOC 구조를 시각적으로 확인하는 도구
+- [검색과 태그](til/obsidian/search-and-tags.md) - MOC와 함께 사용하는 보완적 조직화 방법
+- [Dataview](til/obsidian/dataview.md) - MOC를 자동화할 수 있는 플러그인

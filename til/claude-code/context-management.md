@@ -78,7 +78,7 @@ Claude Code는 **200K 토큰** 컨텍스트 윈도우를 사용한다. 이 안�
 ```
 
 - 도구 정의(System tools + MCP tools)가 상당한 비중을 차지한다
-- MCP 서버가 많으면 도구 정의만으로 컨텍스트의 10% 이상을 소비할 수 있다 → [[til/claude-code/mcp|Tool Search]] 자동 활성화
+- MCP 서버가 많으면 도구 정의만으로 컨텍스트의 10% 이상을 소비할 수 있다 → [Tool Search](til/claude-code/mcp.md) 자동 활성화
 
 ### 메모리 시스템
 
@@ -92,7 +92,7 @@ Claude Code는 **200K 토큰** 컨텍스트 윈도우를 사용한다. 이 안�
 
 #### CLAUDE.md
 
-[[til/claude-code/claude-md|CLAUDE.md]]는 가장 신뢰할 수 있는 메모리다. 프로젝트 규칙, 코딩 컨벤션, 구조 설명 등을 넣으면 **매 턴마다** 컨텍스트에 포함된다.
+[CLAUDE.md](til/claude-code/claude-md.md)는 가장 신뢰할 수 있는 메모리다. 프로젝트 규칙, 코딩 컨벤션, 구조 설명 등을 넣으면 **매 턴마다** 컨텍스트에 포함된다.
 
 ```
 ~/.claude/CLAUDE.md          ← 전역 (모든 프로젝트)
@@ -156,7 +156,7 @@ claude /init    # 대화형으로 CLAUDE.md 생성
 
 ## 관련 노트
 
-- [[til/claude-code/claude-md|CLAUDE.md]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
+- [CLAUDE.md](til/claude-code/claude-md.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)

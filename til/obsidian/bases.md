@@ -14,13 +14,13 @@ aliases:
 # Bases
 
 > [!tldr] 한줄 요약
-> Obsidian 1.9에서 추가된 코어 플러그인으로, 노트의 [[til/obsidian/properties|Properties]]를 컬럼으로 삼아 데이터베이스 뷰(테이블, 리스트, 카드, 맵)로 조회·편집할 수 있는 기능이다.
+> Obsidian 1.9에서 추가된 코어 플러그인으로, 노트의 [Properties](til/obsidian/properties.md)를 컬럼으로 삼아 데이터베이스 뷰(테이블, 리스트, 카드, 맵)로 조회·편집할 수 있는 기능이다.
 
 ## 핵심 내용
 
 ### 노트 = 레코드, Properties = 컬럼
 
-[[til/obsidian/yaml-frontmatter|YAML Frontmatter]]에 정의된 Properties가 테이블의 컬럼이 된다. `file.name`, `file.folder`, `file.tags` 같은 파일 메타데이터도 컬럼으로 사용할 수 있다.
+[YAML Frontmatter](til/obsidian/yaml-frontmatter.md)에 정의된 Properties가 테이블의 컬럼이 된다. `file.name`, `file.folder`, `file.tags` 같은 파일 메타데이터도 컬럼으로 사용할 수 있다.
 
 ### Base 생성 방법
 
@@ -73,9 +73,9 @@ aliases:
 
 ### Dataview와의 비교
 
-| | Bases | [[til/obsidian/dataview\|Dataview]] |
+| | Bases | [Dataview](til/obsidian/dataview.md) |
 |---|---|---|
-| 종류 | [[til/obsidian/core-plugins\|코어 플러그인]] | [[til/obsidian/community-plugins\|커뮤니티 플러그인]] |
+| 종류 | [코어 플러그인](til/obsidian/core-plugins.md) | [커뮤니티 플러그인](til/obsidian/community-plugins.md) |
 | 인터페이스 | GUI (노코드) | DQL / JavaScript 쿼리 |
 | 뷰 타입 | Table, List, Cards, Map | Table, List, Task |
 | 인라인 편집 | 가능 (테이블에서 직접 수정) | 불가 |
@@ -133,8 +133,8 @@ views:
 
 ## 관련 노트
 
-- [[til/obsidian/properties|Properties]] — Bases의 컬럼 데이터 원천
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] — Properties가 저장되는 형식
-- [[til/obsidian/dataview|Dataview]] — Bases 이전의 데이터베이스 솔루션
-- [[til/obsidian/core-plugins|Core Plugins]] — Bases는 코어 플러그인으로 제공됨
-- [[til/obsidian/canvas|Canvas]] — 또 다른 시각적 노트 도구
+- [Properties](til/obsidian/properties.md) — Bases의 컬럼 데이터 원천
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) — Properties가 저장되는 형식
+- [Dataview](til/obsidian/dataview.md) — Bases 이전의 데이터베이스 솔루션
+- [Core Plugins](til/obsidian/core-plugins.md) — Bases는 코어 플러그인으로 제공됨
+- [Canvas](til/obsidian/canvas.md) — 또 다른 시각적 노트 도구

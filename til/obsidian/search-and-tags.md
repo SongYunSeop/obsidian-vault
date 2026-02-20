@@ -63,7 +63,7 @@ Search 코어 플러그인(`Cmd/Ctrl+Shift+F`)으로 Vault 전체를 검색한�
 
 #### Properties 검색
 
-[[til/obsidian/properties|Properties]]로 설정한 메타데이터도 `[property:value]` 구문으로 검색할 수 있다:
+[Properties](til/obsidian/properties.md)로 설정한 메타데이터도 `[property:value]` 구문으로 검색할 수 있다:
 
 ```
 [category:obsidian]      → category가 obsidian인 노트
@@ -162,7 +162,7 @@ tag:#til 검색
 
 ## 관련 노트
 
-- [[til/obsidian/properties|Properties]] - `[property:value]` 검색의 데이터 소스
-- [[til/obsidian/graph-view|Graph View]] - `tag:`, `path:` 필터를 Graph에서도 동일하게 사용
-- [[til/obsidian/core-plugins|Core Plugins]] - Search, Tags View, Bookmarks 등 관련 코어 플러그인
-- [[til/obsidian/dataview|Dataview]] - 검색을 넘어 SQL 유사 쿼리로 노트를 조회하는 커뮤니티 플러그인
+- [Properties](til/obsidian/properties.md) - `[property:value]` 검색의 데이터 소스
+- [Graph View](til/obsidian/graph-view.md) - `tag:`, `path:` 필터를 Graph에서도 동일하게 사용
+- [Core Plugins](til/obsidian/core-plugins.md) - Search, Tags View, Bookmarks 등 관련 코어 플러그인
+- [Dataview](til/obsidian/dataview.md) - 검색을 넘어 SQL 유사 쿼리로 노트를 조회하는 커뮤니티 플러그인

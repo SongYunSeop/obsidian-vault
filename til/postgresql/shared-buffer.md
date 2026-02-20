@@ -91,7 +91,7 @@ Shared Buffer는 3가지 구성요소로 이루어진다.
 
 ## Dirty Page와 쓰기 흐름
 
-[[til/postgresql/mvcc|MVCC]]에서 UPDATE가 발생하면 Shared Buffer의 페이지가 수정되어 **dirty** 상태가 된다. dirty 페이지는 바로 디스크에 쓰지 않는다.
+[MVCC](til/postgresql/mvcc.md)에서 UPDATE가 발생하면 Shared Buffer의 페이지가 수정되어 **dirty** 상태가 된다. dirty 페이지는 바로 디스크에 쓰지 않는다.
 
 ```
 UPDATE 실행
@@ -105,7 +105,7 @@ UPDATE 실행
        └─→ Checkpointer: 체크포인트 시 모든 dirty 페이지를 디스크에 flush
 ```
 
-dirty 페이지를 디스크에 쓸 때는 반드시 해당 [[WAL(Write-Ahead Logging)|WAL]] 레코드가 먼저 디스크에 있어야 한다 (**WAL-before-data 규칙**).
+dirty 페이지를 디스크에 쓸 때는 반드시 해당 [WAL](WAL(Write-Ahead Logging).md) 레코드가 먼저 디스크에 있어야 한다 (**WAL-before-data 규칙**).
 
 ## 이중 버퍼링 (Double Buffering)
 
@@ -191,7 +191,7 @@ LIMIT 10;
 |------|------|
 | **CloudWatch `BufferCacheHitRatio`** | RDS가 자동 수집하는 Buffer Hit율 메트릭 |
 | **CloudWatch `ReadIOPS`** | Buffer Miss가 많으면 함께 올라감 |
-| **[[Performance Insights]]** | Top SQL별 블록 읽기, `IO:DataFileRead` 대기 이벤트 분석 |
+| **[Performance Insights](Performance Insights.md)** | Top SQL별 블록 읽기, `IO:DataFileRead` 대기 이벤트 분석 |
 
 > [!tip] RDS 파라미터 그룹에서 `shared_buffers`는 `{DBInstanceClassMemory/32768}` 같은 수식으로 인스턴스 크기에 비례하게 설정하는 것이 일반적이다.
 
@@ -214,8 +214,8 @@ LIMIT 10;
 
 ## 관련 노트
 
-- [[til/postgresql/postgresql-architecture|PostgreSQL 아키텍처]]
-- [[til/postgresql/mvcc|MVCC]]
-- [[WAL(Write-Ahead Logging)]]
-- [[VACUUM]]
-- [[Performance Insights]]
+- [PostgreSQL 아키텍처](til/postgresql/postgresql-architecture.md)
+- [MVCC](til/postgresql/mvcc.md)
+- [WAL(Write-Ahead Logging)](WAL(Write-Ahead Logging).md)
+- [VACUUM](VACUUM.md)
+- [Performance Insights](Performance Insights.md)

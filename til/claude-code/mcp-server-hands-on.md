@@ -20,7 +20,7 @@ aliases:
 ## 핵심 내용
 
 > [!tip] 선행 학습
-> [[til/claude-code/mcp-server-development|MCP Server 개발]]에서 3가지 프리미티브 개념과 SDK API를 먼저 익히고 오면 좋다.
+> [MCP Server 개발](til/claude-code/mcp-server-development.md)에서 3가지 프리미티브 개념과 SDK API를 먼저 익히고 오면 좋다.
 
 ### Step 1: 프로젝트 초기화
 
@@ -184,7 +184,7 @@ claude mcp add --transport stdio bookmark-server -- node /absolute/path/to/build
 claude mcp list
 ```
 
-또는 [[til/claude-code/settings|settings.json]]에 직접 추가:
+또는 [settings.json](til/claude-code/settings.md)에 직접 추가:
 
 ```json
 {
@@ -296,7 +296,7 @@ tail -f ~/Library/Logs/Claude/mcp*.log
 
 ## 관련 노트
 
-- [[til/claude-code/mcp-server-development|MCP Server 개발]] — 이론편: 프리미티브 개념, SDK API, 트랜스포트
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]] — MCP 프로토콜 자체의 개념과 아키텍처
-- [[til/claude-code/settings|Settings와 Configuration]] — MCP 서버 등록이 저장되는 설정 체계
-- [[til/claude-code/hooks|Hooks]] — `disableAllHooks: true` 시 MCP 서버도 비활성화됨
+- [MCP Server 개발](til/claude-code/mcp-server-development.md) — 이론편: 프리미티브 개념, SDK API, 트랜스포트
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md) — MCP 프로토콜 자체의 개념과 아키텍처
+- [Settings와 Configuration](til/claude-code/settings.md) — MCP 서버 등록이 저장되는 설정 체계
+- [Hooks](til/claude-code/hooks.md) — `disableAllHooks: true` 시 MCP 서버도 비활성화됨

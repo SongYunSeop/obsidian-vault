@@ -50,7 +50,7 @@ Hooks는 Claude Code의 **라이프사이클 특정 시점에 자동 실행**되
 
 ### 설정 형식
 
-[[til/claude-code/settings|settings.json]]에 정의한다. 설정 위치는 user(`~/.claude/settings.json`), project(`.claude/settings.json`), local(`.claude/settings.local.json`) 모두 가능하다.
+[settings.json](til/claude-code/settings.md)에 정의한다. 설정 위치는 user(`~/.claude/settings.json`), project(`.claude/settings.json`), local(`.claude/settings.local.json`) 모두 가능하다.
 
 ```json
 {
@@ -134,7 +134,7 @@ Hooks는 Claude Code의 **라이프사이클 특정 시점에 자동 실행**되
 
 | 결정 | 효과 |
 |------|------|
-| `"allow"` | [[til/claude-code/permission-mode\|Permission]] 시스템 우회, 즉시 실행 |
+| `"allow"` | [Permission](til/claude-code/permission-mode.md) 시스템 우회, 즉시 실행 |
 | `"deny"` | 차단, 이유를 Claude에게 전달 |
 | `"ask"` | 사용자에게 권한 프롬프트 표시 |
 
@@ -313,8 +313,8 @@ claude -p "Fix the failing tests" --output-format stream-json
 
 | 수준 | 도구 | 강제력 | 실행 방식 |
 |------|------|--------|----------|
-| 1 | **[[til/claude-code/claude-md\|CLAUDE.md]] / [[til/claude-code/rules\|Rules]]** | 권장 | LLM이 읽고 따르려고 노력 |
-| 2 | **[[til/claude-code/skill\|Skill]]** | 반강제 | 사용자가 호출하면 절차대로 진행 |
+| 1 | **[CLAUDE.md](til/claude-code/claude-md.md) / [Rules](til/claude-code/rules.md)** | 권장 | LLM이 읽고 따르려고 노력 |
+| 2 | **[Skill](til/claude-code/skill.md)** | 반강제 | 사용자가 호출하면 절차대로 진행 |
 | 3 | **Hook** | **강제** | 이벤트 발생 시 무조건 실행 |
 
 Rules는 프롬프트이므로 컨텍스트가 길어지거나 compaction이 일어나면 잊거나 우선순위를 낮게 판단할 수 있다. Hook은 LLM의 판단과 무관하게 셸에서 실행된다.
@@ -342,11 +342,11 @@ Rules는 프롬프트이므로 컨텍스트가 길어지거나 compaction이 일
 
 ## 관련 노트
 
-- [[til/claude-code/settings|Settings와 Configuration]]
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/security-sandboxing|Security와 Sandboxing]]
-- [[til/claude-code/rules|Rules]]
-- [[til/claude-code/skill|Claude Code Skill]]
-- [[til/claude-code/claude-md|CLAUDE.md]]
+- [Settings와 Configuration](til/claude-code/settings.md)
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [Security와 Sandboxing](til/claude-code/security-sandboxing.md)
+- [Rules](til/claude-code/rules.md)
+- [Claude Code Skill](til/claude-code/skill.md)
+- [CLAUDE.md](til/claude-code/claude-md.md)

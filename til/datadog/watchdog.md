@@ -51,7 +51,7 @@ Log Explorer, Trace Analytics를 열면 **Insights 패널**이 자동으로 나�
 
 ### 모니터와의 차이
 
-| | [[til/datadog/monitors-and-alerts\|모니터]] | Watchdog |
+| | [모니터](til/datadog/monitors-and-alerts.md) | Watchdog |
 |---|---|---|
 | **방식** | 임계치를 **직접 설정** | 기준선을 **자동 학습** |
 | **적합한 상황** | "반드시 알아야 하는" 명시적 조건 | "예상하지 못한" 이상 징후 |
@@ -142,8 +142,8 @@ Watchdog 활용 시나리오:
 
 ## 관련 노트
 
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[til/datadog/infrastructure-monitoring|인프라스트럭처 모니터링(Infrastructure Monitoring)]]
-- [[til/datadog/error-tracking|Error Tracking]]
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [인프라스트럭처 모니터링(Infrastructure Monitoring)](til/datadog/infrastructure-monitoring.md)
+- [Error Tracking](til/datadog/error-tracking.md)

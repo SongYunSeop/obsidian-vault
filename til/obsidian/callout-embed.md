@@ -95,7 +95,7 @@ CSS 스니펫(`.obsidian/snippets/`)으로 자신만의 callout 타입을 정의
 
 ### Embed (트랜스클루전)
 
-[[til/obsidian/wikilink-backlink|Wikilink]] 앞에 `!`를 붙여 다른 콘텐츠를 현재 노트에 **인라인 삽입**한다. 원본이 수정되면 임베딩된 곳에도 자동 반영된다.
+[Wikilink](til/obsidian/wikilink-backlink.md) 앞에 `!`를 붙여 다른 콘텐츠를 현재 노트에 **인라인 삽입**한다. 원본이 수정되면 임베딩된 곳에도 자동 반영된다.
 
 #### 임베딩 문법
 
@@ -183,7 +183,7 @@ CSS 스니펫(`.obsidian/snippets/`)으로 자신만의 callout 타입을 정의
 
 ## 관련 노트
 
-- [[til/obsidian/wikilink-backlink|Wikilink와 Backlink]] - Embed의 기반이 되는 `[[]]` 링크 문법
-- [[til/obsidian/css-snippets-themes|CSS Snippets과 테마]] - 커스텀 Callout 정의에 사용
-- [[til/obsidian/map-of-content|Map of Content]] - Embed를 활용해 MOC를 풍부하게 만드는 패턴
-- [[til/obsidian/properties|Properties]] - Callout의 tldr/summary를 검색 가능한 메타데이터와 연계
+- [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) - Embed의 기반이 되는 `[[]]` 링크 문법
+- [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md) - 커스텀 Callout 정의에 사용
+- [Map of Content](til/obsidian/map-of-content.md) - Embed를 활용해 MOC를 풍부하게 만드는 패턴
+- [Properties](til/obsidian/properties.md) - Callout의 tldr/summary를 검색 가능한 메타데이터와 연계

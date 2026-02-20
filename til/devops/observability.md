@@ -37,7 +37,7 @@ aliases:
 
 ### 세 기둥(Three Pillars)
 
-전통적으로 **[[til/datadog/metrics|메트릭(Metrics)]], [[til/datadog/log-management|로그(Logs)]], [[til/datadog/apm-distributed-tracing|트레이스(Traces)]]** 를 "옵저버빌리티의 3기둥"이라 부른다.
+전통적으로 **[메트릭(Metrics)](til/datadog/metrics.md), [로그(Logs)](til/datadog/log-management.md), [트레이스(Traces)](til/datadog/apm-distributed-tracing.md)** 를 "옵저버빌리티의 3기둥"이라 부른다.
 
 **1. 메트릭(Metrics)** — 숫자로 표현되는 정량 데이터
 - CPU 사용률, 응답 시간, 에러율 등
@@ -86,8 +86,8 @@ graph TB
 
 ### 최근 동향
 
-- **[[OpenTelemetry 연동|OpenTelemetry]]**: 벤더 중립적 텔레메트리 표준. 메트릭, 로그, 트레이스를 통합 API로 수집
-- **AI 기반 옵저버빌리티**: 이상 탐지, 근본 원인 분석 자동화 (예: [[Bits AI]])
+- **[OpenTelemetry](OpenTelemetry 연동.md)**: 벤더 중립적 텔레메트리 표준. 메트릭, 로그, 트레이스를 통합 API로 수집
+- **AI 기반 옵저버빌리티**: 이상 탐지, 근본 원인 분석 자동화 (예: [Bits AI](Bits AI.md))
 - **스마트 텔레메트리**: "모든 것을 수집"에서 "신호 대 잡음비 최적화"로 전환
 
 ## 예시
@@ -112,7 +112,7 @@ graph TB
 
 ## 관련 노트
 
-- [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
-- [[SLI-SLO-SLA]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
+- [분산 시스템 모니터링(Distributed System Monitoring)](til/devops/distributed-system-monitoring.md)
+- [SLI-SLO-SLA](SLI-SLO-SLA.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [로그-트레이스 상관관계(Log-Trace Correlation)](til/datadog/log-trace-correlation.md)

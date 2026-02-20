@@ -26,7 +26,7 @@ aliases:
 
 ### RUM과의 비교
 
-[[til/datadog/rum|RUM]]이 "실제 사용자를 관측(수동적)"이라면, Synthetic은 "가상 사용자로 테스트(능동적)"이다. 둘은 서로 보완 관계다.
+[RUM](til/datadog/rum.md)이 "실제 사용자를 관측(수동적)"이라면, Synthetic은 "가상 사용자로 테스트(능동적)"이다. 둘은 서로 보완 관계다.
 
 | | Synthetic Monitoring | RUM |
 |---|---|---|
@@ -187,9 +187,9 @@ docker run -d --name dd-synth-worker \
 
 ## 관련 노트
 
-- [[til/datadog/rum|RUM(Real User Monitoring)]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-- [[til/datadog/slo-monitoring|SLO 모니터링(SLO Monitoring)]]
-- [[til/devops/observability|옵저버빌리티(Observability)]]
-- [[til/devops/sli-slo-sla|SLI / SLO / SLA]]
+- [RUM(Real User Monitoring)](til/datadog/rum.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
+- [SLO 모니터링(SLO Monitoring)](til/datadog/slo-monitoring.md)
+- [옵저버빌리티(Observability)](til/devops/observability.md)
+- [SLI / SLO / SLA](til/devops/sli-slo-sla.md)

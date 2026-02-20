@@ -15,13 +15,13 @@ aliases:
 # GIN 인덱스(GIN Index)
 
 > [!tldr] 한줄 요약
-> GIN(Generalized Inverted Index)은 하나의 컬럼에 여러 값이 들어있는 데이터 타입(배열, [[til/postgresql/jsonb|JSONB]], tsvector)을 효율적으로 검색하기 위한 역색인(Inverted Index) 구조이다.
+> GIN(Generalized Inverted Index)은 하나의 컬럼에 여러 값이 들어있는 데이터 타입(배열, [JSONB](til/postgresql/jsonb.md), tsvector)을 효율적으로 검색하기 위한 역색인(Inverted Index) 구조이다.
 
 ## 핵심 내용
 
 ### 역색인 구조
 
-일반적인 [[til/postgresql/btree-index|B-tree 인덱스]]가 "행 → 값" 방향으로 인덱싱한다면, GIN은 **"값 → 행들"** 방향의 역색인이다.
+일반적인 [B-tree 인덱스](til/postgresql/btree-index.md)가 "행 → 값" 방향으로 인덱싱한다면, GIN은 **"값 → 행들"** 방향의 역색인이다.
 
 ```
 B-tree:  row1 -> [a, b, c]    (행 단위로 전체 값 저장)
@@ -40,7 +40,7 @@ GIN:     a -> [row1, row3]     (각 요소가 어떤 행에 있는지 역으로 
 | 사용 사례 | 대상 타입 | 주요 연산자 |
 |-----------|----------|------------|
 | Full-Text Search | `tsvector` | `@@` |
-| [[til/postgresql/jsonb\|JSONB]] 검색 | `jsonb` | `@>`, `?`, `?&`, `?\|` |
+| [JSONB](til/postgresql/jsonb.md) 검색 | `jsonb` | `@>`, `?`, `?&`, `?\|` |
 | 배열 검색 | `array` | `@>`, `<@`, `&&` |
 
 ```sql
@@ -60,7 +60,7 @@ SELECT * FROM posts WHERE tags @> ARRAY['postgres', 'database'];
 
 ### Operator Class: jsonb_ops vs jsonb_path_ops
 
-[[til/postgresql/jsonb|JSONB]] 컬럼에 GIN 인덱스를 생성할 때 두 가지 operator class를 선택할 수 있다. **인덱스 생성 시 지정**하며, 중간에 변경할 수 없다(DROP 후 재생성 필요).
+[JSONB](til/postgresql/jsonb.md) 컬럼에 GIN 인덱스를 생성할 때 두 가지 operator class를 선택할 수 있다. **인덱스 생성 시 지정**하며, 중간에 변경할 수 없다(DROP 후 재생성 필요).
 
 | | `jsonb_ops` (기본) | `jsonb_path_ops` |
 |---|---|---|
@@ -83,7 +83,7 @@ ALTER INDEX idx_data_new RENAME TO idx_data;
 
 ### 다른 인덱스 타입과 비교
 
-| | [[til/postgresql/btree-index\|B-tree]] | GIN | [[til/postgresql/gist-index\|GiST]] | [[til/postgresql/brin-index\|BRIN]] |
+| | [B-tree](til/postgresql/btree-index.md) | GIN | [GiST](til/postgresql/gist-index.md) | [BRIN](til/postgresql/brin-index.md) |
 |---|---|---|---|---|
 | 최적 대상 | 스칼라 값, 범위 검색 | 다중 값 컬럼 | 공간 데이터, 범위 타입 | 물리적 정렬된 대용량 |
 | 검색 속도 | 빠름 | 매우 빠름 (정확 매치) | 중간 | 빠름 (정렬 시) |
@@ -137,7 +137,7 @@ WHERE data @> '{"items": [{"sku": "A100"}]}';
 
 > [!tip] 적합하지 않은 경우
 > - UPDATE가 빈번한 컬럼 (DELETE + INSERT로 이중 비용)
-> - 범위 검색(`<`, `>`)이 주된 패턴 → [[til/postgresql/btree-index|B-tree]] 사용
+> - 범위 검색(`<`, `>`)이 주된 패턴 → [B-tree](til/postgresql/btree-index.md) 사용
 > - 특정 필드 하나만 = 검색 → Expression B-tree 인덱스가 효율적
 
 ## 참고 자료
@@ -148,8 +148,8 @@ WHERE data @> '{"items": [{"sku": "A100"}]}';
 
 ## 관련 노트
 
-- [[til/postgresql/btree-index|인덱스 기초(B-tree)]] - GIN과 가장 자주 비교되는 기본 인덱스
-- [[til/postgresql/gist-index|GiST 인덱스]] - GIN과 유사하지만 공간 데이터에 특화된 인덱스
-- [[til/postgresql/jsonb|JSONB]] - GIN 인덱스의 핵심 사용 사례
-- [[til/postgresql/full-text-search|Full-Text Search]] - tsvector/tsquery 기반 전문 검색. GIN 인덱스의 최초 사용 사례
-- [[til/postgresql/pg-trgm|pg_trgm]] - 트라이그램 기반 유사 문자열 검색 확장. GIN과 함께 LIKE 검색 최적화에 활용
+- [인덱스 기초(B-tree)](til/postgresql/btree-index.md) - GIN과 가장 자주 비교되는 기본 인덱스
+- [GiST 인덱스](til/postgresql/gist-index.md) - GIN과 유사하지만 공간 데이터에 특화된 인덱스
+- [JSONB](til/postgresql/jsonb.md) - GIN 인덱스의 핵심 사용 사례
+- [Full-Text Search](til/postgresql/full-text-search.md) - tsvector/tsquery 기반 전문 검색. GIN 인덱스의 최초 사용 사례
+- [pg_trgm](til/postgresql/pg-trgm.md) - 트라이그램 기반 유사 문자열 검색 확장. GIN과 함께 LIKE 검색 최적화에 활용

@@ -20,7 +20,7 @@ aliases:
 
 ### Datadog Agent란?
 
-호스트에 설치되어 [[til/datadog/metrics|메트릭]], [[til/datadog/log-management|로그]], [[til/datadog/apm-distributed-tracing|트레이스]]를 수집하고 Datadog 서버로 전송하는 경량 소프트웨어. Datadog의 모든 데이터 수집은 Agent에서 시작된다.
+호스트에 설치되어 [메트릭](til/datadog/metrics.md), [로그](til/datadog/log-management.md), [트레이스](til/datadog/apm-distributed-tracing.md)를 수집하고 Datadog 서버로 전송하는 경량 소프트웨어. Datadog의 모든 데이터 수집은 Agent에서 시작된다.
 
 ### 아키텍처 (Agent 7 기준)
 
@@ -183,9 +183,9 @@ statsd.histogram('api.response_time', 0.235, tags=['endpoint:/api/orders'])
 
 ## 관련 노트
 
-- [[til/devops/observability|옵저버빌리티(Observability)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
+- [옵저버빌리티(Observability)](til/devops/observability.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)

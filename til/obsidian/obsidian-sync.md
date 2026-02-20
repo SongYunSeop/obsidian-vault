@@ -134,7 +134,7 @@ Settings > Sync > Excluded folders > Manage
 
 ## 관련 노트
 
-- [[til/obsidian/obsidian-publish|Obsidian Publish]] — 웹 퍼블리싱 서비스 (Sync와 독립적)
-- [[til/obsidian/obsidian-git|Obsidian Git]] — Git 기반 무료 동기화 대안
-- [[til/obsidian/vault|Vault]] — 동기화의 기본 단위
-- [[til/obsidian/community-plugins|Community Plugins]] — Sync로 플러그인 설정까지 동기화 가능
+- [Obsidian Publish](til/obsidian/obsidian-publish.md) — 웹 퍼블리싱 서비스 (Sync와 독립적)
+- [Obsidian Git](til/obsidian/obsidian-git.md) — Git 기반 무료 동기화 대안
+- [Vault](til/obsidian/vault.md) — 동기화의 기본 단위
+- [Community Plugins](til/obsidian/community-plugins.md) — Sync로 플러그인 설정까지 동기화 가능

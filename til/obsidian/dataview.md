@@ -22,7 +22,7 @@ Dataview는 vault의 노트를 인덱싱하고, SQL과 유사한 **DQL(Dataview 
 
 | 방식 | 예시 |
 |------|------|
-| [[til/obsidian/yaml-frontmatter\|Frontmatter]] (YAML) | `rating: 8`, `date: 2026-02-18` |
+| [Frontmatter](til/obsidian/yaml-frontmatter.md) (YAML) | `rating: 8`, `date: 2026-02-18` |
 | Inline Field (본문) | `Basic Field:: Some Value` |
 | 괄호형 Inline (문장 안) | `이 책은 [rating:: 9]점이다` |
 
@@ -111,7 +111,7 @@ SORT length(rows) DESC
 
 ## 관련 노트
 
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - Dataview가 읽는 메타데이터 형식
-- [[til/obsidian/properties|Properties]] - Obsidian 기본 메타데이터 시스템
-- [[til/obsidian/search-and-tags|검색과 태그]] - Dataview FROM에서 태그 기반 필터링
-- [[til/obsidian/community-plugins|Community Plugins]] - Dataview가 속한 플러그인 생태계
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - Dataview가 읽는 메타데이터 형식
+- [Properties](til/obsidian/properties.md) - Obsidian 기본 메타데이터 시스템
+- [검색과 태그](til/obsidian/search-and-tags.md) - Dataview FROM에서 태그 기반 필터링
+- [Community Plugins](til/obsidian/community-plugins.md) - Dataview가 속한 플러그인 생태계

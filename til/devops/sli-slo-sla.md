@@ -136,7 +136,7 @@ Target: 99.95% / 30-day rolling window
 
 ## 관련 노트
 
-- [[til/devops/observability|옵저버빌리티(Observability)]]
-- [[til/devops/distributed-system-monitoring|분산 시스템 모니터링(Distributed System Monitoring)]]
-- [[SLO 모니터링]]
-- [[모니터와 알림(Monitors & Alerts)]]
+- [옵저버빌리티(Observability)](til/devops/observability.md)
+- [분산 시스템 모니터링(Distributed System Monitoring)](til/devops/distributed-system-monitoring.md)
+- [SLO 모니터링](SLO 모니터링.md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)

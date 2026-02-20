@@ -319,6 +319,6 @@ npm run build            # 프로덕션 빌드
 
 ## 관련 노트
 
-- [[til/obsidian/plugin-development|Plugin 개발]]
-- [[til/obsidian/core-plugins|Core Plugins]]
-- [[til/obsidian/community-plugins|Community Plugins]]
+- [Plugin 개발](til/obsidian/plugin-development.md)
+- [Core Plugins](til/obsidian/core-plugins.md)
+- [Community Plugins](til/obsidian/community-plugins.md)

@@ -131,7 +131,7 @@ Settings > Files & Links > New link format에서 선택:
 
 #### Properties(Frontmatter)에서의 차이 — 핵심 갈림길
 
-두 형식의 차이가 **가장 극명하게** 드러나는 영역이다. Obsidian의 [[til/obsidian/properties|Properties]] 시스템은 YAML 파싱 위에 자체 링크 해석 레이어를 얹은 구조로, `[[노트]]`는 "내부 링크"로 인식하지만 `[텍스트](노트.md)`는 **일반 문자열**로 취급한다.
+두 형식의 차이가 **가장 극명하게** 드러나는 영역이다. Obsidian의 [Properties](til/obsidian/properties.md) 시스템은 YAML 파싱 위에 자체 링크 해석 레이어를 얹은 구조로, `[[노트]]`는 "내부 링크"로 인식하지만 `[텍스트](노트.md)`는 **일반 문자열**로 취급한다.
 
 ```yaml
 # Obsidian이 링크로 인식
@@ -149,11 +149,11 @@ related:
 | Reading View | 링크로 동작 | 텍스트로만 표시 |
 | Backlink 추적 | 정상 | 추적 안 됨 |
 | 파일 이름 변경 시 | 자동 업데이트 | 업데이트 안 됨 |
-| [[til/obsidian/bases\|Bases]] 테이블 | 클릭 가능한 링크 | 마크다운 문법이 그대로 노출 |
-| [[til/obsidian/graph-view\|Graph View]] | 연결 반영 | 연결 안 됨 |
+| [Bases](til/obsidian/bases.md) 테이블 | 클릭 가능한 링크 | 마크다운 문법이 그대로 노출 |
+| [Graph View](til/obsidian/graph-view.md) | 연결 반영 | 연결 안 됨 |
 
 > [!important] Frontmatter에서는 Wikilink가 사실상 필수
-> [[til/obsidian/dataview\|Dataview]] 쿼리(`WHERE contains(related, [[노트]])`), [[til/obsidian/bases\|Bases]] 테이블 렌더링, [[til/obsidian/graph-view\|Graph View]] 노드 연결 등 Obsidian의 핵심 기능이 frontmatter의 Wikilink에만 반응한다. Markdown Link로는 양방향 연결 자체가 작동하지 않는다.
+> [Dataview](til/obsidian/dataview.md) 쿼리(`WHERE contains(related, [[노트]])`), [Bases](til/obsidian/bases.md) 테이블 렌더링, [Graph View](til/obsidian/graph-view.md) 노드 연결 등 Obsidian의 핵심 기능이 frontmatter의 Wikilink에만 반응한다. Markdown Link로는 양방향 연결 자체가 작동하지 않는다.
 
 #### 자동 링크 업데이트
 
@@ -220,10 +220,10 @@ Wikilink로 구현된다.
 
 ## 관련 노트
 
-- [[til/obsidian/vault|Vault]] - Wikilink는 같은 Vault 안에서만 동작한다
-- [[til/obsidian/pkm|PKM]] - 지식 연결의 핵심 도구로서의 Wikilink
-- [[til/obsidian/graph-view|Graph View]] - Wikilink로 만든 연결을 시각화하는 기능
-- [[til/obsidian/map-of-content|Map of Content]] - Wikilink를 활용한 노트 조직 패턴
-- [[til/obsidian/properties|Properties]] - Frontmatter에서 Wikilink만 링크로 인식되는 핵심 영역
-- [[til/obsidian/dataview|Dataview]] - Wikilink 기반 쿼리 필터링이 가능한 플러그인
-- [[til/obsidian/bases|Bases]] - Wikilink만 테이블에서 클릭 가능한 링크로 렌더링
+- [Vault](til/obsidian/vault.md) - Wikilink는 같은 Vault 안에서만 동작한다
+- [PKM](til/obsidian/pkm.md) - 지식 연결의 핵심 도구로서의 Wikilink
+- [Graph View](til/obsidian/graph-view.md) - Wikilink로 만든 연결을 시각화하는 기능
+- [Map of Content](til/obsidian/map-of-content.md) - Wikilink를 활용한 노트 조직 패턴
+- [Properties](til/obsidian/properties.md) - Frontmatter에서 Wikilink만 링크로 인식되는 핵심 영역
+- [Dataview](til/obsidian/dataview.md) - Wikilink 기반 쿼리 필터링이 가능한 플러그인
+- [Bases](til/obsidian/bases.md) - Wikilink만 테이블에서 클릭 가능한 링크로 렌더링

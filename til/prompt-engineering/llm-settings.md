@@ -63,7 +63,7 @@ OpenAI API에는 없고, **Claude, Gemini 등에서 지원**하는 파라미터�
 
 응답의 **최대 길이**를 제한한다. 비용 제어와 불필요하게 긴 응답 방지에 유용하다.
 
-[[til/claude/model-family|Claude 모델 패밀리]] 기준: Opus 4.6은 최대 128K, Sonnet/Haiku는 64K 출력 토큰을 지원한다.
+[Claude 모델 패밀리](til/claude/model-family.md) 기준: Opus 4.6은 최대 128K, Sonnet/Haiku는 64K 출력 토큰을 지원한다.
 
 ### Stop Sequences (정지 시퀀스)
 
@@ -144,6 +144,6 @@ response = client.messages.create(
 
 ## 관련 노트
 
-- [[til/claude/model-family|Claude 모델 패밀리(Claude Model Family)]]
-- [[til/prompt-engineering/tokens-and-context-window|토큰과 컨텍스트 윈도우(Tokens & Context Window)]]
-- [[til/claude-code/cost-optimization|Cost 최적화(Cost Optimization)]]
+- [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
+- [토큰과 컨텍스트 윈도우(Tokens & Context Window)](til/prompt-engineering/tokens-and-context-window.md)
+- [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)

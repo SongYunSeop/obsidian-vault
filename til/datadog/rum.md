@@ -16,13 +16,13 @@ aliases:
 # RUM(Real User Monitoring)
 
 > [!tldr] 한줄 요약
-> RUM은 브라우저/모바일에 SDK를 삽입하여 실제 사용자의 페이지 로딩, 에러, 상호작용을 수집하고, `allowedTracingUrls` 설정으로 백엔드 [[til/datadog/apm-distributed-tracing|APM 트레이스]]와 연결하여 프론트엔드→백엔드 end-to-end 옵저버빌리티를 제공한다.
+> RUM은 브라우저/모바일에 SDK를 삽입하여 실제 사용자의 페이지 로딩, 에러, 상호작용을 수집하고, `allowedTracingUrls` 설정으로 백엔드 [APM 트레이스](til/datadog/apm-distributed-tracing.md)와 연결하여 프론트엔드→백엔드 end-to-end 옵저버빌리티를 제공한다.
 
 ## 핵심 내용
 
 ### RUM이란
 
-**Real User Monitoring** — 실제 사용자의 브라우저/모바일에서 발생하는 경험을 수집·분석하는 프론트엔드 모니터링이다. [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]이 "가상 사용자로 능동적 테스트"라면, RUM은 "실제 사용자의 수동적 관측"이다.
+**Real User Monitoring** — 실제 사용자의 브라우저/모바일에서 발생하는 경험을 수집·분석하는 프론트엔드 모니터링이다. [신서틱 모니터링(Synthetic Monitoring)](til/datadog/synthetic-monitoring.md)이 "가상 사용자로 능동적 테스트"라면, RUM은 "실제 사용자의 수동적 관측"이다.
 
 RUM SDK를 앱에 삽입하면 자동으로 수집이 시작된다:
 - 페이지 로딩 성능 (Core Web Vitals)
@@ -108,7 +108,7 @@ datadogRum.init({
 
 ### RUM ↔ APM 상관관계 (End-to-End 연결)
 
-RUM의 가장 강력한 기능은 **프론트엔드 요청을 백엔드 트레이스와 연결**하는 것이다. 이전에 배운 [[til/datadog/log-trace-correlation|로그-트레이스 상관관계]]가 "로그 ↔ 트레이스"를 연결했다면, 이것은 **"브라우저 ↔ 백엔드 트레이스"**를 연결한다.
+RUM의 가장 강력한 기능은 **프론트엔드 요청을 백엔드 트레이스와 연결**하는 것이다. 이전에 배운 [로그-트레이스 상관관계](til/datadog/log-trace-correlation.md)가 "로그 ↔ 트레이스"를 연결했다면, 이것은 **"브라우저 ↔ 백엔드 트레이스"**를 연결한다.
 
 #### 동작 원리
 
@@ -153,7 +153,7 @@ datadogRum.init({
 | **W3C Trace Context** | `traceparent` (`00-{traceId}-{parentId}-{flags}`) | OTel / 표준 |
 | **B3** | `X-B3-TraceId`, `X-B3-SpanId` 등 | Zipkin 호환 |
 
-기본값은 Datadog + W3C 둘 다 전송한다. 백엔드가 [[OpenTelemetry 연동|OpenTelemetry]]를 쓴다면 W3C만으로도 충분하다.
+기본값은 Datadog + W3C 둘 다 전송한다. 백엔드가 [OpenTelemetry](OpenTelemetry 연동.md)를 쓴다면 W3C만으로도 충분하다.
 
 #### 연결된 후 Datadog UI에서
 
@@ -191,7 +191,7 @@ graph TB
     style LOG fill:#3CB371
 ```
 
-세 영역이 모두 같은 `trace_id`로 연결되어, Datadog UI에서 **RUM ↔ APM ↔ 로그를 자유롭게 오갈 수 있다**. 이것이 Datadog이 말하는 "end-to-end [[til/devops/observability|옵저버빌리티]]"의 핵심이다.
+세 영역이 모두 같은 `trace_id`로 연결되어, Datadog UI에서 **RUM ↔ APM ↔ 로그를 자유롭게 오갈 수 있다**. 이것이 Datadog이 말하는 "end-to-end [옵저버빌리티](til/devops/observability.md)"의 핵심이다.
 
 ### 과금
 
@@ -248,13 +248,13 @@ try {
 ```
 
 > [!example] 장애 대응 시 RUM 활용 흐름
-> 1. [[til/datadog/monitors-and-alerts|모니터]] 알림: "checkout 페이지 에러율 급증"
+> 1. [모니터](til/datadog/monitors-and-alerts.md) 알림: "checkout 페이지 에러율 급증"
 > 2. RUM Explorer에서 `service:checkout-web status:error` 필터링
 > 3. Error Tracking에서 에러 그룹 확인 → 스택 트레이스 분석
 > 4. 해당 세션의 Session Replay로 사용자 행동 재현
 > 5. Resource 탭에서 실패한 API 클릭 → "View Trace"로 APM 이동
 > 6. Flame Graph에서 백엔드 원인 확인 (예: DB 타임아웃)
-> 7. [[til/datadog/log-trace-correlation|로그-트레이스 상관관계]]로 해당 시점 로그 확인
+> 7. [로그-트레이스 상관관계](til/datadog/log-trace-correlation.md)로 해당 시점 로그 확인
 > → **사용자 행동 → 프론트 에러 → 백엔드 원인 → 로그** 전체 흐름 파악
 
 ## 참고 자료
@@ -270,10 +270,10 @@ try {
 
 ## 관련 노트
 
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-trace-correlation|로그-트레이스 상관관계(Log-Trace Correlation)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-- [[til/devops/observability|옵저버빌리티(Observability)]]
-- [[til/datadog/synthetic-monitoring|신서틱 모니터링(Synthetic Monitoring)]]
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그-트레이스 상관관계(Log-Trace Correlation)](til/datadog/log-trace-correlation.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
+- [옵저버빌리티(Observability)](til/devops/observability.md)
+- [신서틱 모니터링(Synthetic Monitoring)](til/datadog/synthetic-monitoring.md)

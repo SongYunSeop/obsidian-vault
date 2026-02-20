@@ -126,11 +126,11 @@ stateDiagram-v2
 
 ### Delegate 모드
 
-리드가 직접 코드를 건드리지 않고 **조정에만 집중**하게 하는 [[til/claude-code/permission-mode|Permission 모드]]다. `Shift+Tab`으로 전환하면 리드는 팀원 생성, 메시지, 작업 관리만 할 수 있다.
+리드가 직접 코드를 건드리지 않고 **조정에만 집중**하게 하는 [Permission 모드](til/claude-code/permission-mode.md)다. `Shift+Tab`으로 전환하면 리드는 팀원 생성, 메시지, 작업 관리만 할 수 있다.
 
 ### Hooks 연동
 
-| [[til/claude-code/hooks\|Hook]] | 용도 |
+| [Hook](til/claude-code/hooks.md) | 용도 |
 |------|------|
 | **TeammateIdle** | 팀원이 멈추려 할 때 검증. exit 2로 계속 작업 강제 |
 | **TaskCompleted** | 작업 완료 시 검증. exit 2로 완료 차단 |
@@ -225,8 +225,8 @@ claude --teammate-mode tmux
 
 ## 관련 노트
 
-- [[til/claude-code/agent|Claude Code Agent 동작 방식]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/permission-mode|Permission 모드(Permission Mode)]]
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]]
-- [[MCP(Model Context Protocol)]]
+- [Claude Code Agent 동작 방식](til/claude-code/agent.md)
+- [Hooks](til/claude-code/hooks.md)
+- [Permission 모드(Permission Mode)](til/claude-code/permission-mode.md)
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md)
+- [MCP(Model Context Protocol)](MCP(Model Context Protocol).md)

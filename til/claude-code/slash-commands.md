@@ -20,24 +20,24 @@ aliases:
 > Claude Code의 슬래시 커맨드는 내장 커맨드(/compact, /init 등)와 사용자 정의 커맨드로 나뉘며, 사용자 정의 커맨드는 `.claude/commands/`(레거시) 또는 `.claude/skills/`(권장)에 마크다운으로 정의한다.
 
 > [!warning] 커스텀 슬래시 커맨드 → Skill 통합
-> 커스텀 슬래시 커맨드(`.claude/commands/`)는 [[til/claude-code/skill|Skill]](`.claude/skills/`)로 통합되었다. 기존 `.claude/commands/` 파일은 계속 작동하지만, Skill이 부가 파일, Claude 자동 호출 제어, 서브에이전트 실행 등 더 많은 기능을 지원하므로 **Skill로 만드는 것을 권장**한다. 동일한 이름이 있으면 Skill이 우선한다.
+> 커스텀 슬래시 커맨드(`.claude/commands/`)는 [Skill](til/claude-code/skill.md)(`.claude/skills/`)로 통합되었다. 기존 `.claude/commands/` 파일은 계속 작동하지만, Skill이 부가 파일, Claude 자동 호출 제어, 서브에이전트 실행 등 더 많은 기능을 지원하므로 **Skill로 만드는 것을 권장**한다. 동일한 이름이 있으면 Skill이 우선한다.
 
 ## 핵심 내용
 
 ### 내장 슬래시 커맨드
 
-Claude Code에 기본 탑재된 고정 커맨드다. 수정할 수 없고, [[til/claude-code/skill|Skill]] 도구로는 호출 불가(Claude가 프로그래밍적으로 실행할 수 없다).
+Claude Code에 기본 탑재된 고정 커맨드다. 수정할 수 없고, [Skill](til/claude-code/skill.md) 도구로는 호출 불가(Claude가 프로그래밍적으로 실행할 수 없다).
 
 | 커맨드 | 기능 |
 |--------|------|
 | `/help` | 사용 가능한 모든 커맨드 목록 |
-| `/init` | 프로젝트에 [[til/claude-code/claude-md\|CLAUDE.md]] 생성 |
-| `/compact` | [[til/claude-code/context-management\|컨텍스트]] 압축 (compaction) |
+| `/init` | 프로젝트에 [CLAUDE.md](til/claude-code/claude-md.md) 생성 |
+| `/compact` | [컨텍스트](til/claude-code/context-management.md) 압축 (compaction) |
 | `/clear` | 대화 기록 삭제, 새 세션 시작 |
-| `/hooks` | [[til/claude-code/hooks\|Hook]] 설정 인터랙티브 메뉴 |
+| `/hooks` | [Hook](til/claude-code/hooks.md) 설정 인터랙티브 메뉴 |
 | `/model` | 모델 변경 |
 | `/vim` | Vim 모드 토글 |
-| `/permissions` | [[til/claude-code/permission-mode\|권한]] 설정 |
+| `/permissions` | [권한](til/claude-code/permission-mode.md) 설정 |
 | `/context` | 현재 컨텍스트 사용량 확인 |
 | `/review` | 최근 변경사항 코드 리뷰 |
 
@@ -186,9 +186,9 @@ Skill로 전환하면 `disable-model-invocation`으로 수동 호출만 허용�
 
 ## 관련 노트
 
-- [[til/claude-code/skill|Claude Code Skill]] — 커스텀 커맨드의 상위 호환
-- [[til/claude-code/cli-reference|CLI 레퍼런스(CLI Reference)]] — claude 명령어 플래그와 옵션
-- [[til/claude-code/hooks|Hooks]] — 이벤트 기반 자동화 (Skill과 보완 관계)
-- [[til/claude-code/claude-md|CLAUDE.md]] — /init으로 생성하는 프로젝트 설정
-- [[til/claude-code/rules|Rules]] — 프로젝트 규칙 정의
-- [[til/claude-code/context-management|Context 관리(Context Management)]] — /compact의 동작 원리
+- [Claude Code Skill](til/claude-code/skill.md) — 커스텀 커맨드의 상위 호환
+- [CLI 레퍼런스(CLI Reference)](til/claude-code/cli-reference.md) — claude 명령어 플래그와 옵션
+- [Hooks](til/claude-code/hooks.md) — 이벤트 기반 자동화 (Skill과 보완 관계)
+- [CLAUDE.md](til/claude-code/claude-md.md) — /init으로 생성하는 프로젝트 설정
+- [Rules](til/claude-code/rules.md) — 프로젝트 규칙 정의
+- [Context 관리(Context Management)](til/claude-code/context-management.md) — /compact의 동작 원리

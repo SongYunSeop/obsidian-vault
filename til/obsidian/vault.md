@@ -63,7 +63,7 @@ Obsidian의 핵심 설계 철학:
 |------|------|
 | **소유권** | 노트가 내 컴퓨터에 일반 파일로 존재. 벤더 종속 없음 |
 | **포맷** | 표준 Markdown. Obsidian 없이도 어떤 에디터로든 열 수 있음 |
-| **동기화 자유** | Git, iCloud, Dropbox, [[Obsidian Sync와 Publish\|Obsidian Sync]] 등 원하는 방식 선택 |
+| **동기화 자유** | Git, iCloud, Dropbox, [Obsidian Sync](Obsidian Sync와 Publish.md) 등 원하는 방식 선택 |
 | **오프라인** | 인터넷 없이 완전히 동작 |
 | **속도** | 로컬 파일이라 검색/열기가 빠름 |
 
@@ -76,7 +76,7 @@ Obsidian의 핵심 설계 철학:
 | 추천 | 대부분의 사용자 (기본 추천) | 업무/개인 분리 필수, 팀 공유 필요 시 |
 
 > [!warning] Wikilink는 Vault 경계를 넘지 못한다
-> `[[노트A]]`는 같은 Vault 안의 노트만 참조할 수 있다. 이것이 단일 Vault가 권장되는 가장 큰 이유다. [[Zettelkasten]]의 "모든 것은 연결될 수 있어야 한다"는 원칙과도 일치한다.
+> `[[노트A]]`는 같은 Vault 안의 노트만 참조할 수 있다. 이것이 단일 Vault가 권장되는 가장 큰 이유다. [Zettelkasten](Zettelkasten.md)의 "모든 것은 연결될 수 있어야 한다"는 원칙과도 일치한다.
 
 단일 Vault 안에서 분리가 필요하면:
 - **폴더**로 영역 구분 (예: `til/`, `Daily/`)
@@ -108,7 +108,7 @@ Daily/
 
 ## 관련 노트
 
-- [[til/obsidian/yaml-frontmatter|YAML Frontmatter]] - Vault 안 노트의 메타데이터 형식
-- [[til/obsidian/pkm|PKM]] - Vault를 활용한 개인 지식 관리 방법론
-- [[Wikilink와 Backlink]] - Vault 안에서 노트를 연결하는 핵심 메커니즘
-- [[Obsidian Sync와 Publish]] - Vault 동기화와 웹 퍼블리싱
+- [YAML Frontmatter](til/obsidian/yaml-frontmatter.md) - Vault 안 노트의 메타데이터 형식
+- [PKM](til/obsidian/pkm.md) - Vault를 활용한 개인 지식 관리 방법론
+- [Wikilink와 Backlink](Wikilink와 Backlink.md) - Vault 안에서 노트를 연결하는 핵심 메커니즘
+- [Obsidian Sync와 Publish](Obsidian Sync와 Publish.md) - Vault 동기화와 웹 퍼블리싱

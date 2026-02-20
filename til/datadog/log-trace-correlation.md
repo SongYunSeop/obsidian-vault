@@ -54,7 +54,7 @@ sequenceDiagram
 | `dd.service` | 서비스명 (service 태그) | `"checkout-api"` |
 | `dd.version` | 서비스 버전 (version 태그) | `"1.2.3"` |
 
-이 5가지가 [[til/datadog/unified-service-tagging|통합 서비스 태깅]]과 연결되어 로그, 트레이스, 메트릭을 하나로 묶는 핵심 역할을 한다.
+이 5가지가 [통합 서비스 태깅](til/datadog/unified-service-tagging.md)과 연결되어 로그, 트레이스, 메트릭을 하나로 묶는 핵심 역할을 한다.
 
 ### Trace ID 형식
 
@@ -152,7 +152,7 @@ OTel SDK를 사용하는 경우, Logging Bridge가 `trace_id`와 `span_id`를 �
 1. 로그가 **JSON 형식**인지 확인
 2. `dd.trace_id`가 JSON **최상위 레벨**에 있는지 확인
 3. Datadog의 Reserved Attributes에서 `dd.trace_id`가 Trace ID로 매핑되어 있는지 확인 (기본값)
-4. [[til/datadog/unified-service-tagging|통합 서비스 태깅]] (`DD_ENV`, `DD_SERVICE`, `DD_VERSION`) 환경변수가 설정되어 있는지 확인
+4. [통합 서비스 태깅](til/datadog/unified-service-tagging.md) (`DD_ENV`, `DD_SERVICE`, `DD_VERSION`) 환경변수가 설정되어 있는지 확인
 5. 로그와 트레이스가 **같은 Datadog 계정**으로 수집되는지 확인
 6. 로그의 **타임스탬프**가 트레이스 시간 범위 내에 있는지 확인
 
@@ -194,9 +194,9 @@ log_with_trace("Payment processed", order_id=123)
 
 ## 관련 노트
 
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[til/datadog/unified-service-tagging|통합 서비스 태깅(Unified Service Tagging)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/monitors-and-alerts|모니터와 알림(Monitors & Alerts)]]
-- [[til/datadog/rum|RUM(Real User Monitoring)]]
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [통합 서비스 태깅(Unified Service Tagging)](til/datadog/unified-service-tagging.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
+- [RUM(Real User Monitoring)](til/datadog/rum.md)

@@ -71,12 +71,12 @@ Shift+Tab → 모델 전환
 
 #### 2. CLAUDE.md 최적화 → Skills 분리 (50-70% 절감)
 
-잘 작성된 [[til/claude-code/claude-md|CLAUDE.md]]는 반복 설명을 줄인다.
+잘 작성된 [CLAUDE.md](til/claude-code/claude-md.md)는 반복 설명을 줄인다.
 - **~500줄 이하** 유지 (핵심 지침만)
 - 빌드 명령, 컨벤션, 구조만 기록
 - 하위 디렉토리별 모듈화
 
-PR 리뷰 규칙, DB 마이그레이션 절차 같은 **전문 지침은 [[til/claude-code/skill|Skills]]로 분리**한다. Skills는 호출할 때만 로딩되므로 기본 컨텍스트가 줄어든다.
+PR 리뷰 규칙, DB 마이그레이션 절차 같은 **전문 지침은 [Skills](til/claude-code/skill.md)로 분리**한다. Skills는 호출할 때만 로딩되므로 기본 컨텍스트가 줄어든다.
 
 #### 3. 컨텍스트 관리
 
@@ -96,7 +96,7 @@ When you are using compact, please focus on test output and code changes
 
 #### 4. MCP Tool Search (최대 95% 절감)
 
-[[til/claude-code/mcp|MCP]] 도구 정의가 컨텍스트의 10%+ 차지할 수 있다. Tool Search를 활성화하면 51K → 8.7K 토큰으로 줄어든다.
+[MCP](til/claude-code/mcp.md) 도구 정의가 컨텍스트의 10%+ 차지할 수 있다. Tool Search를 활성화하면 51K → 8.7K 토큰으로 줄어든다.
 
 ```bash
 ENABLE_TOOL_SEARCH=auto    # 기본값, 10% 넘으면 자동 활성화
@@ -120,7 +120,7 @@ MAX_THINKING_TOKENS=10000  # 사고 토큰 예산 제한
 claude -p "리뷰해줘" --max-turns 5
 ```
 
-[[til/claude-code/github-actions-cicd|Batch API]]를 사용하면 비동기 처리로 **50% 할인**.
+[Batch API](til/claude-code/github-actions-cicd.md)를 사용하면 비동기 처리로 **50% 할인**.
 
 #### 7. 서브에이전트 위임 (20-40% 절감)
 
@@ -128,7 +128,7 @@ claude -p "리뷰해줘" --max-turns 5
 
 #### 8. Hooks로 입력 전처리
 
-[[til/claude-code/hooks|Hooks]]로 Claude에게 전달되는 데이터를 사전 필터링한다. 10,000줄 로그를 통째로 읽는 대신, 훅이 `grep ERROR` 결과만 전달하면 수만 토큰 → 수백 토큰으로 줄일 수 있다.
+[Hooks](til/claude-code/hooks.md)로 Claude에게 전달되는 데이터를 사전 필터링한다. 10,000줄 로그를 통째로 읽는 대신, 훅이 `grep ERROR` 결과만 전달하면 수만 토큰 → 수백 토큰으로 줄일 수 있다.
 
 ```bash
 # PreToolUse 훅 예시: 테스트 실행 시 실패 결과만 필터링
@@ -149,7 +149,7 @@ npm install -g pyright
 
 #### 10. Agent Team 비용 관리
 
-[[til/claude-code/agent-teams|Agent Teams]]는 표준 세션 대비 **~7배 토큰**을 소모한다. 팀원마다 별도 컨텍스트 윈도우를 유지하기 때문이다.
+[Agent Teams](til/claude-code/agent-teams.md)는 표준 세션 대비 **~7배 토큰**을 소모한다. 팀원마다 별도 컨텍스트 윈도우를 유지하기 때문이다.
 
 - 팀원은 Sonnet 사용 (Opus 대신)
 - 팀 규모 최소화
@@ -203,11 +203,11 @@ npm install -g pyright
 
 ## 관련 노트
 
-- [[til/claude-code/context-management|Context 관리(Context Management)]]
-- [[til/claude-code/best-practices|Best Practices]]
-- [[til/claude-code/mcp|MCP(Model Context Protocol)]]
-- [[til/claude-code/claude-md|CLAUDE.md]]
-- [[til/claude-code/hooks|Hooks]]
-- [[til/claude-code/skill|Skills]]
-- [[til/claude-code/agent-teams|Agent Teams]]
-- [[til/claude-code/github-actions-cicd|GitHub Actions와 CI/CD]]
+- [Context 관리(Context Management)](til/claude-code/context-management.md)
+- [Best Practices](til/claude-code/best-practices.md)
+- [MCP(Model Context Protocol)](til/claude-code/mcp.md)
+- [CLAUDE.md](til/claude-code/claude-md.md)
+- [Hooks](til/claude-code/hooks.md)
+- [Skills](til/claude-code/skill.md)
+- [Agent Teams](til/claude-code/agent-teams.md)
+- [GitHub Actions와 CI/CD](til/claude-code/github-actions-cicd.md)

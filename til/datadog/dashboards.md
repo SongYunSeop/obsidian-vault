@@ -71,7 +71,7 @@ $region  → region:ap-northeast-2, region:us-east-1
 
 ### 쿼리 함수
 
-위젯의 [[til/datadog/metrics|메트릭]] 쿼리에 적용할 수 있는 함수들:
+위젯의 [메트릭](til/datadog/metrics.md) 쿼리에 적용할 수 있는 함수들:
 
 | 함수 | 용도 | 예시 |
 |------|------|------|
@@ -152,9 +152,9 @@ Integration 설치 시 **기본 대시보드가 자동 생성**된다. Nginx, Re
 
 ## 관련 노트
 
-- [[til/datadog/metrics|메트릭(Metrics)]]
-- [[til/datadog/tagging|태깅(Tagging)]]
-- [[til/datadog/infrastructure-monitoring|인프라스트럭처 모니터링(Infrastructure Monitoring)]]
-- [[til/datadog/apm-distributed-tracing|APM과 분산 트레이싱(Distributed Tracing)]]
-- [[til/datadog/log-management|로그 관리(Log Management)]]
-- [[모니터와 알림(Monitors & Alerts)]]
+- [메트릭(Metrics)](til/datadog/metrics.md)
+- [태깅(Tagging)](til/datadog/tagging.md)
+- [인프라스트럭처 모니터링(Infrastructure Monitoring)](til/datadog/infrastructure-monitoring.md)
+- [APM과 분산 트레이싱(Distributed Tracing)](til/datadog/apm-distributed-tracing.md)
+- [로그 관리(Log Management)](til/datadog/log-management.md)
+- [모니터와 알림(Monitors & Alerts)](모니터와 알림(Monitors & Alerts).md)
