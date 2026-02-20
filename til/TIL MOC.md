@@ -36,6 +36,7 @@ tags:
 19. [[til/datadog/trace-explorer|Trace Explorer 고급 기능]]
 20. [[til/datadog/cost-management|비용 관리(Cost Management)]]
 21. [[til/datadog/workflow-automation|Workflow Automation]]
+22. [[til/datadog/bits-ai|Bits AI]]
 
 ### postgresql
 - [[til/postgresql/backlog|Backlog]]
@@ -43,6 +44,7 @@ tags:
 2. [[til/postgresql/mvcc|MVCC (Multi-Version Concurrency Control)]]
 3. [[til/postgresql/shared-buffer|공유 메모리와 버퍼 풀(Shared Buffer)]]
 4. [[til/postgresql/wal|WAL(Write-Ahead Logging)]]
+5. [[til/postgresql/gin-index|GIN 인덱스(GIN Index)]]
 
 ### obsidian
 - [[til/obsidian/backlog|Backlog]]

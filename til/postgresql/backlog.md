@@ -22,7 +22,7 @@ updated: 2026-02-15
 - [ ] [[til/postgresql/role-authentication|권한과 인증(Role, pg_hba.conf)]] - 사용자 관리, 접근 제어, SSL 설정
 
 ## 심화
-- [ ] [[til/postgresql/gin-index|GIN 인덱스]] - 배열, JSONB, 전문 검색에 적합한 역인덱스
+- [x] [[til/postgresql/gin-index|GIN 인덱스(GIN Index)]] - 배열, JSONB, 전문 검색에 적합한 역인덱스
 - [ ] [[til/postgresql/gist-index|GiST 인덱스]] - 공간 데이터, 범위 타입 등 B-tree로 불가능한 검색
 - [ ] [[til/postgresql/brin-index|BRIN 인덱스]] - 물리적 정렬과 상관관계가 높은 대용량 테이블용 경량 인덱스
 - [ ] [[til/postgresql/recursive-cte|CTE와 재귀 쿼리(Recursive CTE)]] - 계층 데이터 처리를 위한 WITH 구문
