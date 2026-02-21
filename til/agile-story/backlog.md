@@ -68,7 +68,7 @@ sources:
 - [x] [몰입(Flow)](til/agile-story/flow.md) - 난이도와 실력의 균형에서 오는 최적의 학습/작업 상태
 - [ ] [테스트 주도 개발(TDD)](til/agile-story/tdd.md) - 테스트를 먼저 작성하고 코드를 구현하는 개발 방식
 - [ ] [리팩토링(Refactoring)](til/agile-story/refactoring.md) - 외부 동작을 바꾸지 않으면서 코드 구조를 개선하는 기법
-- [ ] [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 초보에서 전문가까지의 성장 경로와 조건
+- [x] [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 초보에서 전문가까지의 성장 경로와 조건
 - [ ] [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간 투자만으로는 전문가가 되지 못하는 이유
 
 ## 팀
