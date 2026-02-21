@@ -1,5 +1,5 @@
 ---
-date: 2026-02-22
+date: 2026-02-22T00:00:00
 category: agile-story
 tags:
   - til
