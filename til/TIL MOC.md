@@ -102,6 +102,7 @@ tags:
 5. [스크럼(Scrum)](til/agile-story/scrum.md)
 6. [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md)
 7. [회고(Retrospective)](til/agile-story/retrospective.md)
+8. [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
