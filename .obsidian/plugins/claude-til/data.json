@@ -3,6 +3,7 @@
   "autoLaunchClaude": true,
   "resumeLastSession": true,
   "fontSize": 13,
+  "fontFamily": "\"Source Code Pro\", monospace",
   "tilPath": "til",
   "autoOpenNewTIL": true,
   "mcpEnabled": true,
