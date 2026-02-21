@@ -64,7 +64,7 @@ sources:
 # 애자일 이야기 학습 백로그
 
 ## 개인
-- [ ] [의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md) - 실력 개선을 목표로 구체적 피드백과 함께 연습하는 방법
+- [x] [의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md) - 실력 개선을 목표로 구체적 피드백과 함께 연습하는 방법
 - [ ] [몰입(Flow)](til/agile/flow.md) - 난이도와 실력의 균형에서 오는 최적의 학습/작업 상태
 - [ ] [테스트 주도 개발(TDD)](til/agile/tdd.md) - 테스트를 먼저 작성하고 코드를 구현하는 개발 방식
 - [ ] [리팩토링(Refactoring)](til/agile/refactoring.md) - 외부 동작을 바꾸지 않으면서 코드 구조를 개선하는 기법
