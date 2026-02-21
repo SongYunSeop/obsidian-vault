@@ -1,6 +1,6 @@
 ---
 date: 2026-02-21
-category: agile
+category: agile-story
 tags:
   - til
   - agile
@@ -48,14 +48,14 @@ aliases:
 - 난이도 높이기 - 더 높은 성능 기준, 더 짧은 시간 제한 설정
 
 **불안할 때 (난이도 > 실력):**
-- 실력 높이기 - 관련 자료 학습, 멘토에게 도움 요청, [짝 프로그래밍(Pair Programming)](til/agile/pair-programming.md)
+- 실력 높이기 - 관련 자료 학습, 멘토에게 도움 요청, [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md)
 - 난이도 낮추기 - 문제를 작게 쪼개기, 프로토타입부터 시작
 
 이 전략을 적용하려면 **메타인지(알아차림)**가 전제되어야 한다. "지금 내가 지루한가, 불안한가?"를 스스로 인식하는 것이 첫 단계다.
 
 ### 의도적 수련과의 관계
 
-[의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md)이 효과적이려면 몰입 상태가 필요하다. 의도적 수련의 "현재 실력 경계에서 도전"이라는 조건이 곧 몰입 채널에 머무르는 것과 같다. 반대로 몰입 상태에서의 수련이 실력 향상으로 이어지므로, 둘은 상호 강화 관계다.
+[의도적 수련(Deliberate Practice)](til/agile-story/deliberate-practice.md)이 효과적이려면 몰입 상태가 필요하다. 의도적 수련의 "현재 실력 경계에서 도전"이라는 조건이 곧 몰입 채널에 머무르는 것과 같다. 반대로 몰입 상태에서의 수련이 실력 향상으로 이어지므로, 둘은 상호 강화 관계다.
 
 ### 소프트웨어 개발에서의 몰입
 
@@ -98,7 +98,7 @@ Owen Schaffer의 몰입 7조건을 개발에 대입하면:
 
 - **메타인지**: "지금 나는 집중을 못하고 있구나"를 알아차리는 것 자체가 첫 단계
 - **난이도 조절**: 환경이 산만하면 복잡한 설계 대신 기계적이지만 약간 도전적인 작업을 선택한다 (리팩토링, 테스트 작성 등)
-- **[피드백 루프(Feedback Loop)](til/agile/feedback-loop.md) 단축**: [테스트 주도 개발(TDD)](til/agile/tdd.md)처럼 "코드 작성 → 테스트 통과"의 짧은 사이클은 산만한 환경에서도 몰입을 유도할 수 있다
+- **[피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) 단축**: [테스트 주도 개발(TDD)](til/agile-story/tdd.md)처럼 "코드 작성 → 테스트 통과"의 짧은 사이클은 산만한 환경에서도 몰입을 유도할 수 있다
 
 ### 조직 차원의 몰입 환경 만들기
 
@@ -115,7 +115,7 @@ Owen Schaffer의 몰입 7조건을 개발에 대입하면:
 - 당번의 역할은 "답변자"가 아니라 "라우터"로 정의 — 적절한 담당자에게 연결만 해주면 된다
 - 당번 주간에는 스토리 포인트를 70%만 배정하여 불만을 줄인다
 
-**[회고(Retrospective)](til/agile/retrospective.md)에서 몰입 방해 요소 논의:**
+**[회고(Retrospective)](til/agile-story/retrospective.md)에서 몰입 방해 요소 논의:**
 - "이번 스프린트에서 몰입을 방해한 것 3가지"를 회고 항목에 추가
 - "2시간 이상 연속 집중할 수 있었던 날이 며칠이었나?"를 측정 — 숫자로 보면 문제가 명확해진다
 - 구체적 액션으로 연결한다 (회의 배치 변경, FAQ 문서화 등)
@@ -131,9 +131,9 @@ Owen Schaffer의 몰입 7조건을 개발에 대입하면:
 
 - **스프린트** → 명확한 목표와 시간 프레임 제공
 - **데일리 스탠드업** → 방해 요소 사전 제거
-- **[짝 프로그래밍(Pair Programming)](til/agile/pair-programming.md)** → 즉각적 피드백 + 난이도 조절
-- **[테스트 주도 개발(TDD)](til/agile/tdd.md)** → 코드 작성 → 테스트 통과의 빠른 [피드백 루프(Feedback Loop)](til/agile/feedback-loop.md)
-- **[회고(Retrospective)](til/agile/retrospective.md)** → 몰입 환경을 지속적으로 개선
+- **[짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md)** → 즉각적 피드백 + 난이도 조절
+- **[테스트 주도 개발(TDD)](til/agile-story/tdd.md)** → 코드 작성 → 테스트 통과의 빠른 [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md)
+- **[회고(Retrospective)](til/agile-story/retrospective.md)** → 몰입 환경을 지속적으로 개선
 
 ### 팀 리더의 역할
 
@@ -160,9 +160,9 @@ Owen Schaffer의 몰입 7조건을 개발에 대입하면:
 
 ## 관련 노트
 
-- [의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md) - 몰입 상태에서 수련해야 실력이 향상된다
-- [피드백 루프(Feedback Loop)](til/agile/feedback-loop.md) - 몰입의 핵심 조건인 즉각적 피드백
-- [테스트 주도 개발(TDD)](til/agile/tdd.md) - 짧은 피드백 루프로 몰입을 유도하는 실천법
-- [짝 프로그래밍(Pair Programming)](til/agile/pair-programming.md) - 난이도 조절과 즉각적 피드백을 동시에 제공
-- [심리적 안전감(Psychological Safety)](til/agile/psychological-safety.md) - 팀 차원의 몰입 환경을 위한 전제 조건
-- [회고(Retrospective)](til/agile/retrospective.md) - 몰입 방해 요소를 정기적으로 개선
+- [의도적 수련(Deliberate Practice)](til/agile-story/deliberate-practice.md) - 몰입 상태에서 수련해야 실력이 향상된다
+- [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 몰입의 핵심 조건인 즉각적 피드백
+- [테스트 주도 개발(TDD)](til/agile-story/tdd.md) - 짧은 피드백 루프로 몰입을 유도하는 실천법
+- [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md) - 난이도 조절과 즉각적 피드백을 동시에 제공
+- [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 팀 차원의 몰입 환경을 위한 전제 조건
+- [회고(Retrospective)](til/agile-story/retrospective.md) - 몰입 방해 요소를 정기적으로 개선

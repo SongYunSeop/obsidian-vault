@@ -1,6 +1,6 @@
 ---
 date: 2026-02-21
-category: agile
+category: agile-story
 tags:
   - til
   - agile
@@ -46,11 +46,11 @@ aliases:
 
 **2. 적절한 시기의 구체적 피드백**
 
-양치질 직후 치면착색제로 확인하면 즉시 개선이 가능하지만, 1년 후 치과에서 듣는 피드백은 너무 늦다. 소프트웨어 개발에서는 코드 리뷰, 테스트 결과, [짝 프로그래밍(Pair Programming)](til/agile/pair-programming.md)이 즉각적 [피드백 루프(Feedback Loop)](til/agile/feedback-loop.md)를 제공한다.
+양치질 직후 치면착색제로 확인하면 즉시 개선이 가능하지만, 1년 후 치과에서 듣는 피드백은 너무 늦다. 소프트웨어 개발에서는 코드 리뷰, 테스트 결과, [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md)이 즉각적 [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md)를 제공한다.
 
 ### 몰입과의 관계
 
-의도적 수련이 효과적이려면 [몰입(Flow)](til/agile/flow.md) 상태가 필요하다. 과제 난이도와 실력이 비슷해야 몰입에 들어갈 수 있다:
+의도적 수련이 효과적이려면 [몰입(Flow)](til/agile-story/flow.md) 상태가 필요하다. 과제 난이도와 실력이 비슷해야 몰입에 들어갈 수 있다:
 
 - **지루함** (실력 > 난이도) → 난이도를 높인다: 새로운 언어로 작업, 더 높은 성능 기준 설정
 - **불안함** (난이도 > 실력) → 난이도를 낮춘다: 프로토타입부터 시작, 짝 프로그래밍으로 도움 받기
@@ -67,7 +67,7 @@ aliases:
 
 ### 실수 관리
 
-의도적 수련에서 실수는 예방이 아닌 **관리**가 핵심이다. 실수 관리 문화가 높을수록 조직의 혁신 정도가 높다. 실수를 통해 배우려면 실수가 드러났을 때 안전하다고 느낄 수 있는 [심리적 안전감(Psychological Safety)](til/agile/psychological-safety.md)이 전제되어야 한다.
+의도적 수련에서 실수는 예방이 아닌 **관리**가 핵심이다. 실수 관리 문화가 높을수록 조직의 혁신 정도가 높다. 실수를 통해 배우려면 실수가 드러났을 때 안전하다고 느낄 수 있는 [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md)이 전제되어야 한다.
 
 ## 예시
 
@@ -87,7 +87,7 @@ aliases:
 
 ## 관련 노트
 
-- [몰입(Flow)](til/agile/flow.md) - 의도적 수련의 효과를 극대화하는 최적 상태
-- [피드백 루프(Feedback Loop)](til/agile/feedback-loop.md) - 의도적 수련의 필수 조건
-- [전문성 발달(Expertise Development)](til/agile/expertise-development.md) - 의도적 수련의 장기적 결과
-- [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile/ten-thousand-hour-rule.md) - 시간이 아닌 수련의 질이 중요
+- [몰입(Flow)](til/agile-story/flow.md) - 의도적 수련의 효과를 극대화하는 최적 상태
+- [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 의도적 수련의 필수 조건
+- [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 의도적 수련의 장기적 결과
+- [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간이 아닌 수련의 질이 중요

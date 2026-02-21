@@ -93,13 +93,10 @@ tags:
 ### claude
 1. [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
 
-### agile
-- [Backlog](til/agile/backlog.md)
-1. [의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md)
-2. [몰입(Flow)](til/agile/flow.md)
-
-### spline
-- [Backlog](til/spline/backlog.md)
+### agile-story
+- [Backlog](til/agile-story/backlog.md)
+1. [의도적 수련(Deliberate Practice)](til/agile-story/deliberate-practice.md)
+2. [몰입(Flow)](til/agile-story/flow.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
