@@ -72,7 +72,7 @@ sources:
 - [ ] [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간 투자만으로는 전문가가 되지 못하는 이유
 
 ## 팀
-- [ ] [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 짧은 주기의 피드백이 학습과 개선을 이끄는 원리
+- [x] [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 짧은 주기의 피드백이 학습과 개선을 이끄는 원리
 - [ ] [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md) - 두 사람이 하나의 컴퓨터에서 함께 코딩하는 실천법
 - [ ] [회고(Retrospective)](til/agile-story/retrospective.md) - 주기적으로 과정을 되돌아보며 개선점을 찾는 실천법
 - [ ] [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 실수나 의견 표현 시 처벌받지 않을 거라는 팀 내 믿음
