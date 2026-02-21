@@ -96,6 +96,7 @@ tags:
 ### agile
 - [Backlog](til/agile/backlog.md)
 1. [의도적 수련(Deliberate Practice)](til/agile/deliberate-practice.md)
+2. [몰입(Flow)](til/agile/flow.md)
 
 ### spline
 - [Backlog](til/spline/backlog.md)
