@@ -75,7 +75,7 @@ sources:
 - [x] [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 짧은 주기의 피드백이 학습과 개선을 이끄는 원리
 - [ ] [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md) - 두 사람이 하나의 컴퓨터에서 함께 코딩하는 실천법
 - [ ] [회고(Retrospective)](til/agile-story/retrospective.md) - 주기적으로 과정을 되돌아보며 개선점을 찾는 실천법
-- [ ] [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 실수나 의견 표현 시 처벌받지 않을 거라는 팀 내 믿음
+- [x] [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 실수나 의견 표현 시 처벌받지 않을 거라는 팀 내 믿음
 - [ ] [코칭(Coaching)](til/agile-story/coaching.md) - 상대의 멘탈 모델을 이해하고 공감하며 성장을 돕는 기술
 - [ ] [지속적 통합(Continuous Integration)](til/agile-story/continuous-integration.md) - 코드 변경을 자주 통합하여 문제를 빠르게 발견하는 방식
 - [ ] [사용자 스토리(User Story)](til/agile-story/user-story.md) - 고객 중심의 경량 요구사항 기법

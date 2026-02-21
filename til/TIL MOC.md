@@ -100,6 +100,7 @@ tags:
 3. [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md)
 4. [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md)
 5. [스크럼(Scrum)](til/agile-story/scrum.md)
+6. [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
