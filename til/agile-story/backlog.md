@@ -84,7 +84,7 @@ sources:
 - [ ] [애자일 선언문(Agile Manifesto)](til/agile-story/agile-manifesto.md) - 애자일의 4가지 가치와 12가지 원칙
 - [ ] [불확실성과 애자일(Uncertainty & Agile)](til/agile-story/uncertainty-and-agile.md) - 불확실성이 높을 때 왜 애자일이 효과적인지
 - [ ] [익스트림 프로그래밍(XP)](til/agile-story/xp.md) - 피드백과 단순성을 극대화한 애자일 방법론
-- [ ] [스크럼(Scrum)](til/agile-story/scrum.md) - 스프린트 기반의 애자일 프레임워크와 역할/이벤트/산출물
+- [x] [스크럼(Scrum)](til/agile-story/scrum.md) - 스프린트 기반의 애자일 프레임워크와 역할/이벤트/산출물
 - [ ] [린 소프트웨어 개발(Lean Software Development)](til/agile-story/lean-software-development.md) - 도요타 생산 방식의 소프트웨어 적용 (칸반, 낭비 제거, 지속적 개선)
 - [ ] [사회적 자본(Social Capital)](til/agile-story/social-capital.md) - 기술적 실천법을 현실에 적용하기 위해 필요한 관계와 신뢰
 - [ ] [애자일 도입과 변화 관리(Agile Adoption)](til/agile-story/agile-adoption.md) - 조직에 애자일을 도입할 때의 전략과 저항 관리
