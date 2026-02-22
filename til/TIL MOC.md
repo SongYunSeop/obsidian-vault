@@ -37,6 +37,7 @@ tags:
 20. [비용 관리(Cost Management)](til/datadog/cost-management.md)
 21. [Workflow Automation](til/datadog/workflow-automation.md)
 22. [Bits AI](til/datadog/bits-ai.md)
+23. [프러스트레이션 시그널(Frustration Signals)](til/datadog/frustration-signals.md)
 
 ### postgresql
 - [Backlog](til/postgresql/backlog.md)
