@@ -4,8 +4,10 @@
   "resumeLastSession": true,
   "fontSize": 13,
   "fontFamily": "\"Source Code Pro\", monospace",
+  "lineHeight": 1.2,
   "tilPath": "til",
   "autoOpenNewTIL": true,
+  "openDashboardOnStartup": true,
   "mcpEnabled": true,
   "mcpPort": 22360
 }

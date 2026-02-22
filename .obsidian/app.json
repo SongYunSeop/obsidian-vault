@@ -1,7 +1,7 @@
 {
   "promptDelete": false,
   "defaultViewMode": "preview",
-  "focusNewTab": true,
-  "openBehavior": "file:til/TIL MOC",
+  "focusNewTab": false,
+  "openBehavior": "",
   "showInlineTitle": false
 }
