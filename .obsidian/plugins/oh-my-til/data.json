@@ -3,7 +3,7 @@
   "autoLaunchClaude": true,
   "resumeLastSession": true,
   "fontSize": 13,
-  "fontFamily": "\"Source Code Pro\", monospace",
+  "fontFamily": "\"JetBrains Mono\", monospace",
   "lineHeight": 1.2,
   "tilPath": "til",
   "autoOpenNewTIL": true,
