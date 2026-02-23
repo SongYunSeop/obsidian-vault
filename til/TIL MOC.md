@@ -108,6 +108,9 @@ tags:
 9. [리팩토링(Refactoring)](til/agile-story/refactoring.md)
 10. [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md)
 
+### llm
+- [Backlog](til/llm/backlog.md)
+
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
 1. [Claude Code 개요](til/claude-code/overview.md)
