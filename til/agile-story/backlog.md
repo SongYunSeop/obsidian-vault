@@ -69,7 +69,7 @@ sources:
 - [ ] [테스트 주도 개발(TDD)](til/agile-story/tdd.md) - 테스트를 먼저 작성하고 코드를 구현하는 개발 방식
 - [x] [리팩토링(Refactoring)](til/agile-story/refactoring.md) - 외부 동작을 바꾸지 않으면서 코드 구조를 개선하는 기법
 - [x] [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 초보에서 전문가까지의 성장 경로와 조건
-- [ ] [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간 투자만으로는 전문가가 되지 못하는 이유
+- [x] [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간 투자만으로는 전문가가 되지 못하는 이유
 
 ## 팀
 - [x] [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 짧은 주기의 피드백이 학습과 개선을 이끄는 원리
