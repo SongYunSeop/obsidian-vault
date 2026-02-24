@@ -109,6 +109,7 @@ tags:
 8. [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md)
 9. [리팩토링(Refactoring)](til/agile-story/refactoring.md)
 10. [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md)
+11. [테스트 주도 개발(TDD)](til/agile-story/tdd.md)
 
 ### llm
 - [Backlog](til/llm/backlog.md)

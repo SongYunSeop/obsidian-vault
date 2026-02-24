@@ -89,5 +89,6 @@ aliases:
 
 - [몰입(Flow)](til/agile-story/flow.md) - 의도적 수련의 효과를 극대화하는 최적 상태
 - [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 의도적 수련의 필수 조건
+- [테스트 주도 개발(TDD)](til/agile-story/tdd.md) - 즉각적 피드백과 함께 실력을 높이는 실천법
 - [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 의도적 수련의 장기적 결과
 - [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간이 아닌 수련의 질이 중요
