@@ -91,6 +91,7 @@ tags:
 ### prompt-engineering
 - [Backlog](til/prompt-engineering/backlog.md)
 1. [LLM 기초 설정(LLM Settings)](til/prompt-engineering/llm-settings.md)
+2. [프롬프트 구성 요소(Prompt Elements)](til/prompt-engineering/prompt-elements.md)
 
 ### claude
 1. [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
