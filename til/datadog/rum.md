@@ -277,3 +277,4 @@ try {
 - [모니터와 알림(Monitors & Alerts)](til/datadog/monitors-and-alerts.md)
 - [옵저버빌리티(Observability)](til/devops/observability.md)
 - [신서틱 모니터링(Synthetic Monitoring)](til/datadog/synthetic-monitoring.md)
+- [Bits AI](til/datadog/bits-ai.md)

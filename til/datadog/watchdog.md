@@ -147,3 +147,4 @@ Watchdog 활용 시나리오:
 - [로그 관리(Log Management)](til/datadog/log-management.md)
 - [인프라스트럭처 모니터링(Infrastructure Monitoring)](til/datadog/infrastructure-monitoring.md)
 - [Error Tracking](til/datadog/error-tracking.md)
+- [Bits AI](til/datadog/bits-ai.md)
