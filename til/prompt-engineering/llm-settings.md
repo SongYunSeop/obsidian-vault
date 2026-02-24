@@ -147,3 +147,4 @@ response = client.messages.create(
 - [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
 - [토큰과 컨텍스트 윈도우(Tokens & Context Window)](til/prompt-engineering/tokens-and-context-window.md)
 - [Cost 최적화(Cost Optimization)](til/claude-code/cost-optimization.md)
+- [프롬프트 구성 요소(Prompt Elements)](til/prompt-engineering/prompt-elements.md)
