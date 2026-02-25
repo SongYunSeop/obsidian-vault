@@ -114,6 +114,9 @@ tags:
 10. [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md)
 11. [테스트 주도 개발(TDD)](til/agile-story/tdd.md)
 
+### anki
+- [Backlog](til/anki/backlog.md)
+
 ### llm
 - [Backlog](til/llm/backlog.md)
 
