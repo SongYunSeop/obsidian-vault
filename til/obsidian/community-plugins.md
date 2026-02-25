@@ -145,3 +145,4 @@ aliases:
 - [Templater](til/obsidian/templater.md) - Core Templates의 상위 호환 플러그인
 - [Obsidian Git](til/obsidian/obsidian-git.md) - Git 기반 동기화 플러그인
 - [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md)
+- [Hotkeys 커스터마이징](til/obsidian/hotkeys.md)

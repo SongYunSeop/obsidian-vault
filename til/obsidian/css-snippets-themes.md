@@ -140,3 +140,4 @@ body {
 - [Obsidian Publish](til/obsidian/obsidian-publish.md)
 - [Canvas](til/obsidian/canvas.md)
 - [Callout과 Embed](til/obsidian/callout-embed.md)
+- [Hotkeys 커스터마이징](til/obsidian/hotkeys.md)

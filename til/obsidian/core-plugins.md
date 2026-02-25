@@ -138,3 +138,4 @@ Template file location: _templates/daily
 - [Graph View](til/obsidian/graph-view.md) - 코어 플러그인 중 하나로 별도 TIL에서 상세 다룸
 - [Properties](til/obsidian/properties.md) - Properties View 코어 플러그인의 데이터 기반
 - [Templater](til/obsidian/templater.md) - Templates 코어 플러그인의 상위 호환 커뮤니티 플러그인
+- [Hotkeys 커스터마이징](til/obsidian/hotkeys.md)

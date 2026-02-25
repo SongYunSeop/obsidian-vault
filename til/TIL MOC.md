@@ -76,6 +76,7 @@ tags:
 22. [Obsidian Sync](til/obsidian/obsidian-sync.md)
 23. [Obsidian Publish](til/obsidian/obsidian-publish.md)
 24. [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md)
+25. [Hotkeys 커스터마이징](til/obsidian/hotkeys.md)
 
 ### 도시정비사업
 - [Backlog](til/도시정비사업/backlog.md)
