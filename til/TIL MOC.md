@@ -48,6 +48,7 @@ tags:
 4. [WAL(Write-Ahead Logging)](til/postgresql/wal.md)
 5. [GIN 인덱스(GIN Index)](til/postgresql/gin-index.md)
 6. [죽은 튜플(Dead Tuple)](til/postgresql/dead-tuple.md)
+7. [Generated Column (Computed Column)](til/postgresql/generated-column.md)
 
 ### obsidian
 - [Backlog](til/obsidian/backlog.md)

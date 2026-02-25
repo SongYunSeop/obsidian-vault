@@ -153,3 +153,4 @@ WHERE data @> '{"items": [{"sku": "A100"}]}';
 - [JSONB](til/postgresql/jsonb.md) - GIN 인덱스의 핵심 사용 사례
 - [Full-Text Search](til/postgresql/full-text-search.md) - tsvector/tsquery 기반 전문 검색. GIN 인덱스의 최초 사용 사례
 - [pg_trgm](til/postgresql/pg-trgm.md) - 트라이그램 기반 유사 문자열 검색 확장. GIN과 함께 LIKE 검색 최적화에 활용
+- [Generated Column](til/postgresql/generated-column.md) - tsvector Generated Column으로 파생 데이터를 자동 계산할 때 GIN 인덱스 활용
