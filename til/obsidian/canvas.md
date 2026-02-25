@@ -95,3 +95,4 @@ Canvas는 노트 내 인라인 다이어그램인 Mermaid를 대체하는 것이
 - [Graph View](til/obsidian/graph-view.md) - 노트 연결의 또 다른 시각화 방식
 - [Core Plugins](til/obsidian/core-plugins.md) - Canvas가 포함된 코어 플러그인 목록
 - [Callout과 Embed](til/obsidian/callout-embed.md) - Canvas File 카드에서 사용되는 임베드 기능
+- [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md)

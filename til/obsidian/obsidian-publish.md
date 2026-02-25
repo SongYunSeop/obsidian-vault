@@ -143,3 +143,4 @@ h1, h2, h3 {
 - [Graph View](til/obsidian/graph-view.md) — Publish 사이트에서도 제공되는 시각적 그래프
 - [Wikilink와 Backlink](til/obsidian/wikilink-backlink.md) — Publish에서 백링크가 자동 생성되는 기반
 - [Community Plugins](til/obsidian/community-plugins.md) — Obsidian Digital Garden 등 Publish 대안 플러그인
+- [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md)

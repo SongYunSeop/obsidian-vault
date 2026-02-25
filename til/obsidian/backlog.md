@@ -34,6 +34,6 @@ updated: 2026-02-18
 - [x] [Obsidian Sync](til/obsidian/obsidian-sync.md) - E2E 암호화 기반 디바이스 간 vault 동기화 서비스
 - [x] [Obsidian Publish](til/obsidian/obsidian-publish.md) - 선택한 노트를 웹사이트로 공개하는 퍼블리싱 서비스
 - [x] [Plugin 개발](til/obsidian/plugin-development.md) - TypeScript API, Plugin 클래스 라이프사이클, esbuild 빌드 시스템
-- [ ] [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md) - CSS를 통한 외관 커스터마이징과 커뮤니티 테마 적용
+- [x] [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md) - CSS를 통한 외관 커스터마이징과 커뮤니티 테마 적용
 - [ ] [Hotkeys 커스터마이징](til/obsidian/hotkeys.md) - 단축키 설정과 hotkeys.json 직접 편집으로 워크플로우 최적화
 - [x] [Obsidian CLI](til/obsidian/obsidian-cli.md) - 터미널에서 Obsidian vault를 조작하는 공식 CLI 도구

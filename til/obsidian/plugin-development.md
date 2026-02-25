@@ -216,3 +216,4 @@ export default class MyPlugin extends Plugin {
 
 - [Core Plugins](til/obsidian/core-plugins.md)
 - [Community Plugins](til/obsidian/community-plugins.md)
+- [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md)
