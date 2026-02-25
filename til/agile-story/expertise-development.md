@@ -150,3 +150,4 @@ aliases:
 - [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 학습 프레임이 작동하기 위한 환경 조건
 - [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간이 아닌 수련의 질이 중요
 - [회고(Retrospective)](til/agile-story/retrospective.md) - 학습 프레임을 팀 차원에서 실천하는 도구
+- [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 학습 과정에서 망각 관리의 과학적 기초

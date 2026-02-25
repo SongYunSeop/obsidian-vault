@@ -96,3 +96,4 @@ aliases:
 - [전문성 발달(Expertise Development)](til/agile-story/expertise-development.md) - 전문성 발달의 4가지 조건과 경력 ≠ 실력
 - [몰입(Flow)](til/agile-story/flow.md) - 의도적 수련이 효과적이려면 몰입 상태가 필요
 - [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 수련의 질을 결정하는 즉각적 피드백
+- [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 에릭슨과 동시대의 학습 과학 연구, 간격 반복의 과학적 근거

@@ -116,6 +116,7 @@ tags:
 
 ### anki
 - [Backlog](til/anki/backlog.md)
+1. [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md)
 
 ### llm
 - [Backlog](til/llm/backlog.md)
