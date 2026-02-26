@@ -97,3 +97,4 @@ aliases:
 - [몰입(Flow)](til/agile-story/flow.md) - 의도적 수련이 효과적이려면 몰입 상태가 필요
 - [피드백 루프(Feedback Loop)](til/agile-story/feedback-loop.md) - 수련의 질을 결정하는 즉각적 피드백
 - [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 에릭슨과 동시대의 학습 과학 연구, 간격 반복의 과학적 근거
+- [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md) - 의도적 수련 시간을 효율적으로 만드는 복습 시스템

@@ -54,7 +54,7 @@ sources:
 
 ## 선행 지식
 - [x] [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 에빙하우스의 시간 경과에 따른 기억 감소 법칙 (무의미 음절 실험 기반, 의미 있는 내용은 망각률이 다름)
-- [ ] [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md) - 망각 직전에 복습하여 장기 기억을 형성하는 분산 학습 전략
+- [x] [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md) - 망각 직전에 복습하여 장기 기억을 형성하는 분산 학습 전략
 - [ ] [능동적 회상(Active Recall)](til/anki/active-recall.md) - 단순 재독 대신 직접 답을 끄집어내는 테스팅 효과 기반 학습법
 
 ## 핵심 개념
