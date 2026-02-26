@@ -3,11 +3,12 @@
   "autoLaunchClaude": true,
   "resumeLastSession": true,
   "fontSize": 13,
-  "fontFamily": "\"JetBrains Mono\", monospace",
+  "fontFamily": "\"Source Code Pro\", monospace",
   "lineHeight": 1.2,
   "tilPath": "til",
   "autoOpenNewTIL": true,
   "openDashboardOnStartup": true,
+  "claudeArgs": "--dangerously-skip-permissions",
   "mcpEnabled": true,
   "mcpPort": 22360
 }
