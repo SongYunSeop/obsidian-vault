@@ -119,6 +119,7 @@ tags:
 - [Backlog](til/anki/backlog.md)
 1. [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md)
 2. [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md)
+3. [능동적 회상(Active Recall)](til/anki/active-recall.md)
 
 ### llm
 - [Backlog](til/llm/backlog.md)
