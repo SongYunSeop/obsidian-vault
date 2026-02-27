@@ -113,6 +113,7 @@ tags:
 9. [리팩토링(Refactoring)](til/agile-story/refactoring.md)
 10. [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md)
 11. [테스트 주도 개발(TDD)](til/agile-story/tdd.md)
+12. [더 많은 일을 하면서 더 빨리 하기(Doing More While Doing It Faster)](til/agile-story/doing-more-doing-faster.md)
 
 ### anki
 - [Backlog](til/anki/backlog.md)

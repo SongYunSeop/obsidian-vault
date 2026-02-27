@@ -140,3 +140,4 @@ aliases:
 - [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md) - 시간 단위 피드백을 제공하는 실천법
 - [회고(Retrospective)](til/agile-story/retrospective.md) - 주 단위 피드백 루프
 - [코칭(Coaching)](til/agile-story/coaching.md) - 피드백을 효과적으로 전달하는 기술
+- [더 많은 일을 하면서 더 빨리 하기](til/agile-story/doing-more-doing-faster.md) - 피드백 루프 단축으로 실력 향상 가속화

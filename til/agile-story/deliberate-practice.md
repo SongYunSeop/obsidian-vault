@@ -94,3 +94,4 @@ aliases:
 - [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md) - 시간이 아닌 수련의 질이 중요
 - [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 간격 반복을 통한 학습 효율화의 과학적 근거
 - [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md) - 바람직한 어려움과 인출 연습을 통한 장기 기억 최적화
+- [더 많은 일을 하면서 더 빨리 하기](til/agile-story/doing-more-doing-faster.md) - 톰슨의 법칙과 의도적 수련의 시너지

@@ -166,3 +166,4 @@ Owen Schaffer의 몰입 7조건을 개발에 대입하면:
 - [짝 프로그래밍(Pair Programming)](til/agile-story/pair-programming.md) - 난이도 조절과 즉각적 피드백을 동시에 제공
 - [심리적 안전감(Psychological Safety)](til/agile-story/psychological-safety.md) - 팀 차원의 몰입 환경을 위한 전제 조건
 - [회고(Retrospective)](til/agile-story/retrospective.md) - 몰입 방해 요소를 정기적으로 개선
+- [더 많은 일을 하면서 더 빨리 하기](til/agile-story/doing-more-doing-faster.md) - i+1 이론과 몰입의 관계

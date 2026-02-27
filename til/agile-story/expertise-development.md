@@ -152,3 +152,4 @@ aliases:
 - [회고(Retrospective)](til/agile-story/retrospective.md) - 학습 프레임을 팀 차원에서 실천하는 도구
 - [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md) - 학습 과정에서 망각 관리의 과학적 기초
 - [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md) - 의도적 수련과 결합하면 효과를 극대화하는 복습 시스템
+- [더 많은 일을 하면서 더 빨리 하기](til/agile-story/doing-more-doing-faster.md) - 작은 작업 완성으로 쌓은 학습이 복리처럼 누적되는 원리
