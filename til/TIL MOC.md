@@ -115,6 +115,7 @@ tags:
 10. [1만 시간 법칙의 오해(10,000 Hour Rule)](til/agile-story/ten-thousand-hour-rule.md)
 11. [테스트 주도 개발(TDD)](til/agile-story/tdd.md)
 12. [더 많은 일을 하면서 더 빨리 하기(Doing More While Doing It Faster)](til/agile-story/doing-more-doing-faster.md)
+13. [애자일 선언문(Agile Manifesto)](til/agile-story/agile-manifesto.md)
 
 ### anki
 - [Backlog](til/anki/backlog.md)
@@ -122,6 +123,7 @@ tags:
 2. [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md)
 3. [능동적 회상(Active Recall)](til/anki/active-recall.md)
 4. [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md)
+5. [노트 타입과 템플릿(Note Types and Templates)](til/anki/note-types-and-templates.md)
 
 ### llm
 - [Backlog](til/llm/backlog.md)
