@@ -4,7 +4,7 @@ tags:
   - anki
 aliases:
   - "Backlog - Anki"
-updated: 2026-02-26
+updated: 2026-02-28
 sources:
   forgetting-curve:
     - https://whatfix.com/blog/ebbinghaus-forgetting-curve/
@@ -58,7 +58,7 @@ sources:
 - [x] [능동적 회상(Active Recall)](til/anki/active-recall.md) - 단순 재독 대신 직접 답을 끄집어내는 테스팅 효과 기반 학습법
 
 ## 핵심 개념
-- [ ] [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md) - Anki의 기본 데이터 모델: 노트가 원본 데이터, 카드가 학습 단위
+- [x] [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md) - Anki의 기본 데이터 모델: 노트가 원본 데이터, 카드가 학습 단위
 - [ ] [노트 타입과 템플릿(Note Types and Templates)](til/anki/note-types-and-templates.md) - 필드 스키마와 HTML/CSS 카드 레이아웃 정의 시스템
 - [ ] [덱 구조(Deck Structure)](til/anki/deck-structure.md) - :: 구분자 기반 계층형 카드 컨테이너
 - [ ] [카드 상태와 스케줄링(Card States and Scheduling)](til/anki/card-states-and-scheduling.md) - New → Learning → Review → Relearning 흐름과 학습 단계 설정

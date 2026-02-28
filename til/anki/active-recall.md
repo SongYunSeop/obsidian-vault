@@ -96,3 +96,4 @@ Anki가 이 두 원리를 동시에 구현하는 도구다.
 
 - [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md)
 - [간격 반복(Spaced Repetition)](til/anki/spaced-repetition.md)
+- [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md) - 1:N 구조 덕분에 동일 정보를 여러 방향에서 인출 연습하여 회상 효과 강화

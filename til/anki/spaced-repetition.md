@@ -114,6 +114,7 @@ FSRS의 안정성(Stability)은 "회상률이 100%에서 90%로 떨어지는 데
 
 - [망각 곡선(Forgetting Curve)](til/anki/forgetting-curve.md)
 - [능동적 회상(Active Recall)](til/anki/active-recall.md)
+- [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md) - 카드 단위로 복습 일정이 추적된다. 같은 노트에서 나온 카드라도 각각 독립적인 스케줄을 가진다
 - [SM-2 알고리즘](til/anki/sm-2-algorithm.md)
 - [FSRS 알고리즘](til/anki/fsrs-algorithm.md)
 - [바람직한 어려움(Desirable Difficulty)](til/anki/desirable-difficulty.md)
