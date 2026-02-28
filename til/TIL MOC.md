@@ -99,6 +99,7 @@ tags:
 
 ### claude
 1. [Claude 모델 패밀리(Claude Model Family)](til/claude/model-family.md)
+2. [Claude 사용 한도 모범 사례(Usage Limit Best Practices)](til/claude/usage-limit-best-practices.md)
 
 ### agile-story
 - [Backlog](til/agile-story/backlog.md)
