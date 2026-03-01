@@ -125,6 +125,9 @@ tags:
 4. [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md)
 5. [노트 타입과 템플릿(Note Types and Templates)](til/anki/note-types-and-templates.md)
 
+### celery
+- [Backlog](til/celery/backlog.md)
+
 ### llm
 - [Backlog](til/llm/backlog.md)
 
