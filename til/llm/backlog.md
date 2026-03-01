@@ -64,7 +64,7 @@ sources:
 - [ ] [DPO(Direct Preference Optimization)](til/llm/dpo.md) - 보상 모델 없이 선호도 데이터에서 직접 최적화하여 RLHF 복잡성 제거
 - [ ] [LoRA와 PEFT](til/llm/lora-peft.md) - 저랭크 행렬로 파인튜닝 비용을 90%+ 절감하는 매개변수 효율적 기법
 - [ ] [RAG(Retrieval-Augmented Generation)](til/llm/rag.md) - 외부 지식 기반 검색으로 모델 재학습 없이 답변 품질 향상
-- [ ] [Function Calling과 Tool Use](til/llm/function-calling-tool-use.md) - LLM이 구조화된 JSON으로 외부 API/도구를 호출하는 메커니즘
+- [x] [Function Calling과 Tool Use](til/llm/function-calling-tool-use.md) - LLM이 구조화된 JSON으로 외부 API/도구를 호출하는 메커니즘
 - [ ] [할루시네이션(Hallucination)](til/llm/hallucination.md) - 사실처럼 보이지만 근거 없는 정보를 높은 신뢰도로 생성하는 현상
 - [ ] [정렬(Alignment)](til/llm/alignment.md) - 모델이 인간의 의도와 가치를 따르도록 훈련시키는 과정
 

@@ -132,6 +132,7 @@ tags:
 - [Backlog](til/llm/backlog.md)
 1. [AI 브라우저(AI Browser)](til/llm/ai-browser.md)
 2. [BrowserOS](til/llm/browseros.md)
+3. [Function Calling과 Tool Use](til/llm/function-calling-tool-use.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
