@@ -131,6 +131,7 @@ tags:
 ### llm
 - [Backlog](til/llm/backlog.md)
 1. [AI 브라우저(AI Browser)](til/llm/ai-browser.md)
+2. [BrowserOS](til/llm/browseros.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
