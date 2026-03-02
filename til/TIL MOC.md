@@ -39,6 +39,7 @@ tags:
 22. [Bits AI](til/datadog/bits-ai.md)
 23. [프러스트레이션 시그널(Frustration Signals)](til/datadog/frustration-signals.md)
 24. [Session Replay](til/datadog/session-replay.md)
+25. [RUM Session Context](til/datadog/rum-session-context.md)
 
 ### postgresql
 - [Backlog](til/postgresql/backlog.md)

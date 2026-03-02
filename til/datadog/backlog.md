@@ -39,3 +39,4 @@ updated: 2026-02-16
 - [x] [비용 관리(Cost Management)](til/datadog/cost-management.md) - 커스텀 메트릭 과금, Metrics without Limits, 로그/트레이스 보존 비용 최적화
 - [x] [Workflow Automation](til/datadog/workflow-automation.md) - 모니터 알림 트리거로 자동 대응 워크플로우 구성 (스케일링, 티켓 생성 등)
 - [x] [Bits AI](til/datadog/bits-ai.md) - 자연어로 Datadog 질의, 장애 자동 조사, 근본 원인 요약
+- [x] [RUM Session Context](til/datadog/rum-session-context.md) - Global Context, User Context, Feature Flag로 RUM 이벤트에 커스텀 메타데이터 부착
