@@ -127,6 +127,7 @@ tags:
 3. [능동적 회상(Active Recall)](til/anki/active-recall.md)
 4. [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md)
 5. [노트 타입과 템플릿(Note Types and Templates)](til/anki/note-types-and-templates.md)
+6. [덱 구조(Deck Structure)](til/anki/deck-structure.md)
 
 ### celery
 - [Backlog](til/celery/backlog.md)

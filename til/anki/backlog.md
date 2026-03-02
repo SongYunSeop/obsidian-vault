@@ -60,7 +60,7 @@ sources:
 ## 핵심 개념
 - [x] [노트와 카드(Notes and Cards)](til/anki/notes-and-cards.md) - Anki의 기본 데이터 모델: 노트가 원본 데이터, 카드가 학습 단위
 - [x] [노트 타입과 템플릿(Note Types and Templates)](til/anki/note-types-and-templates.md) - 필드 스키마와 HTML/CSS 카드 레이아웃 정의 시스템
-- [ ] [덱 구조(Deck Structure)](til/anki/deck-structure.md) - :: 구분자 기반 계층형 카드 컨테이너
+- [x] [덱 구조(Deck Structure)](til/anki/deck-structure.md) - :: 구분자 기반 계층형 카드 컨테이너
 - [ ] [카드 상태와 스케줄링(Card States and Scheduling)](til/anki/card-states-and-scheduling.md) - New → Learning → Review → Relearning 흐름과 학습 단계 설정
 - [ ] [SM-2 알고리즘](til/anki/sm-2-algorithm.md) - Anki의 전통적 간격 반복 알고리즘 (0~5점 척도가 Again/Hard/Good/Easy 4버튼으로 구현)
 - [ ] [FSRS 알고리즘](til/anki/fsrs-algorithm.md) - 안정성/인출 가능성/난이도 3요소 기반 차세대 알고리즘 (Anki 23.10+, SM-2에서 마이그레이션 포함)
