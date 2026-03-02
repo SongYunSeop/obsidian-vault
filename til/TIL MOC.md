@@ -164,3 +164,4 @@ tags:
 25. [plugin-dev (플러그인 개발 도구킷)](til/claude-code/plugin-dev.md)
 26. [AGENTS.md](til/claude-code/agents-md.md)
 27. [프롬프트 캐싱(Prompt Caching)](til/claude-code/prompt-caching.md)
+28. [Context Mode](til/claude-code/context-mode.md)

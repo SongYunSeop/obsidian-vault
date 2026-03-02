@@ -44,3 +44,4 @@ updated: 2026-02-19
 
 ## 생태계
 - [x] [oh-my-claudecode](til/claude-code/oh-my-claudecode.md) - 28+ 전문 에이전트, 40+ 스킬, 멀티에이전트 오케스트레이션(autopilot/ralph/ultrawork/team 등) 플러그인
+- [x] [Context Mode](til/claude-code/context-mode.md) - MCP 도구 출력을 샌드박스에서 처리하여 컨텍스트 소비를 98% 줄이는 플러그인
