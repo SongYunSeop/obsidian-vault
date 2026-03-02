@@ -37,3 +37,4 @@ updated: 2026-02-18
 - [x] [CSS Snippets과 테마](til/obsidian/css-snippets-themes.md) - CSS를 통한 외관 커스터마이징과 커뮤니티 테마 적용
 - [x] [Hotkeys 커스터마이징](til/obsidian/hotkeys.md) - 단축키 설정과 hotkeys.json 직접 편집으로 워크플로우 최적화
 - [x] [Obsidian CLI](til/obsidian/obsidian-cli.md) - 터미널에서 Obsidian vault를 조작하는 공식 CLI 도구
+- [x] [Obsidian Headless](til/obsidian/obsidian-headless.md) - Electron 없이 터미널에서 Obsidian Sync를 실행하는 Node.js 동기화 클라이언트
