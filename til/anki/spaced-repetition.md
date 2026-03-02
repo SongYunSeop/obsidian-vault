@@ -9,6 +9,11 @@ tags:
 aliases:
   - "간격 반복"
   - "Spaced Repetition"
+next_review: "2026-03-03"
+interval: 1
+ease_factor: 2.5
+repetitions: 1
+last_review: "2026-03-02"
 ---
 
 # 간격 반복(Spaced Repetition)

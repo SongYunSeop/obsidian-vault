@@ -9,6 +9,11 @@ tags:
 aliases:
   - "피드백 루프"
   - "Feedback Loop"
+next_review: "2026-03-08"
+interval: 6
+ease_factor: 2.36
+repetitions: 2
+last_review: "2026-03-02"
 ---
 
 # 피드백 루프(Feedback Loop)

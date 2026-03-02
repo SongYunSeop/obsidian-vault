@@ -9,6 +9,11 @@ tags:
 aliases:
   - "몰입"
   - "Flow"
+next_review: "2026-03-08"
+interval: 6
+ease_factor: 2.36
+repetitions: 2
+last_review: "2026-03-02"
 ---
 
 # 몰입(Flow)

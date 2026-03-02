@@ -7,6 +7,11 @@ tags:
 aliases:
   - "애자일 선언문"
   - "Agile Manifesto"
+next_review: "2026-03-03"
+interval: 1
+ease_factor: 2.36
+repetitions: 1
+last_review: "2026-03-02"
 ---
 
 # 애자일 선언문(Agile Manifesto)

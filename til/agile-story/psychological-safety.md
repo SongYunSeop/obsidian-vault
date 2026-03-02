@@ -9,6 +9,11 @@ tags:
 aliases:
   - "심리적 안전감"
   - "Psychological Safety"
+next_review: "2026-03-03"
+interval: 1
+ease_factor: 2.18
+repetitions: 0
+last_review: "2026-03-02"
 ---
 
 # 심리적 안전감(Psychological Safety)
