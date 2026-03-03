@@ -31,7 +31,7 @@ updated: 2026-02-19
 - [x] [Status Line](til/claude-code/status-line.md) - 터미널 하단에 모델 정보, 토큰 사용량, Git 브랜치 등을 실시간 표시하는 커스텀 상태 표시줄
 
 ## Agent SDK
-- [ ] [Anthropic Messages API](til/claude-code/anthropic-messages-api.md) - Claude API의 기본 호출 방식, 도구 사용(Tool Use) 패턴, 스트리밍 응답
+- [x] [Anthropic Messages API](til/claude-code/anthropic-messages-api.md) - Claude API의 기본 호출 방식, 도구 사용(Tool Use) 패턴, 스트리밍 응답
 - [ ] [에이전트 루프(Agent Loop)](til/claude-code/agent-loop.md) - 컨텍스트 수집 → 액션 실행 → 검증 → 반복의 자율 실행 사이클
 - [ ] [Agent SDK 시작하기(Quickstart)](til/claude-code/agent-sdk-quickstart.md) - Python/TypeScript SDK 설치, 첫 번째 에이전트 실행, 내장 도구 사용
 - [ ] [내장 도구와 권한(Built-in Tools & Permissions)](til/claude-code/built-in-tools-permissions.md) - Read/Write/Edit/Bash/Glob/Grep 등 내장 도구, 권한 모드(default/acceptEdits/bypassPermissions)
