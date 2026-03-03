@@ -37,7 +37,7 @@ updated: 2026-02-19
 - [ ] [내장 도구와 권한(Built-in Tools & Permissions)](til/claude-code/built-in-tools-permissions.md) - Read/Write/Edit/Bash/Glob/Grep 등 내장 도구, 권한 모드(default/acceptEdits/bypassPermissions)
 - [ ] [커스텀 도구(Custom Tools)](til/claude-code/custom-tools.md) - createSdkMcpServer로 인프로세스 MCP 서버를 만들어 에이전트에 도구 추가
 - [ ] [세션 관리(Sessions)](til/claude-code/sessions.md) - 세션 ID로 대화 재개, 세션 포킹(forking), 자동 컴팩션
-- [ ] [훅(SDK Hooks)](til/claude-code/sdk-hooks.md) - PreToolUse/PostToolUse/Stop 등 에이전트 실행 시점에 커스텀 로직 삽입
+- [x] [훅(SDK Hooks)](til/claude-code/sdk-hooks.md) - PreToolUse/PostToolUse/Stop 등 에이전트 실행 시점에 커스텀 로직 삽입
 - [x] [서브에이전트(Subagents)](til/claude-code/subagents.md) - 메인 에이전트가 전문화된 하위 에이전트를 생성하여 병렬/분업 처리
 - [ ] [프로덕션 배포(Hosting & Secure Deployment)](til/claude-code/hosting-secure-deployment.md) - 컨테이너 격리, 자격 증명 관리, OpenTelemetry 관찰성, 보안 모범 사례
 - [ ] [CI/CD 자동화 실습](til/claude-code/cicd-automation.md) - Agent SDK로 PR 리뷰, 코드 분석, 테스트 자동화 파이프라인 구축
