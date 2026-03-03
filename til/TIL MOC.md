@@ -138,6 +138,7 @@ tags:
 1. [AI 브라우저(AI Browser)](til/llm/ai-browser.md)
 2. [BrowserOS](til/llm/browseros.md)
 3. [Function Calling과 Tool Use](til/llm/function-calling-tool-use.md)
+4. [MCP vs CLI 논쟁](til/llm/mcp-vs-cli.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
