@@ -15,7 +15,7 @@ updated: 2026-02-18
 - [x] [토큰과 컨텍스트 윈도우(Tokens & Context Window)](til/prompt-engineering/tokens-and-context-window.md) - 토큰화 방식, 컨텍스트 윈도우 크기가 프롬프트 설계에 미치는 영향
 
 ## 핵심 개념
-- [ ] [Zero-shot Prompting](til/prompt-engineering/zero-shot.md) - 예시 없이 지시만으로 모델이 작업을 수행하게 하는 기법
+- [x] [Zero-shot Prompting](til/prompt-engineering/zero-shot.md) - 예시 없이 지시만으로 모델이 작업을 수행하게 하는 기법
 - [ ] [Few-shot Prompting](til/prompt-engineering/few-shot.md) - 소수의 예시를 제공하여 모델이 패턴을 인컨텍스트 학습하게 하는 기법
 - [ ] [Chain-of-Thought(CoT) Prompting](til/prompt-engineering/chain-of-thought.md) - "단계별로 생각하라"는 지시로 중간 추론 과정을 유도하는 기법
 - [ ] [시스템 프롬프트와 XML 태그(System Prompt & XML Tags)](til/prompt-engineering/system-prompt-xml-tags.md) - 시스템/유저 메시지 역할 구분, XML 태그로 프롬프트를 구조화하는 Claude 특화 기법
