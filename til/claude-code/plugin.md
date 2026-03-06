@@ -1,6 +1,6 @@
 ---
 date: 2026-02-13
-updated: 2026-02-19
+updated: 2026-03-05
 category: claude-code
 tags:
   - til
@@ -10,6 +10,8 @@ tags:
   - hooks
   - mcp
   - lsp
+  - settings
+  - namespace
 aliases:
   - Claude Code Plugin
   - Claude Code 플러그인
@@ -18,7 +20,7 @@ aliases:
 # Claude Code Plugin
 
 > [!tldr] 한줄 요약
-> Plugin은 [Skills](til/claude-code/skill.md), [Agents](til/claude-code/agent.md), [Hooks](til/claude-code/hooks.md), [MCP](til/claude-code/mcp.md), LSP를 하나의 패키지로 묶어 공유하는 시스템이며, 3가지 Hook 타입(command/prompt/agent)과 구성 요소 간 조합을 통해 복합적인 자동화 파이프라인을 구축할 수 있다.
+> Plugin은 [Skills](til/claude-code/skill.md), [Agents](til/claude-code/agent.md), [Hooks](til/claude-code/hooks.md), [MCP](til/claude-code/mcp.md), LSP를 하나의 패키지로 묶어 공유하는 시스템이며, LSP 통합, 기본 에이전트 교체(`settings.json`), 네임스페이스 격리, 마켓플레이스 배포 등 standalone(`.claude/`)으로는 불가능한 고유 기능을 제공한다.
 
 ## 핵심 내용
 
@@ -111,6 +113,84 @@ graph TB
     style Claude fill:#f0f0f0
 ```
 
+### 플러그인 고유 기능
+
+Standalone(`.claude/`)으로는 **불가능하고** 플러그인으로만 가능한 기능들이다:
+
+| 기능 | Standalone | Plugin |
+|------|:---------:|:------:|
+| Skills / Commands / Agents / Hooks / MCP | O | O |
+| **LSP Servers** | **X** | **O** |
+| **기본 에이전트 교체 (`settings.json`)** | **X** | **O** |
+| **네임스페이스 격리** | **X** | **O** |
+| **마켓플레이스 배포** | **X** | **O** |
+| **`${CLAUDE_PLUGIN_ROOT}`** | **X** | **O** |
+| **managed scope** | **X** | **O** |
+
+#### LSP 서버 통합 (`.lsp.json`)
+
+플러그인 **전용** 기능이다. Claude에게 실시간 코드 인텔리전스를 제공한다:
+
+```
+Claude가 파일 수정 (Write/Edit)
+  → LSP 서버에 didChange 알림
+  → 서버가 diagnostics 반환 (에러, 경고, 힌트)
+  → Claude가 즉시 인지하고 자체 수정
+```
+
+LSP 없이는 Claude가 코드를 수정한 뒤 직접 빌드/타입체크 명령어를 실행해야 에러를 알 수 있지만, LSP가 있으면 이 과정이 자동화된다.
+
+| 기능 | 설명 | Claude 활용 예시 |
+|------|------|-----------------|
+| Diagnostics | 에러/경고 실시간 감지 | 편집 직후 타입 에러 자동 수정 |
+| Go to Definition | 심볼의 정의 위치로 이동 | 함수 구현부를 찾아 읽고 이해 |
+| Find References | 심볼이 사용된 모든 위치 | 리팩토링 시 영향 범위 파악 |
+| Hover | 타입 정보, 문서 표시 | 변수의 정확한 타입을 확인 후 코드 작성 |
+
+```json
+{
+  "typescript": {
+    "command": "typescript-language-server",
+    "args": ["--stdio"],
+    "extensionToLanguage": { ".ts": "typescript", ".tsx": "typescriptreact" },
+    "initializationOptions": { "preferences": { "importModuleSpecifierPreference": "relative" } },
+    "restartOnCrash": true,
+    "maxRestarts": 3,
+    "startupTimeout": 10000
+  }
+}
+```
+
+> [!warning] 언어 서버 바이너리는 별도 설치 필요
+> 플러그인은 설정만 제공한다. 사용자 머신에 `gopls`, `pyright`, `typescript-language-server` 등이 PATH에 있어야 동작한다.
+
+#### 기본 에이전트 교체 (`settings.json`)
+
+플러그인 루트의 `settings.json`에서 `agent` 키로 **메인 에이전트를 교체**할 수 있다. 플러그인 활성화만으로 Claude Code의 기본 동작 방식 자체가 바뀐다:
+
+```json
+{ "agent": "security-reviewer" }
+```
+
+`agents/` 디렉토리에 정의한 커스텀 에이전트의 시스템 프롬프트, 도구 제한(`allowed-tools`), 모델 설정이 메인 스레드에 적용된다.
+
+```
+일반 세션:       사용자 입력 → Claude (기본 시스템 프롬프트) → 응답
+플러그인 활성화:  사용자 입력 → Claude (커스텀 에이전트의 프롬프트 + 도구 제한 + 모델) → 응답
+```
+
+핵심은 **도구 제한(`allowed-tools`)과 시스템 프롬프트**의 조합이다:
+
+| 플러그인 예시 | 기본 에이전트 | 효과 |
+|-------------|-------------|------|
+| security-audit | security-reviewer | `Read`, `Glob`, `Grep`만 허용 → 읽기 전용 보안 리뷰 |
+| code-mentor | teaching-assistant | 직접 코드를 쓰지 않고 힌트만 제공 |
+| strict-tdd | tdd-enforcer | 테스트 없이 구현 코드 작성 차단 |
+| docs-writer | documentation-agent | 문서 파일만 수정 가능, 소스 코드 수정 차단 |
+
+> [!tip] 우선순위
+> 플러그인 루트의 `settings.json`이 `plugin.json`의 `settings` 필드보다 우선한다.
+
 ### 설치 범위 (Scope)
 
 | 범위 | 설정 파일 | 용도 |
@@ -118,6 +198,7 @@ graph TB
 | `user` | `~/.claude/settings.json` | 개인, 모든 프로젝트 (기본값) |
 | `project` | `.claude/settings.json` | 팀 공유 (git 커밋) |
 | `local` | `.claude/settings.local.json` | 프로젝트 한정 (gitignore) |
+| `managed` | managed settings (읽기 전용) | 조직이 배포하는 플러그인 (플러그인 전용) |
 
 ### 핵심 환경 변수
 
