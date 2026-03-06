@@ -1,5 +1,6 @@
 ---
 date: 2026-02-19
+updated: 2026-03-06
 category: claude-code
 tags:
   - til
@@ -7,6 +8,8 @@ tags:
   - skill
   - skill-creator
   - best-practices
+  - eval
+  - benchmark
 aliases:
   - "Skill Creator"
   - "스킬 생성기"
@@ -16,7 +19,7 @@ aliases:
 # 스킬 생성기(Skill Creator)
 
 > [!tldr] 한줄 요약
-> Skill Creator는 Anthropic이 공식 제공하는 메타 스킬로, 효과적인 스킬 설계를 위한 3가지 원칙(간결함, 자유도 조절, 점진적 공개)과 6단계 생성 워크플로우를 안내한다.
+> Skill Creator는 Anthropic이 공식 제공하는 메타 스킬로, 스킬 설계 원칙과 **평가(Eval) 기반 반복 개선 프레임워크**를 제공한다. v2(2026-02)에서 "작성 가이드"에서 "개발+검증 환경"으로 진화했다.
 
 ## 핵심 내용
 
@@ -24,43 +27,121 @@ aliases:
 
 [anthropics/skills](https://github.com/anthropics/skills) 리포지토리에 포함된 공식 메타 스킬이다. `skill-creator` 자체가 하나의 [스킬(Skill)](til/claude-code/skill.md)이며, Claude에게 새로운 스킬을 설계하는 방법론과 베스트 프랙티스를 주입한다.
 
-### 3가지 핵심 원칙
+### v1 → v2 변화 (PR #465, 2026-02-25)
 
-#### 1. 간결함이 핵심(Concise is Key)
+| | v1 | v2 |
+|---|---|---|
+| 역할 | 스킬 **작성** 가이드 | 스킬 **개발 환경** (IDE처럼) |
+| 완료 기준 | SKILL.md 작성 + 패키징 | 벤치마크 통과 + 사용자 만족 |
+| 품질 보증 | 원칙 준수 여부 (주관적) | eval 통과율, 트리거 정확도 (정량적) |
+| 톤 | 공식 문서체 | 대화체, 실용적 |
+| 초기화 | `init_skill.py` 의존 | 수동 생성 |
 
-[컨텍스트 윈도우](til/claude-code/context-management.md)는 공공재다. 스킬은 시스템 프롬프트, 대화 이력, 다른 스킬의 메타데이터와 공간을 나눠 쓴다. Claude는 이미 충분히 똑똑하므로 **Claude가 모르는 정보만** 담아야 한다. 각 문단에 대해 "이 설명이 토큰 비용을 정당화하는가?"를 자문한다.
+v1의 설계 원칙(간결함, 점진적 공개 등)은 여전히 유효하지만, v2는 **"만든 스킬을 어떻게 검증하고 개선하는가"**에 초점을 맞춘다.
 
-#### 2. 자유도 조절(Degrees of Freedom)
+### 설계 원칙 (v1에서 유지)
 
-작업의 민감도에 따라 지시 수준을 맞춘다:
+#### 간결함이 핵심(Concise is Key)
 
-| 자유도 | 형태 | 적합한 경우 |
-|--------|------|------------|
-| 높음 | 텍스트 지시 | 여러 접근법이 유효, 컨텍스트에 따라 판단 |
-| 중간 | 의사코드/파라미터화 스크립트 | 선호 패턴 있지만 변형 허용 |
-| 낮음 | 구체적 스크립트, 고정 시퀀스 | 깨지기 쉬운 작업, 일관성 필수 |
+[컨텍스트 윈도우](til/claude-code/context-management.md)는 공공재다. Claude는 이미 충분히 똑똑하므로 **Claude가 모르는 정보만** 담아야 한다.
 
-> [!tip] 비유
-> 좁은 다리(낮은 자유도)에는 가드레일이 필요하고, 넓은 들판(높은 자유도)에는 자유롭게 걸어도 된다.
-
-#### 3. 점진적 공개(Progressive Disclosure)
-
-3단계로 컨텍스트를 관리한다:
+#### 점진적 공개(Progressive Disclosure)
 
 | 단계 | 로드 시점 | 크기 |
 |------|----------|------|
 | 메타데이터 (name + description) | 항상 | ~100단어 |
-| SKILL.md 본문 | 스킬 트리거 시 | <5,000단어 |
+| SKILL.md 본문 | 스킬 트리거 시 | <500줄 |
 | 번들 리소스 (scripts/references/assets) | 필요할 때만 | 무제한 |
 
-### 6단계 생성 워크플로우
+#### 작성 스타일 (v2 강조)
 
-1. **구체적 예시로 이해** — "이 스킬을 사용자가 어떻게 쓸까?" 트리거 문구, 예상 입출력 정의
-2. **재사용 리소스 계획** — 각 예시를 분석해 scripts/references/assets로 분류
-3. **초기화** — `init_skill.py`로 템플릿 디렉토리 자동 생성
-4. **편집** — 번들 리소스부터 구현(스크립트는 실제 실행 테스트), 이후 SKILL.md 작성
-5. **패키징** — `package_skill.py`로 검증 + `.skill` 파일 생성
-6. **반복** — 실제 사용 후 개선 사항 반영
+- **Why를 설명하라** — `ALWAYS`/`NEVER` 대문자 강조보다 이유를 설명하는 게 더 효과적
+- Description은 약간 "pushy"하게 — 언더트리거(undertrigger) 방지
+- "Not for" 패턴으로 스킬 간 경계를 명확히
+
+### 핵심 워크플로우 (v2)
+
+v2의 전체 프로세스는 **소프트웨어 개발의 CI/CD 파이프라인**과 유사하다:
+
+```mermaid
+graph LR
+    A[초안 작성] --> B[테스트 실행]
+    B --> C[정량 평가]
+    C --> D[사용자 리뷰]
+    D --> E[스킬 개선]
+    E --> B
+    D -->|만족| F[Description 최적화]
+    F --> G[패키징]
+```
+
+#### 1단계: 스킬 작성
+
+- **Capture Intent** — 무엇을, 언제 트리거할지, 출력 형식은?
+- **Interview & Research** — 엣지 케이스, 의존성, 성공 기준 조사
+- **Write SKILL.md** — name, description(트리거 메커니즘), body
+
+#### 2단계: 평가(Eval) 실행
+
+테스트 케이스 2~3개를 `evals/evals.json`에 저장 후 **with-skill / without-skill 병렬 실행**:
+
+```
+<skill-name>-workspace/
+├── iteration-1/
+│   ├── eval-0-descriptive-name/
+│   │   ├── with_skill/outputs/
+│   │   ├── without_skill/outputs/
+│   │   └── eval_metadata.json
+│   ├── benchmark.json
+│   └── benchmark.md
+├── iteration-2/
+└── feedback.json
+```
+
+- 실행 중 대기하지 않고 **assertion 초안 작성** (시간 활용)
+- 완료 시 `timing.json`에 토큰/시간 기록
+
+#### 3단계: 채점 + 벤치마크
+
+1. **Grader 에이전트**(`agents/grader.md`)로 assertion 기반 자동 채점
+2. **`aggregate_benchmark.py`**로 pass_rate, 토큰, 시간 집계
+3. **Analyst 패스** — 항상 통과하는 assertion(비차별적), 높은 분산(flaky), 시간/토큰 트레이드오프 분석
+4. **`generate_review.py`**로 인터랙티브 뷰어 생성 → 사용자에게 제공
+
+> [!tip] 뷰어 구성
+> - **Outputs 탭**: 테스트 케이스별 출력 + 피드백 입력
+> - **Benchmark 탭**: 정량 비교 (pass rate, 토큰, 시간)
+
+#### 4단계: 반복 개선
+
+사용자 `feedback.json`을 읽고 스킬 수정 → 재실행. 개선 시 핵심 원칙:
+
+1. **일반화** — 테스트 케이스에 오버피팅하지 않기. 다양한 메타포와 패턴 시도
+2. **린하게 유지** — 비생산적인 지시 제거
+3. **Why 설명** — 딱딱한 MUST 대신 이유를 전달
+4. **반복 작업 번들링** — 테스트마다 같은 스크립트를 작성하면 `scripts/`에 포함
+
+#### 5단계: Description 최적화
+
+트리거 정확도를 자동으로 높이는 프로세스:
+
+1. **Eval 쿼리 20개 생성** — should-trigger 8~10개 + should-not-trigger 8~10개
+   - 구체적이고 현실적인 쿼리 (파일 경로, 개인 맥락, 오타 포함)
+   - should-not-trigger는 **near-miss**(키워드는 겹치지만 다른 의도)가 핵심
+2. **HTML 리뷰어**(`assets/eval_review.html`)로 사용자 검수
+3. **`run_loop.py`** 실행 — train 60%/test 40% 분할, 3회 반복 측정, 최대 5 iteration
+4. `best_description`을 SKILL.md에 적용
+
+#### 고급: 블라인드 비교
+
+두 버전을 **Comparator 에이전트**(`agents/comparator.md`)에게 익명으로 제출 → 어느 쪽이 왜 나은지 분석. **Analyzer 에이전트**(`agents/analyzer.md`)가 개선 제안 생성.
+
+### 환경별 대응
+
+| 환경 | 서브에이전트 | 브라우저 | 대응 |
+|------|:---:|:---:|------|
+| Claude Code | O | O | 전체 워크플로우 사용 가능 |
+| Cowork | O | X | `--static` 옵션으로 HTML 파일 생성 |
+| Claude.ai | X | X | 직접 실행 + 인라인 피드백, 벤치마크 생략 |
 
 ### 번들 리소스 구성
 
@@ -72,37 +153,16 @@ my-skill/
 └── assets/            ← 출력에 사용되는 파일 (템플릿, 이미지)
 ```
 
-- **scripts**: 같은 코드를 반복 작성하게 될 때 (예: PDF 회전 스크립트)
-- **references**: Claude가 참고해야 하는 문서 (예: DB 스키마, API 문서)
-- **assets**: 최종 출력물에 쓰이는 파일 (예: 로고, PPT 템플릿)
+v2에서 추가된 번들 리소스:
 
-> [!warning] 주의
-> SKILL.md와 references에 같은 정보를 중복하지 않는다. 상세 정보는 references에, 핵심 절차만 SKILL.md에 둔다.
-
-### Description 작성 권장사항
-
-description은 스킬의 **주요 트리거 메커니즘**이다. 모든 스킬의 description이 항상 컨텍스트에 로드되므로 Claude의 자동 호출 판단에 직접 영향을 준다.
-
-**권장 규칙:**
-
-1. **what + when 조합** — 무엇을 하는지 + 언제 쓰는지를 모두 포함
-2. **"When to Use"는 description에만** — body의 활성화 조건은 트리거 후에야 로드되므로 자동 호출에 도움이 되지 않음
-3. **컨텍스트 예산 인식** — 모든 description이 컨텍스트 윈도우의 2%(fallback 16,000자)를 공유
-4. **생략 시 fallback** — description이 없으면 본문 첫 문단이 사용됨
-
-```yaml
-# 나쁜 예
-description: "Word 문서 작업"
-
-# 좋은 예
-description: "Comprehensive document creation, editing, and analysis
-with support for tracked changes. Use when: (1) Creating new documents,
-(2) Modifying content, (3) Working with tracked changes.
-Not for: plain text files or PDFs"
 ```
-
-> [!tip] Not for 패턴
-> 스킬이 여러 개일 때 "Not for"를 추가하면 Claude가 스킬 간 경계를 더 정확히 구분한다.
+skill-creator/
+├── agents/            ← 서브에이전트 프롬프트 (grader, comparator, analyzer)
+├── eval-viewer/       ← 인터랙티브 결과 뷰어 (generate_review.py, viewer.html)
+├── scripts/           ← 벤치마크 집계, description 최적화 등
+├── references/        ← JSON 스키마 (schemas.md)
+└── assets/            ← eval 리뷰 HTML 템플릿
+```
 
 ### 고급 패턴
 
@@ -136,10 +196,6 @@ Research $ARGUMENTS thoroughly...
 > [!warning] 주의
 > `context: fork`는 명확한 작업 지시가 있는 스킬에만 적합하다. 가이드라인만 있고 태스크가 없으면 서브에이전트가 할 일을 모른다.
 
-#### 시각적 출력
-
-스크립트로 인터랙티브 HTML을 생성하고 브라우저에서 여는 패턴. 코드베이스 시각화, 의존성 그래프, 테스트 커버리지 리포트 등에 활용한다.
-
 ## 예시
 
 이 프로젝트의 `/til` 스킬 시스템이 Skill Creator 원칙을 잘 적용한 실례다:
@@ -161,6 +217,7 @@ Research $ARGUMENTS thoroughly...
 ## 참고 자료
 
 - [Skill Creator SKILL.md (anthropics/skills)](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md)
+- [PR #465: export latest skills](https://github.com/anthropics/skills/pull/465) — v2 변경 내역
 - [Claude Code Skills 공식 문서](https://code.claude.com/docs/en/skills)
 - [Agent Skills 오픈 표준](https://agentskills.io)
 - [The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
