@@ -140,6 +140,9 @@ tags:
 3. [Function Calling과 Tool Use](til/llm/function-calling-tool-use.md)
 4. [MCP vs CLI 논쟁](til/llm/mcp-vs-cli.md)
 
+### vector-db
+- [Backlog](til/vector-db/backlog.md)
+
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
 1. [Claude Code 개요](til/claude-code/overview.md)
