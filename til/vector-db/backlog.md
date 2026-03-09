@@ -26,7 +26,7 @@ sources:
 
 ## Prerequisites
 - [x] [벡터 임베딩(Vector Embedding)](til/vector-db/vector-embedding.md) - 텍스트/이미지를 고차원 수치 벡터로 변환하는 개념
-- [ ] [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md) - Cosine, Euclidean, Dot Product 비교 및 선택 기준
+- [x] [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md) - Cosine, Euclidean, Dot Product 비교 및 선택 기준
 
 ## Core Concepts
 - [ ] [유사도 검색(Similarity Search)](til/vector-db/similarity-search.md) - 쿼리 벡터와 저장된 벡터 간 유사도 기반 검색 원리

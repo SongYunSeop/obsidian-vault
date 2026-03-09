@@ -143,6 +143,7 @@ tags:
 ### vector-db
 - [Backlog](til/vector-db/backlog.md)
 1. [벡터 임베딩(Vector Embedding)](til/vector-db/vector-embedding.md)
+2. [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
