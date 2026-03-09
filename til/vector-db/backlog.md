@@ -25,7 +25,7 @@ sources:
 # Vector DB Learning Backlog
 
 ## Prerequisites
-- [ ] [벡터 임베딩(Vector Embedding)](til/vector-db/vector-embedding.md) - 텍스트/이미지를 고차원 수치 벡터로 변환하는 개념
+- [x] [벡터 임베딩(Vector Embedding)](til/vector-db/vector-embedding.md) - 텍스트/이미지를 고차원 수치 벡터로 변환하는 개념
 - [ ] [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md) - Cosine, Euclidean, Dot Product 비교 및 선택 기준
 
 ## Core Concepts
