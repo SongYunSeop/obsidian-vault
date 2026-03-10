@@ -29,7 +29,7 @@ sources:
 - [x] [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md) - Cosine, Euclidean, Dot Product 비교 및 선택 기준
 
 ## Core Concepts
-- [ ] [유사도 검색(Similarity Search)](til/vector-db/similarity-search.md) - 쿼리 벡터와 저장된 벡터 간 유사도 기반 검색 원리
+- [x] [유사도 검색(Similarity Search)](til/vector-db/similarity-search.md) - 쿼리 벡터와 저장된 벡터 간 유사도 기반 검색 원리
 - [ ] [ANN 알고리즘(Approximate Nearest Neighbor)](til/vector-db/ann.md) - 정확도를 약간 희생하여 속도를 대폭 향상시키는 근사 검색
 - [ ] [HNSW 인덱스](til/vector-db/hnsw.md) - 그래프 기반 계층적 탐색 알고리즘, 가장 널리 쓰이는 벡터 인덱스
 - [ ] [IVF 인덱스](til/vector-db/ivf.md) - 파티션 기반 역인덱스, 메모리 효율적인 대안
