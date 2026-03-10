@@ -9,11 +9,6 @@ tags:
 aliases:
   - "불확실성과 애자일"
   - "Uncertainty & Agile"
-next_review: "2026-03-03"
-interval: 1
-ease_factor: 2.5
-repetitions: 1
-last_review: "2026-03-02"
 ---
 
 # 불확실성과 애자일(Uncertainty & Agile)

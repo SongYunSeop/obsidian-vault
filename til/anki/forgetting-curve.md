@@ -9,11 +9,6 @@ tags:
 aliases:
   - "망각 곡선"
   - "Forgetting Curve"
-next_review: "2026-03-03"
-interval: 1
-ease_factor: 2.5
-repetitions: 1
-last_review: "2026-03-02"
 ---
 
 # 망각 곡선(Forgetting Curve)

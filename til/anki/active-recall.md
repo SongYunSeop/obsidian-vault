@@ -3,11 +3,6 @@ date: 2026-02-27T22:45:24
 category: anki
 tags: [til, active-recall, memory, learning]
 aliases: ["능동적 회상", "Active Recall"]
-next_review: "2026-03-03"
-interval: 1
-ease_factor: 2.5
-repetitions: 1
-last_review: "2026-03-02"
 ---
 
 # 능동적 회상(Active Recall)

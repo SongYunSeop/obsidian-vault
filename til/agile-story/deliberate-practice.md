@@ -8,11 +8,6 @@ tags:
 aliases:
   - "의도적 수련"
   - "Deliberate Practice"
-next_review: "2026-03-03"
-interval: 1
-ease_factor: 2.18
-repetitions: 0
-last_review: "2026-03-02"
 ---
 
 # 의도적 수련(Deliberate Practice)

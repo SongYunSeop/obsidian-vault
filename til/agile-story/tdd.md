@@ -11,11 +11,6 @@ aliases:
   - "테스트 주도 개발"
   - "TDD"
   - "Test-Driven Development"
-next_review: "2026-03-03"
-interval: 1
-ease_factor: 1.96
-repetitions: 0
-last_review: "2026-03-02"
 ---
 
 # 테스트 주도 개발(TDD)
