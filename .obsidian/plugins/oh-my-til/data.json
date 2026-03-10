@@ -7,8 +7,6 @@
   "lineHeight": 1.2,
   "tilPath": "til",
   "autoOpenNewTIL": true,
-  "openDashboardOnStartup": true,
-  "claudeArgs": "--dangerously-skip-permissions",
-  "mcpEnabled": true,
-  "mcpPort": 22360
+  "openDashboardOnStartup": false,
+  "claudeArgs": "--dangerously-skip-permissions"
 }
