@@ -146,6 +146,9 @@ tags:
 2. [거리 메트릭(Distance Metrics)](til/vector-db/distance-metrics.md)
 3. [유사도 검색(Similarity Search)](til/vector-db/similarity-search.md)
 
+### ai-engineering
+1. [Harness Engineering(하네스 엔지니어링)](til/ai-engineering/harness-engineering.md)
+
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
 1. [Claude Code 개요](til/claude-code/overview.md)
