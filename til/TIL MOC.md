@@ -148,6 +148,7 @@ tags:
 
 ### ai-engineering
 1. [Harness Engineering(하네스 엔지니어링)](til/ai-engineering/harness-engineering.md)
+2. [RAG(검색 증강 생성)](til/ai-engineering/rag.md)
 
 ### claude-code
 - [Backlog](til/claude-code/backlog.md)
